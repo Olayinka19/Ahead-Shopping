@@ -11,3 +11,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Extra small devices (portrait phones) */
+@media (max-width: 480px) {
+  /* Your CSS rules for small mobile devices here */
+  .page{
+    object-fit: cover;
+  }
+}
+
+/* Small devices (landscape phones) */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* Your CSS rules for medium-sized mobile devices here */
+  .page{
+    object-fit: cover;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Your CSS rules for larger mobile devices and small tablets here */
+  .page{
+    object-fit: cover;
+  }
+}
+/* Large devices (small tablets and desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Your CSS rules for larger tablets and smaller desktop screens here */
+  .page{
+    object-fit: cover;
+  }
+}
+
+/* Extra large devices (large desktops and high-res devices) */
+@media (min-width: 1200px) {
+  /* Your CSS rules for larger desktop screens and high-resolution devices here */
+  .page{
+    object-fit: cover;
+  }
+}
+
+

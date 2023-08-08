@@ -25,8 +25,39 @@
       Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
+
     -->
-    <title>React App</title>
+   <style>
+    .page{
+      object-fit:cover ;
+    }
+   </style>
+    <title>Ahead-Store</title>
+    <div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex" style="background-image: url('images/dark.jpg');">
+      <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+          <h1 uk-parallax="opacity: 0,1; y: -100,0; scale: 2,1; end: 50vh + 50%;">Headline</h1>
+          <p uk-parallax="opacity: 0,1; y: 100,0; scale: 0.5,1; end: 50vh + 50%;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+  </div>
+    <div class="page">
+    <ul class="uk-pagination" uk-margin>
+      <li><a href="#"><span uk-pagination-previous></span></a></li>
+      <li><a href="#">1</a><img src="https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg?auto=compress&cs=tinysrgb&w=1600" /></li>
+      <li class="uk-disabled"><span>…</span></li>
+      <li><a href="#">2</a><img width="100%" src="https://images.pexels.com/photos/3056059/pexels-photo-3056059.jpeg?auto=compress&cs=tinysrgb&w=1600" /></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li class="uk-active"><span>5</span></li>
+      <li><a href="#">8</a></li>
+      <li><a href="#">9</a></li>
+      <li><a href="#">10</a></li>
+      <li class="uk-disabled"><span>…</span></li>
+      <li><a href="#">20</a></li>
+      <li><a href="#"><span uk-pagination-next></span></a></li>
+  </ul>
+</div>
+    <!-- <img src="https://images.pexels.com/photos/4525359/pexels-photo-4525359.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+    <img src="https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg?auto=compress&cs=tinysrgb&w=1600" /> -->
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
