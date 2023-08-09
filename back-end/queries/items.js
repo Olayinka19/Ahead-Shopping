@@ -24,11 +24,11 @@ const getAllItems = async () => {
 
 
   const createItem = async (item) => {
-    const { name, price , quantity, image_url,  description } = item;
+    const { name, price , quantity, image_url,  description , category } = item;
     try {
       const newItem = await db.one(
-        "INSERT INTO items (name, price , quantity, image_url,  description) VALUES ($1, $2, $3, $4 , $5) RETURNING *",
-        [name, price , quantity, image_url,  description]
+        "INSERT INTO items (name, price , quantity, image_url,  description) VALUES ($1, $2, $3, $4 , $5 , $6) RETURNING *",
+        [name, price , quantity, image_url,  description , category]
       );
       return newItem;
     } catch (error) {
@@ -47,11 +47,11 @@ const getAllItems = async () => {
 
  
   const updateItem = async (item, id) => {
-    const { name, price , quantity, image_url,  description } = item;
+    const { name, price , quantity, image_url,  description , category} = item;
     try {
-      const updateditem = await db.one("UPDATE items SET name = $1, price = $2, quantity = $3, image_url = $4, description=$5 , WHERE id = $6 RETURNING *",
+      const updateditem = await db.one("UPDATE items SET name = $1, price = $2, quantity = $3, image_url = $4, description=$5 , category = $6 WHERE id = $7 RETURNING *",
       
-      [name, price , quantity, image_url,  description, id]);
+      [name, price , quantity, image_url,  description, category, id]);
       return updateditem;
     } catch (err) {
       return err;
