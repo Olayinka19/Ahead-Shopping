@@ -41,17 +41,17 @@ function NavBar() {
         <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
             <li class="uk-active"><Link to="/Show">Shop</Link></li>
             <li class="uk-parent">
-                <a href="#">Parent</a>
+            <Link to="/">Home</Link>
                 <ul class="uk-nav-sub">
-                    <li><a href="#">Sub item</a></li>
-                    <li><a href="#">Sub item</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/">Home</Link></li>
                 </ul>
             </li>
             <li class="uk-nav-header">Header</li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+            <li><Link to="/BlogPost">Blog Post</Link></li>
+            <li><Link to="/BlogPost">Blog Post</Link></li>
             <li class="uk-nav-divider"></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+            <li><Link to="/BlogPost">Blog Post</Link></li>
         </ul>
 
     </div>
@@ -63,9 +63,9 @@ function NavBar() {
         <ul class="uk-nav uk-nav-default">
             <li class="uk-active"><a href="/"><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.clipartbest.com%2Fcliparts%2FncB%2FM6p%2FncBM6pg4i.png&f=1&nofb=1&ipt=96393183749527f84cb6eb1ef85ca05ef867ec32edb5819768067e57949b521e&ipo=images" width="30px" height="30px" /></a></li>
             <li class="uk-parent">
-                <a href="#">Projects</a>
+            <Link to="/BlogPost">Blog Post</Link>
                 <ul class="uk-nav-sub">
-                    <li><a href="#">Affiliate Marketting</a></li>
+                    <li><Link to="/BlogPost">Blog Post</Link></li>
                     <li><Link to="/BlogPost">Blog Post</Link></li>
                 </ul>
             </li>
