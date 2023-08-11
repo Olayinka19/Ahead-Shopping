@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import CartIcon from './CartIcon';
+import { Link } from "react-router-dom";
 
 function NavBar() {
     const [cartItems, setCartItems] = useState([]);
@@ -38,7 +39,7 @@ function NavBar() {
     <div class="uk-offcanvas-bar uk-flex uk-flex-column">
 
         <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-            <li class="uk-active"><a href="/Show">Shop</a></li>
+            <li class="uk-active"><Link to="/Show">Shop</Link></li>
             <li class="uk-parent">
                 <a href="#">Parent</a>
                 <ul class="uk-nav-sub">
@@ -65,15 +66,15 @@ function NavBar() {
                 <a href="#">Projects</a>
                 <ul class="uk-nav-sub">
                     <li><a href="#">Affiliate Marketting</a></li>
-                    <li><a href="/BlogPost">Blog Post</a></li>
+                    <li><Link to="/BlogPost">Blog Post</Link></li>
                 </ul>
             </li>
             <li class="uk-nav-divider"></li>
             <li class="uk-nav-header">Ahead-Store</li>
-            <li><a href="/Items"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Shop</a></li>
-            <li><a href="/AboutMe"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> About</a></li>
+            <li><Link to="/Items"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Shop</Link></li>
+            <li><Link to="/AboutMe"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> About</Link></li>
             <li class="uk-nav-divider"></li>
-            <li><a href="/ContactUs"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Contact Us</a></li>
+            <li><Link to="/ContactUs"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Contact Us</Link></li>
         </ul>
 
     </div>
