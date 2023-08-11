@@ -1,0 +1,12 @@
+/* StarRating.css */
+.StarRating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .StarIcon {
+    color: gold; /* Change to your preferred star color */
+    font-size: 1.2rem; /* Adjust the size as needed */
+    margin-right: 4px; /* Adjust spacing between stars */
+  }
+  

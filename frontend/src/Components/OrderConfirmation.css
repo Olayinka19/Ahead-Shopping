@@ -1,0 +1,29 @@
+/* OrderConfirmation.css */
+.OrderConfirmation {
+    background-color: #ffffff;
+    border: 1px solid #d8d8d8;
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+  }
+  
+  .OrderConfirmation h2 {
+    margin: 0;
+  }
+  
+  .OrderConfirmation p {
+    margin-bottom: 10px;
+  }
+  
+  .OrderConfirmation ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+  }
+  
+  .OrderConfirmation li {
+    margin-bottom: 5px;
+  }
+  
+  /* Add more styles here if needed */
+  

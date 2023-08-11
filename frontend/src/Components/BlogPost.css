@@ -1,0 +1,28 @@
+/* BlogPost.css */
+
+.blog-post {
+    margin: 20px;
+  }
+  
+  .blog-post h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .blog-post h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .blog-post p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .conclusion {
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+  }
+  

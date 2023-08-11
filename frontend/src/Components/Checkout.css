@@ -1,0 +1,51 @@
+/* Checkout.css */
+.Checkout {
+    background-color: #ffffff;
+    border: 1px solid #d8d8d8;
+    padding: 20px;
+    width: 300px;
+    margin: 20px;
+  }
+  
+  .Checkout h2 {
+    margin: 0;
+  }
+  
+  .Checkout form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Checkout label {
+    margin-bottom: 5px;
+  }
+  
+  .Checkout input,
+  .Checkout textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+  }
+  
+  .CheckoutButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Checkout.css */
+.Checkout {
+    /* Existing styles */
+    opacity: 0; /* Start with 0 opacity */
+    transform: translateY(20px); /* Move component slightly down */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Add transition for opacity and transform */
+  }
+  
+  .Checkout.show {
+    opacity: 1; /* Show component with full opacity */
+    transform: translateY(0); /* Reset transform */
+  }
+  

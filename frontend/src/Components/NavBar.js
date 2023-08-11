@@ -1,6 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { useState } from 'react';
+import CartIcon from './CartIcon';
 
 function NavBar() {
+    const [cartItems, setCartItems] = useState([]);
+    const initialCartItemCount = cartItems.length;
   return (
     <div>
 
@@ -27,8 +31,9 @@ function NavBar() {
                 <a class="uk-navbar-toggle" href="#">
                 {/* <button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-nav-primary">Menu</button> */}
 
-<button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-nav">Menu</button>
+<button class="uk-button uk-button-default" type="button" uk-toggle="target: #offcanvas-nav"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.iconbolt.com%2Fpreview%2Ffacebook%2Fdripicons%2Fmenu.svg&f=1&nofb=1&ipt=3dad0d32135d4c435bb7097284feac2dae6061687936bc992985f600f871a4b6&ipo=images" width="30px" height="30px" />Menu</button>
 
+<CartIcon initialItemCount={initialCartItemCount} />
 <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
     <div class="uk-offcanvas-bar uk-flex uk-flex-column">
 
@@ -55,19 +60,20 @@ function NavBar() {
     <div class="uk-offcanvas-bar">
 
         <ul class="uk-nav uk-nav-default">
-            <li class="uk-active"><a href="/">Home</a></li>
+            <li class="uk-active"><a href="/"><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.clipartbest.com%2Fcliparts%2FncB%2FM6p%2FncBM6pg4i.png&f=1&nofb=1&ipt=96393183749527f84cb6eb1ef85ca05ef867ec32edb5819768067e57949b521e&ipo=images" width="30px" height="30px" /></a></li>
             <li class="uk-parent">
                 <a href="#">Projects</a>
                 <ul class="uk-nav-sub">
                     <li><a href="#">Affiliate Marketting</a></li>
-                    <li><a href="#">Blog Post</a></li>
+                    <li><a href="/BlogPost">Blog Post</a></li>
                 </ul>
             </li>
+            <li class="uk-nav-divider"></li>
             <li class="uk-nav-header">Ahead-Store</li>
             <li><a href="/Items"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Shop</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> About</a></li>
+            <li><a href="/AboutMe"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> About</a></li>
             <li class="uk-nav-divider"></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Contact Us</a></li>
+            <li><a href="/ContactUs"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Contact Us</a></li>
         </ul>
 
     </div>

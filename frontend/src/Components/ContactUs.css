@@ -1,0 +1,19 @@
+/* ContactUs.css */
+
+.contact-us {
+    margin: 20px;
+  }
+  
+  .contact-us h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-us p {
+    line-height: 1.5;
+  }
+  
+  .contact-details {
+    margin-top: 20px;
+  }
+  

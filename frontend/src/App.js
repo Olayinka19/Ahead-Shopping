@@ -10,12 +10,22 @@ import PaymentSlip from "./Components/PaymentSlip";
 import Cart from "./Components/Cart";
 import OrderHistory from "./Components/OrderHistory";
 import Footer from "./Components/Footer";
-
+import Checkout from "./Components/Checkout";
+import OrderConfirmation from "./Components/OrderConfirmation";
+import CheckoutForm from "./Components/CheckoutForm";
+import CartIcon from "./Components/CartIcon";
+import ItemReview from "./Components/ItemReview";
+import StarRating from "./Components/StarRating";
+import CustomerFeedback from "./Components/CustomerFeedback";
+import BlogPost from "./Components/BlogPost";
+import AboutMe from "./Components/AboutMe";
+import ContactUs from "./Components/ContactUs";
 
 
 import './App.css';
 
 function App() {
+  
   return (
     
   <div className="App">
@@ -23,8 +33,18 @@ function App() {
   <NavBar/>
   <Routes>
     <Route path="/" element={<Home/>} />
+    <Route path="/ContactUs" element={<ContactUs/>} />
+    <Route path="/AboutMe" element={<AboutMe/>} />
+    <Route path="/BlogPost" element={<BlogPost/>} />
     <Route path="/OrderHistory" element={<OrderHistory/>} />
     <Route path="/Cart" element={<Cart/>} />
+    <Route path="/CustomerFeedback" element={<CustomerFeedback/>} />
+    <Route path="/ItemReview" element={<ItemReview/>} />
+    <Route path="/StartRating" element={<StarRating/>} />
+    <Route path="/CartIcon" element={<CartIcon/>} />
+    <Route path="/CheckoutForm" element={<CheckoutForm/>} />
+    <Route path="/OrderConfirmation" element={<OrderConfirmation/>} />
+    <Route path="/Checkout" element={<Checkout/>} />
     <Route path="/PaymentSlip" element={<PaymentSlip/>} />
     <Route path="/Items" element={<Index/>} />
     <Route path="/Items/:id" element={<Show/>} />

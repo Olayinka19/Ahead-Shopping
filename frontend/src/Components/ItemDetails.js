@@ -1,6 +1,9 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
+// import Checkout from "./Checkout";
+import Checkout from "./Checkout";
+// import Cart from "./Cart";
 
 function ItemDetails() {
   const [item, setItem] = useState([]);
@@ -25,7 +28,7 @@ function ItemDetails() {
     deleteitem();
   };
   return (
-    <div style={{ display: "flex", justifyContent: "center" }}>
+    <div className="ItemShow" style={{ display: "flex", justifyContent: "center" }}>
       <article>
         <h3>
            {item.name}
@@ -86,6 +89,9 @@ function ItemDetails() {
         <Link to ="/PaymentSlip"><button class="uk-button uk-button-default">Make Payment</button></Link>
         <div className="showNavigation">
        <br />
+       {/* <Cart cartItems={cartItems} /> */}
+      {/* <Checkout cartItems={cartItems} /> */}
+
           <div>
             {" "}
             <Link to={`/items`}>

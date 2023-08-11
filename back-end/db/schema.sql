@@ -13,3 +13,13 @@ CREATE TABLE items (
   category VARCHAR(255) NOT NULL
 );
 
+CREATE TABLE reviews (
+  id SERIAL PRIMARY KEY,
+  reviewer VARCHAR(255),
+  rating INT,
+  comment TEXT
+);
+
+ALTER TABLE reviews
+ADD COLUMN item_id INTEGER REFERENCES items(id);
+
