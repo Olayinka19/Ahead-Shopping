@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Olayinka19/Ahead-Shopping/issues"
   },
-  "homepage": "https://github.com/Olayinka19/Ahead-Shopping#readme"
+  "homepage": "https://github.com/Olayinka19/Ahead-Shopping#readme",
+  "dependencies": {
+    "react-icons": "^4.10.1"
+  }
 }
