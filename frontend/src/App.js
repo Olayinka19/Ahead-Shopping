@@ -20,6 +20,8 @@ import CustomerFeedback from "./Components/CustomerFeedback";
 import BlogPost from "./Components/BlogPost";
 import AboutMe from "./Components/AboutMe";
 import ContactUs from "./Components/ContactUs";
+import AIPodcast from "./Components/AIPodcast";
+import Projects from "./Components/Projects";
 
 
 import './App.css';
@@ -33,6 +35,8 @@ function App() {
   <NavBar/>
   <Routes>
     <Route path="/" element={<Home/>} />
+    <Route path="/Projects" element={<Projects/>} />
+    <Route path="/AIPodcast" element={<AIPodcast/>} />
     <Route path="/ContactUs" element={<ContactUs/>} />
     <Route path="/AboutMe" element={<AboutMe/>} />
     <Route path="/BlogPost" element={<BlogPost/>} />
@@ -52,9 +56,9 @@ function App() {
     <Route path="/Items/:id/edit" element={<Edit/>} />
     <Route path="*" element={<FourOFour/>} />
   </Routes>
-<Footer />
-  </Router>
 
+  </Router>
+  <Footer />
   </div>
   );
 }

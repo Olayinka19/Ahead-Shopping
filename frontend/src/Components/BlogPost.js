@@ -5,6 +5,7 @@ function BlogPost() {
   return (
     <div className="blog-post">
       <h1>Unveiling the Hidden Gems: Exploring Unique Products in Our E-Commerce Wonderland</h1>
+      <iframe src="https://podcasters.spotify.com/pod/show/olayinka-fakanbi/embed/episodes/The-AI-Explorer-e26b765" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
       <p>Welcome to our enchanting e-commerce wonderland, where every click takes you on a journey of discovery! In this blog post, we're excited to introduce you to the captivating world of unique products that await your exploration. From innovative gadgets to handcrafted treasures, join us as we dive into the hidden gems that make our online store a treasure trove of delight.</p>
       
 

@@ -63,9 +63,9 @@ function NavBar() {
         <ul class="uk-nav uk-nav-default">
             <li class="uk-active"><a href="/"><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.clipartbest.com%2Fcliparts%2FncB%2FM6p%2FncBM6pg4i.png&f=1&nofb=1&ipt=96393183749527f84cb6eb1ef85ca05ef867ec32edb5819768067e57949b521e&ipo=images" width="30px" height="30px" /></a></li>
             <li class="uk-parent">
-            <Link to="/BlogPost">Blog Post</Link>
+            <Link to="/Projects">Projects</Link>
                 <ul class="uk-nav-sub">
-                    <li><Link to="/BlogPost">Blog Post</Link></li>
+                    <li><Link to="/AIPodcast">AI-Podcast</Link></li>
                     <li><Link to="/BlogPost">Blog Post</Link></li>
                 </ul>
             </li>
