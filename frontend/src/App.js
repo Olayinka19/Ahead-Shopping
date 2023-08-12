@@ -24,6 +24,7 @@ import AIPodcast from "./Components/AIPodcast";
 import Projects from "./Components/Projects";
 
 
+
 import './App.css';
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
   <NavBar/>
   <Routes>
     <Route path="/" element={<Home/>} />
+  
     <Route path="/Projects" element={<Projects/>} />
     <Route path="/AIPodcast" element={<AIPodcast/>} />
     <Route path="/ContactUs" element={<ContactUs/>} />

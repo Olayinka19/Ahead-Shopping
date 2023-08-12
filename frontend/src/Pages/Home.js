@@ -46,7 +46,7 @@ function Home() {
 </div>
 </div>
         <hr class="uk-divider-icon"></hr>
-        <div class="uk-margin-small uk-card uk-card-default uk-card-body">🛍️ Unveil Your Ultimate Shopping Experience at Ahead-shopping! 🛍️.</div>
+        <div class="uk-margin-small uk-card uk-card-default uk-card-body"><h3>🛍️ Unveil Your Ultimate Shopping Experience at Ahead-shopping!🛍️ </h3> </div>
         <div class="uk-child-width-1-2@s" uk-grid>
     <div>
     
