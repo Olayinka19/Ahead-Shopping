@@ -46,6 +46,7 @@ function Home() {
 </div>
 </div>
         <hr class="uk-divider-icon"></hr>
+        <div class="uk-margin-small uk-card uk-card-default uk-card-body">🛍️ Unveil Your Ultimate Shopping Experience at Ahead-shopping! 🛍️.</div>
         <div class="uk-child-width-1-2@s" uk-grid>
     <div>
     
@@ -118,7 +119,7 @@ function Home() {
         </div>
     </div>
     <hr class="uk-divider-icon"></hr>
-    <div class="uk-margin-small uk-card uk-card-default uk-card-body">🛍️ Unveil Your Ultimate Shopping Experience at Ahead-shopping! 🛍️.</div>
+    
 <div class="uk-margin-small uk-card uk-card-default uk-card-body">🎉 Limited-Time Offer: Shop Ahead and Save Big! 🎉.</div>
     <div class="uk-child-width-1-2@m" uk-grid>
     <div>
