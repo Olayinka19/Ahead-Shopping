@@ -7,7 +7,7 @@ function NavBar() {
     const [cartItems, setCartItems] = useState([]);
     const initialCartItemCount = cartItems.length;
   return (
-    <div>
+    <div uk-sticky>
 
 
 {/* <nav class="uk-navbar-container uk-margin">
