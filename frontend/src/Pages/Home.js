@@ -57,7 +57,7 @@ function Home() {
         <div class="uk-light uk-background-secondary uk-padding">
             <h3>Men's Shoe</h3>
             <p>Expertly handcrafted with precision, this black leather shoe showcases the artistry of seasoned shoemakers.</p>
-            <button class="uk-button uk-button-default">Learn more
+            <button class="uk-button uk-button-default">Shop Now
             </button>
             
             {/* <div uk-lightbox>
