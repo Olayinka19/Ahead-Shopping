@@ -234,8 +234,9 @@ code {
     -o-border-radius:12px;
   }
   .slider{
-    width: 1800px;
-    height: 1000px;
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
    }
 }
 

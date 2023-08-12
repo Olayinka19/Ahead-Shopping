@@ -22,6 +22,7 @@ import AboutMe from "./Components/AboutMe";
 import ContactUs from "./Components/ContactUs";
 import AIPodcast from "./Components/AIPodcast";
 import Projects from "./Components/Projects";
+import {AuthContextProvider} from './Context/AuthContext';
 
 
 
@@ -33,6 +34,7 @@ function App() {
     
   <div className="App">
   <Router>
+  <AuthContextProvider></AuthContextProvider>
   <NavBar/>
   <Routes>
     <Route path="/" element={<Home/>} />

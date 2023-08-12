@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -57,26 +58,22 @@ function Home() {
         <div class="uk-light uk-background-secondary uk-padding">
             <h3>Men's Shoe</h3>
             <p>Expertly handcrafted with precision, this black leather shoe showcases the artistry of seasoned shoemakers.</p>
-            <button class="uk-button uk-button-default">Shop Now
+            <button class="uk-button uk-button-default"><Link to="/Items">Shop Now</Link>
             </button>
-            
-            {/* <div uk-lightbox>
-    <a class="uk-button uk-button-default" href="https://images.pexels.com/photos/5490218/pexels-photo-5490218.jpeg?auto=compress&cs=tinysrgb&w=800">Open Lightbox</a>
-</div> */}
             
         </div>
     </div>
     <div>
-        <div class="uk-dark uk-background-muted uk-padding">
+        {/* <div class="uk-dark uk-background-muted uk-padding">
     <hr class="uk-divider-icon"></hr>
+
     
             <h3>Women's Handbag</h3>
             <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="https://images.pexels.com/photos/3195980/pexels-photo-3195980.jpeg?auto=compress&cs=tinysrgb&w=1600" uk-img="loading: eager">
-  {/* <h1>Background Image</h1> */}
 </div>
             <p>Introducing our elegant women's brown handbag – a timeless accessory that exudes sophistication and style. Crafted with meticulous attention to detail, this handbag features a rich brown hue that complements any ensemble, whether for work or a night out</p>
             <button class="uk-button uk-button-primary">SHOP NOW</button>
-        </div>
+        </div> */}
         
     </div>
 </div> 
@@ -88,7 +85,7 @@ function Home() {
         <div class="uk-light uk-background-secondary uk-padding">
             <h3>Sleek Black hat</h3>
             <p>Introducing our sleek black hat – a must-have accessory that adds a touch of chic to every look. Crafted with a keen eye for style, this hat boasts a timeless black hue that effortlessly complements any outfit, from casual to formal..</p>
-            <button class="uk-button uk-button-default">Learn More</button>
+            <button class="uk-button uk-button-default"><Link to="/Items">Shop Now</Link></button>
         </div>
     </div>
 
@@ -101,8 +98,11 @@ function Home() {
             </div>
             <div class="uk-card-body">
                 <h3 class="uk-card-title">Neck beads</h3>
+                <button class="uk-button uk-button-default"><Link to="/Items">Shop Now</Link></button>
                 <p>Introducing our exquisite neck beads – a captivating accessory that captures the essence of elegance. Handcrafted with care, these neck beads are a celebration of culture and artistry, featuring intricate patterns and vibrant hues that effortlessly elevate your style.</p>
             </div>
+            
+            <br />
         </div>
     </div>
     <hr class="uk-divider-icon"></hr>
@@ -112,11 +112,13 @@ function Home() {
             <div class="uk-card-body">
                 <h3 class="uk-card-title">CrystalClad Glass Body Suit</h3>
                 <p>Dive into the future of fashion with the revolutionary CrystalClad Glass Body Suit – a seamless blend of cutting-edge technology and artistic ingenuity that redefines the boundaries of wearable art.</p>
+                <button class="uk-button uk-button-default"><Link to="/Items">Shop Now</Link></button>
             </div>
             <div class="uk-card-media-bottom">
                 <img src="https://images.pexels.com/photos/17549228/pexels-photo-17549228/free-photo-of-young-woman-in-a-party-dress-posing-with-her-arms-raised.jpeg?auto=compress&cs=tinysrgb&w=1600" width="350px" height="300px" alt="" />
             </div>
         </div>
+            
     </div>
     <hr class="uk-divider-icon"></hr>
     
@@ -129,8 +131,10 @@ function Home() {
             </div>
             <div class="uk-card-body">
                 <h3 class="uk-card-title">Women's Handbag!👜 </h3>
+                <button class="uk-button uk-button-default"><Link to="/Items">Shop Now</Link></button>
                 <p>Step into a world of elegance and sophistication with Ahead Women's Handbags. Elevate your ensemble with our exquisite collection that effortlessly combines fashion and function..</p>
             </div>
+            
         </div>
     </div>
     <hr class="uk-divider-icon"></hr>
@@ -146,6 +150,7 @@ function Home() {
                 <p>Welcome to the world of opulence and sophistication – where style knows no bounds. Discover the essence of luxury with [Your Luxury Brand] Couture, where every stitch tells a story of exquisite craftsmanship.
 
 .</p>
+<button class="uk-button uk-button-default"><Link to="/Items">Shop Now</Link></button>
             </div>
             <div class="uk-card-media-bottom">
                 <img src="https://images.pexels.com/photos/1040173/pexels-photo-1040173.jpeg?auto=compress&cs=tinysrgb&w=1600" width="350" height="300" alt="" />
@@ -177,7 +182,7 @@ function Home() {
 
     <div class="uk-animation-toggle" tabindex="0">
         <div class="uk-card uk-card-default uk-card-body uk-animation-shake">
-            <p class="uk-text-center">Ahead Shopping Blog</p>
+            <p class="uk-text-center">Ahead Shopping</p>
         </div>
     </div>
     <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="https://images.pexels.com/photos/2881785/pexels-photo-2881785.jpeg?auto=compress&cs=tinysrgb&w=1600" uk-img="loading: eager">
@@ -187,7 +192,7 @@ function Home() {
         <div class="uk-light uk-background-secondary uk-padding">
             <h3>Upgrade Your Wardrobe Now!</h3>
             <p>From formal occasions to casual outings, our trousers are meticulously crafted to embody sophistication.</p>
-            <button class="uk-button uk-button-default">Shop Now</button>
+            <button class="uk-button uk-button-default"><Link to="/Items">Shop Now</Link></button>
         </div>
     </div>
     <hr class="uk-divider-icon"></hr>
@@ -210,7 +215,7 @@ function Home() {
         <div class="uk-light uk-background-secondary uk-padding">
             <h3>🛍️ Ankara Splendor:</h3>
             <p>Our collection showcases the essence of Nigerian Ankara, celebrating its intricate patterns and cultural significance. Choose from a range of designs that speak to your individuality.</p>
-            <button class="uk-button uk-button-default">Shop Now</button>
+            <button class="uk-button uk-button-default"><Link to="/Items">Shop Now</Link></button>
         </div>
     </div>
 
