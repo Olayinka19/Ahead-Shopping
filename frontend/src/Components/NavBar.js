@@ -37,6 +37,7 @@ function NavBar() {
 
 
 <CartIcon initialItemCount={initialCartItemCount} />
+{/* <button class="uk-button uk-button-default"> <Link to="/Items">🛍️ Shop</Link></button> */}
 <div id="offcanvas-nav-primary" uk-offcanvas="overlay: true">
     <div class="uk-offcanvas-bar uk-flex uk-flex-column">
 

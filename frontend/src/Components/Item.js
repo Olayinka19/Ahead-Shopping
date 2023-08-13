@@ -73,8 +73,6 @@ function Item({ item, addToCart, ratings, comments , reviews ,setReviews}) {
       <p>{}</p>
       {/* <button class="uk-button uk-button-default" onClick={() => addToCart(item)}>UIkit.notification("<span uk-icon='icon: check'>Add To Cart</span> Message");</button> */}
       <button onClick={() => addToCart(item)} class="uk-button uk-button-default demo" type="button" onclick="UIkit.notification({message: '<span uk-icon=\'icon: check\'></span> Message with an icon'})">Add To Cart</button>
-
-
     </div>
   );
 }
