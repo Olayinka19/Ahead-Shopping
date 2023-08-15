@@ -39,6 +39,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import StarRating from "./StarRating";
 
+
 function Item({ item, addToCart, ratings, comments , reviews ,setReviews}) {
   const [feedback, setFeedback] = useState("");
   const ratingsArray = ratings || [];
@@ -60,7 +61,9 @@ function Item({ item, addToCart, ratings, comments , reviews ,setReviews}) {
     setReviews([...reviews, newReview]);
     setFeedback("");
   };
-
+// if (addToCart === true) {
+//   window.alert("Cart is added to your cart")
+// }
   return (
     <div className="Item" class="uk-card uk-card-secondary uk-card-hover uk-card-body uk-light">
     <h3 class="uk-card-title"><Link to={`/items/${item.id}`}>
@@ -72,7 +75,9 @@ function Item({ item, addToCart, ratings, comments , reviews ,setReviews}) {
       {/* <p>Ratings: {ratings.join(", ")}</p> */}
       <p>{}</p>
       {/* <button class="uk-button uk-button-default" onClick={() => addToCart(item)}>UIkit.notification("<span uk-icon='icon: check'>Add To Cart</span> Message");</button> */}
-      <button onClick={() => addToCart(item)} class="uk-button uk-button-default demo" type="button" onclick="UIkit.notification({message: '<span uk-icon=\'icon: check\'></span> Message with an icon'})">Add To Cart</button>
+      <button onClick={() => addToCart(item)} class="uk-button uk-button-default demo">Add To Cart</button>
+    
+
     </div>
   );
 }

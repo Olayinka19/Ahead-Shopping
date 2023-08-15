@@ -1,14 +1,30 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import { Link } from "react-router-dom";
 
+
+
+const API = process.env.REACT_APP_API_URL;
+
+
 function Home() {
+    const [items, setItems] = useState([]);
+    
+    useEffect(() => {
+        axios
+          .get(`${API}/items`)
+          .then((response) => setItems(response.data.payload))
+          .catch((error) => console.warn("catch", error));
+      }, []);
+
+
   return (
-    <div>
+    <div className='slider-content'>
         {/* <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1800" height="1200" loop muted playsinline uk-video="autoplay: inview"></video> */}
         <div uk-slideshow="autoplay: true">
         <div class="uk-position-relative uk-visible-toggle uk-light "  tabindex="-1" uk-slideshow>
 
-    <ul class="uk-slideshow-items">
+    <ul class="uk-slideshow-items uk-cover-container">
         <li>
             <img className='slider' src="https://images.pexels.com/photos/2584279/pexels-photo-2584279.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" uk-cover />
         </li>
@@ -45,11 +61,33 @@ function Home() {
     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
 
 </div>
+<hr class="uk-divider-icon"></hr>
+<marquee loop="4" direction="right"> <div class="uk-margin-small uk-card uk-card-default uk-card-body"><h3>🛍️ Unveil Your Ultimate Shopping Experience at Ahead-shopping!🛍️ </h3> </div> </marquee>
+        
+<div className='content content-img' >
+    <div><img className='content-img'  src="https://images.pexels.com/photos/2584279/pexels-photo-2584279.jpeg?auto=compress&cs=tinysrgb&w=800" width="250px" height="250px" /></div>
+    <hr class="uk-divider-icon"></hr>
+    <div><img className='content-img' src="https://images.pexels.com/photos/2584279/pexels-photo-2584279.jpeg?auto=compress&cs=tinysrgb&w=800" width="250px" height="250px" /></div>
+    <hr class="uk-divider-icon"></hr>
+    <div><img className='content-img' width="250px" height="250px" src="https://images.pexels.com/photos/2584279/pexels-photo-2584279.jpeg?auto=compress&cs=tinysrgb&w=800"/></div>
+    <div><img className='content-img' width="250px" height="250px" src="https://images.pexels.com/photos/2584279/pexels-photo-2584279.jpeg?auto=compress&cs=tinysrgb&w=800"/></div>
 </div>
+</div>
+
         <hr class="uk-divider-icon"></hr>
+        
+
+        <div class="uk-animation-toggle" tabindex="0">
+        <div class="uk-card uk-card-default uk-card-body uk-animation-slide-right-small">
         <div class="uk-margin-small uk-card uk-card-default uk-card-body"><h3>🛍️ Unveil Your Ultimate Shopping Experience at Ahead-shopping!🛍️ </h3> </div>
+        </div>
+    </div>
         <div class="uk-child-width-1-2@s" uk-grid>
-    <div>
+    
+
+    <div class="uk-animation-toggle" tabindex="0">
+        <div class="uk-card uk-card-default uk-card-body uk-animation-slide-top">
+        <div>
     
     <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="https://images.pexels.com/photos/5214139/pexels-photo-5214139.jpeg?auto=compress&cs=tinysrgb&w=1600" uk-img="loading: eager">
   {/* <h1>Black Leather Shoe</h1> */}
@@ -61,6 +99,8 @@ function Home() {
             <button class="uk-button uk-button-default"><Link to="/Items">Shop Now</Link>
             </button>
             
+        </div>
+    </div>
         </div>
     </div>
     <div>
@@ -77,9 +117,37 @@ function Home() {
         
     </div>
 </div> 
+
 <hr class="uk-divider-icon"></hr>
+<div className='content'>
+    <div>
+    <Link to="/Items"><img  src="https://images.pexels.com/photos/2584279/pexels-photo-2584279.jpeg?auto=compress&cs=tinysrgb&w=800" width="250px" height="250px" /></Link> 
+    
+    </div>
+    
+    <hr class="uk-divider-icon"></hr>
+    <div><img  src="https://images.pexels.com/photos/2584279/pexels-photo-2584279.jpeg?auto=compress&cs=tinysrgb&w=800" width="250px" height="250px" /></div>
+    <hr class="uk-divider-icon"></hr>
+    <div><img width="250px" height="250px" src="https://images.pexels.com/photos/2584279/pexels-photo-2584279.jpeg?auto=compress&cs=tinysrgb&w=800"/></div>
+    <div><img width="250px" height="250px" src="https://images.pexels.com/photos/2584279/pexels-photo-2584279.jpeg?auto=compress&cs=tinysrgb&w=800"/></div>
+</div>
+
+<div class="uk-margin-small uk-card uk-card-default uk-card-body"></div>
+
+<div class="uk-animation-toggle" tabindex="0">
+        <div class="uk-card uk-card-default uk-card-body uk-animation-slide-left">
+            <p class="uk-text-center">🎉 Limited-Time Offer: Shop Ahead and Save Big! 🎉.</p>
+        </div>
+    </div>
+<br />
+
+{/* <hr class="uk-divider-icon"></hr> */}
+       
+
+
+    <div class="uk-animation-toggle" tabindex="0">
+        <div class="uk-card uk-card-default uk-card-body uk-animation-slide-right">
         <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" data-src="https://images.pexels.com/photos/3651597/pexels-photo-3651597.jpeg?auto=compress&cs=tinysrgb&w=1600" uk-img="loading: eager">
-  {/* <h1>Background Image</h1> */}
 </div>
 <div>
         <div class="uk-light uk-background-secondary uk-padding">
@@ -88,24 +156,47 @@ function Home() {
             <button class="uk-button uk-button-default"><Link to="/Items">Shop Now</Link></button>
         </div>
     </div>
+        </div>
+    </div>
+
+    <div class="uk-animation-toggle" tabindex="0">
+        <div class="uk-card uk-card-default uk-card-body uk-animation-slide-right">
+            <p class="uk-text-center">WELCOME TO AHEAD SHOPPING</p>
+        </div>
+    </div>
 
   <hr class="uk-divider-icon"></hr>
         <div class="uk-child-width-1-2@m" uk-grid>
     <div>
         <div class="uk-card uk-card-default">
-            <div class="uk-card-media-top">
+            
+            <div class="uk-animation-toggle" tabindex="0">
+        <div class="uk-card uk-card-default uk-card-body uk-animation-slide-bottom">
+        <div class="uk-card-media-top">
                 <img src="https://images.pexels.com/photos/17545020/pexels-photo-17545020/free-photo-of-young-woman-posing-outside-between-tree-leaves.jpeg?auto=compress&cs=tinysrgb&w=1600" width="350px" height="300px" alt="" />
             </div>
-            <div class="uk-card-body">
+        </div>
+    </div>
+
+            <div class="uk-animation-toggle" tabindex="0">
+        <div class="uk-card uk-card-default uk-card-body uk-animation-slide-top-medium">
+            <p class="uk-text-center">  <div class="uk-card-body">
                 <h3 class="uk-card-title">Neck beads</h3>
                 <button class="uk-button uk-button-default"><Link to="/Items">Shop Now</Link></button>
                 <p>Introducing our exquisite neck beads – a captivating accessory that captures the essence of elegance. Handcrafted with care, these neck beads are a celebration of culture and artistry, featuring intricate patterns and vibrant hues that effortlessly elevate your style.</p>
-            </div>
+            </div></p>
+        </div>
+    </div>
             
             <br />
         </div>
     </div>
     <hr class="uk-divider-icon"></hr>
+    {/* <div className='content'>
+<div><img src="" width="250px" height="250px" /></div>
+    <div><img src="" width="250px" height="250px" /></div>
+    <div><img src="" width="250px" height="250px" /></div>
+</div> */}
     
     <div>
         <div class="uk-card uk-card-default">
@@ -138,11 +229,21 @@ function Home() {
         </div>
     </div>
     <hr class="uk-divider-icon"></hr>
-    
-    <div class="uk-margin-small uk-card uk-card-default uk-card-body">💰 Early Bird Discounts: Be the trendsetter and snag incredible discounts before everyone else does! Save big on your favorite products and enjoy the thrill of being ahead of the game.</div>
-<div class="uk-margin-small uk-card uk-card-default uk-card-body">Shop ahead and receive exclusive surprise gifts with your purchases. It's our way of saying thank you for being a part of our forward-thinking community.
+    <div class="uk-animation-toggle" tabindex="0">
+        <div class="uk-card uk-card-default uk-card-body uk-animation-slide-top">
+        <div class="uk-margin-small uk-card uk-card-default uk-card-body">💰 Early Bird Discounts: Be the trendsetter and snag incredible discounts before everyone else does! Save big on your favorite products and enjoy the thrill of being ahead of the game.</div>
+        </div>
+    </div>
+
+    <div class="uk-animation-toggle" tabindex="0">
+        <div class="uk-card uk-card-default uk-card-body uk-animation-slide-bottom">
+        <div class="uk-margin-small uk-card uk-card-default uk-card-body">Shop ahead and receive exclusive surprise gifts with your purchases. It's our way of saying thank you for being a part of our forward-thinking community.
 
 .</div>
+        </div>
+    </div>
+    
+
     <div>
         <div class="uk-card uk-card-default">
             <div class="uk-card-body">
@@ -168,6 +269,7 @@ function Home() {
             <div>
                 <p>🎉 Limited-Time Exclusive: Elevate Your Glamour Game! 🎉.</p>
             </div>
+            
             <div>
                 <p>🛍️ The Epitome of Luxury: Explore a curated collection that transcends trends, offering you a range of handpicked pieces that redefine elegance.</p>
             </div>

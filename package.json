@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Olayinka19/Ahead-Shopping#readme",
   "dependencies": {
+    
     "react-icons": "^4.10.1"
   }
 }

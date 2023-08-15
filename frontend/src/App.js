@@ -22,6 +22,8 @@ import AboutMe from "./Components/AboutMe";
 import ContactUs from "./Components/ContactUs";
 import AIPodcast from "./Components/AIPodcast";
 import Projects from "./Components/Projects";
+import cartProduct from "./Components/cartProduct";
+
 import {AuthContextProvider} from './Context/AuthContext';
 
 
@@ -46,6 +48,7 @@ function App() {
     <Route path="/BlogPost" element={<BlogPost/>} />
     <Route path="/OrderHistory" element={<OrderHistory/>} />
     <Route path="/Cart" element={<Cart/>} />
+    <Route path="/cartProduct" element={<cartProduct/>} />
     <Route path="/CustomerFeedback" element={<CustomerFeedback/>} />
     <Route path="/ItemReview" element={<ItemReview/>} />
     <Route path="/StartRating" element={<StarRating/>} />

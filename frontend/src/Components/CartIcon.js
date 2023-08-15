@@ -1,13 +1,16 @@
 // import React from "react";
 import React, { useState } from "react";
 import { FaShoppingCart } from "react-icons/fa";
+import Items from "./Items";
 import "./CartIcon.css";
 
-function CartIcon({ cartItemCount }) {
+function CartIcon({ cartItemCount , items}) {
   const [cartItems, setCartItems] = useState([]);
-  // const cartItemCount = cartItems.reduce((total, item) => total + item.quantity, 0);
+
   return (
+    
     <div className="CartIcon">
+
       <FaShoppingCart />
       {cartItemCount > 0 && <span className="ItemCount">{cartItemCount}</span>}
     </div>
