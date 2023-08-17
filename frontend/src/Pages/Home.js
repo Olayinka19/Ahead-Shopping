@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div style={{justifyContent: 'center'}}>
-        <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1800" height="1200" loop muted playsinline uk-video="autoplay: inview"></video>
+        <video className='video' src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1800" height="1200" loop muted playsinline uk-video="autoplay: inview"></video>
         <div uk-slideshow="autoplay: true">
         <div class="uk-position-relative uk-visible-toggle uk-light "  tabindex="-1" uk-slideshow>
 
