@@ -297,3 +297,7 @@ code {
   -o-border-radius: 12px;
 }
 
+.mens{
+  display:flex;
+  justify-content: center;
+}
