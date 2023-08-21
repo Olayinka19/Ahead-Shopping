@@ -1,5 +1,6 @@
 body {
   margin: 20px;
+  background-color: rgb(18, 23, 45);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -76,7 +77,24 @@ code {
 .footer p {
   margin: 5px 0;
 }
-.im
+.main-content{
+  display: flex;
+  border: 2px solid #ccc;
+  width: 600px;
+  justify-content: center;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.main-content-text{
+  display: inline-block;
+  border:3px solid black;
+  display: flexbox;
+  width:450px;
+  float: right;
+}
 
 
 .cart {
@@ -103,6 +121,20 @@ code {
   padding: 5px 10px;
   border-radius: 3px;
   cursor: pointer;
+}
+
+.second-main-content{
+  display: flex;
+  border: 2px solid #ccc;
+  width: 500px;
+  float: right;
+  display: grid;
+  justify-content: center;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
 }
 
 
@@ -133,6 +165,195 @@ code {
   width:450px !important;
   height:300px !important;
 }
+.container{
+  display: inline-block;
+}
+.main-content-text{
+  display: inline-block;
+  border:3px solid;
+  display: flexbox;
+  
+  /* width:50px; */
+  height: fit-content;
+  border-radius: 13px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(236, 229, 229);
+}
+
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main-content-text{
+  display: inline-block;
+  border:3px solid;
+  display: flexbox;
+  width:150px;
+  border-radius: 13px;
+  /*float: right;
+  */
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+}
+
+
+
+#box
+{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  transform-style: preserve-3d;
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate
+{
+  0%
+  {
+      transform: rotateX(-30deg) rotateY(360deg);
+  }
+  100%
+  {
+      transform: rotateX(-30deg) rotateY(0);
+  }
+}
+
+#box::before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.1);
+  transform: rotateX(90deg) translateZ(-220px);
+  filter: blur(25px);           
+}
+
+#box div
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+#box div span
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#box div span:nth-child(1)
+{
+  transform: rotateY(0) translate3d(0,0,150px);
+  background: #d8aa77;
+}
+#box div span:nth-child(1)::before
+{
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: url(https://images.pexels.com/photos/17855845/pexels-photo-17855845/free-photo-of-a-man-standing-in-the-ruins-of-a-castle.jpeg?auto=compress&cs=tinysrgb&w=1600);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#box div span:nth-child(2)
+{
+  transform: rotateY(90deg) translate3d(0,0,150px);
+  background: #ca9864;
+}
+#box div span:nth-child(3)
+{
+  transform: rotateY(180deg) translate3d(0,0, 150px);
+  background: #d8aa77;
+}
+#box div span:nth-child(3)::before
+{
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: url(https://images.pexels.com/photos/17927911/pexels-photo-17927911/free-photo-of-man-sitting-on-chair-and-posing.jpeg?auto=compress&cs=tinysrgb&w=1600);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#box div span:nth-child(4)
+{
+  transform: rotateY(270deg) translate3d(0,0, 150px);
+  background: #ca9864;
+}
+#box .top
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: #e8bb84;
+  display: flex;
+  align-items: center;
+  transform: rotateX(90deg) translate3d(0,0,150px);
+}
+#box .top::before
+{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  background: #111 url(https://lh4.googleusercontent.com/EqxRh5t4jhe2n-nC0oAA1QJBYVvWNr6Uziyt9k_MfF993EATOcg5xsHRyF4rvWhS_fJZPGBMObp6AyO5fWTN=w1214-h920);
+  background-size: 85px;
+}
+.tape
+{
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
+  width: 120px;
+  height: 60px;
+  background: #111 url(https://lh4.googleusercontent.com/EqxRh5t4jhe2n-nC0oAA1QJBYVvWNr6Uziyt9k_MfF993EATOcg5xsHRyF4rvWhS_fJZPGBMObp6AyO5fWTN=w1214-h920);
+  background-size: 85px;
+  background-position-x: 45px;
+}
+span:nth-child(4) .tape
+{
+  transform: translateX(-50%) rotate(270deg);
+  background-position-x: 30px;
+}
+
+
+
+
+
+
 .content{
   display: flex;
   padding:20px;
@@ -155,6 +376,31 @@ code {
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
 }
+.main-content{
+  display: flex;
+  border: 2px solid #ccc;
+  width: 370px;
+  justify-content: center;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.second-main-content{
+  display: flex;
+  border: 2px solid #ccc;
+  width: 370px;
+  float: right;
+  display: grid;
+  justify-content: center;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
     }
 
     @media only screen 
@@ -256,6 +502,17 @@ code {
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
 }
+.main-content{
+  display: flex;
+  border: 2px solid #ccc;
+  width: 500px;
+  justify-content: center;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
 }
 
 /* Extra large devices (large desktops and high-res devices) */
@@ -282,11 +539,176 @@ code {
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
-/* .first-img{
-  width:700px;
-  height:650px;
-  border:3px solid black;
-} */
+.main-content{
+  display: flex;
+  border: 2px solid #ccc;
+  width: 800px;
+  height: 550px;
+  display: grid;
+  justify-content: center;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.container{
+  display: inline-block;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(236, 229, 229);
+}
+
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#box
+{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate
+{
+  0%
+  {
+      transform: rotateX(-30deg) rotateY(360deg);
+  }
+  100%
+  {
+      transform: rotateX(-30deg) rotateY(0);
+  }
+}
+
+#box::before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.1);
+  transform: rotateX(90deg) translateZ(-220px);
+  filter: blur(25px);           
+}
+
+#box div
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+
+#box div span
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#box div span:nth-child(1)
+{
+  transform: rotateY(0) translate3d(0,0,150px);
+  background: #d8aa77;
+}
+#box div span:nth-child(1)::before
+{
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: url(https://images.pexels.com/photos/17927911/pexels-photo-17927911/free-photo-of-man-sitting-on-chair-and-posing.jpeg?auto=compress&cs=tinysrgb&w=1600);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#box div span:nth-child(2)
+{
+  transform: rotateY(90deg) translate3d(0,0,150px);
+  background: #ca9864;
+}
+#box div span:nth-child(3)
+{
+  transform: rotateY(180deg) translate3d(0,0, 150px);
+  background: #d8aa77;
+}
+#box div span:nth-child(3)::before
+{
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: url(https://images.pexels.com/photos/17855845/pexels-photo-17855845/free-photo-of-a-man-standing-in-the-ruins-of-a-castle.jpeg?auto=compress&cs=tinysrgb&w=1600);
+  background-size: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#box div span:nth-child(4)
+{
+  transform: rotateY(270deg) translate3d(0,0, 150px);
+  background: #ca9864;
+}
+#box .top
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: #e8bb84;
+  display: flex;
+  align-items: center;
+  transform: rotateX(90deg) translate3d(0,0,150px);
+}
+#box .top::before
+{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  background: #111 url(https://lh4.googleusercontent.com/EqxRh5t4jhe2n-nC0oAA1QJBYVvWNr6Uziyt9k_MfF993EATOcg5xsHRyF4rvWhS_fJZPGBMObp6AyO5fWTN=w1214-h920);
+  background-size: 85px;
+}
+.tape
+{
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%) rotate(90deg);
+  width: 120px;
+  height: 60px;
+  background: #111 url(https://lh4.googleusercontent.com/EqxRh5t4jhe2n-nC0oAA1QJBYVvWNr6Uziyt9k_MfF993EATOcg5xsHRyF4rvWhS_fJZPGBMObp6AyO5fWTN=w1214-h920);
+  background-size: 85px;
+  background-position-x: 45px;
+}
+span:nth-child(4) .tape
+{
+  transform: translateX(-50%) rotate(270deg);
+  background-position-x: 30px;
+}
+
 }
 .content{
   display: flex;
@@ -299,8 +721,53 @@ code {
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
 }
+.second-main-content{
+  display: flex;
+  border: 2px solid #ccc;
+  width: 600px;
+  margin-top: 50px;
+  height: 450px;
+  float: right;
+  display: grid;
+  justify-content: center;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.main-content-text{
+  display: inline-block;
+  border:3px solid;
+  display: flexbox;
+  width:450px;
+  height: fit-content;
+  border-radius: 13px;
+  /*float: right;
+  */
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  -ms-border-radius: 13px;
+  -o-border-radius: 13px;
+}
 
+
+
+#box
+{
+  position: relative;
+  width: 300px;
+  display: inline-block;
+  height: 300px;
+  transform-style: preserve-3d;
+  animation: animate 10s linear infinite;
+}
 .mens{
   display:flex;
   justify-content: center;
 }
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

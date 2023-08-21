@@ -73,6 +73,7 @@ import React from "react";
 import './Cart.css'; // Import your CSS for cart styling
 
 function Cart({ cartItems }) {
+  
 
   return (
     <div className="Cart">

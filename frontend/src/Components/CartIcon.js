@@ -1,7 +1,7 @@
 // import React from "react";
 import React, { useState } from "react";
 import { FaShoppingCart } from "react-icons/fa";
-import Items from "./Items";
+// import Items from "./Items";
 import "./CartIcon.css";
 
 function CartIcon({ cartItemCount , items}) {
