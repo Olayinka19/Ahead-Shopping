@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useState } from "react";
 import Home from "./Pages/Home";
 import Edit from "./Pages/Edit";
 import Index from "./Pages/Index";
@@ -31,13 +32,14 @@ import {AuthContextProvider} from './Context/AuthContext';
 import './App.css';
 
 function App() {
+  const [cartItems, setCartItems] = useState([]); 
   
   return (
     
   <div className="App">
   <Router>
   
-  <NavBar/>
+  <NavBar cartItems={cartItems} />
   <Routes>
     <Route path="/" element={<Home/>} />
   

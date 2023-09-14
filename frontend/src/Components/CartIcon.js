@@ -11,7 +11,9 @@ function CartIcon({ cartItemCount , items}) {
     
     <div className="CartIcon">
 
-      <FaShoppingCart />
+      {/* <FaShoppingCart /> */}
+      
+
       {cartItemCount > 0 && <span className="ItemCount">{cartItemCount}</span>}
     </div>
   );

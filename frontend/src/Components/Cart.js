@@ -69,24 +69,36 @@
 // Testing 
 
 
-import React from "react";
-import './Cart.css'; // Import your CSS for cart styling
+import React, { useState } from 'react';
+import './Cart.css';
 
-function Cart({ cartItems }) {
+const Cart = () => {
+  const [cartItems, setCartItems] = useState([]);
   
+  const addToCart = (item) => {
+    setCartItems([...cartItems, item]);
+  };
+
+  const calculateTotal = () => {
+    return cartItems.reduce((total, item) => total + item.price, 0);
+  };
 
   return (
-    <div className="Cart">
+    <div className="cart">
       <h2>Your Cart</h2>
-      <ul>
-        {cartItems.map((item) => (
-          <li key={item.id}>
+      <ul className="cart-items">
+        {cartItems.map((item, index) => (
+          <li key={index} className="cart-item">
             {item.name} - ${item.price}
           </li>
         ))}
       </ul>
+      <div className="cart-total">
+        <p>Total: ${calculateTotal()}</p>
+        <button className="checkout-btn">Checkout</button>
+      </div>
     </div>
   );
-}
+};
 
 export default Cart;

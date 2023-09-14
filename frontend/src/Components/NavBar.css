@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #e6e2e2;
     padding: 10px 20px;
     position: fixed;
     top: 0;
@@ -22,7 +22,7 @@
   
   /* Styling for the logo */
   .logo {
-    color: #fff;
+    color: #080707;
     font-size: 24px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -41,13 +41,16 @@
   
   .nav-links a {
     text-decoration: none;
-    color: #fff;
+    color: #0b0b0b;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
   }
   
   .nav-links a:hover {
     color: #007bff;
+  }
+  .cart-icon:hover{
+color: #007bff;
   }
   
   /* Styling for the menu toggle icon */

@@ -11,62 +11,24 @@ function Home() {
 
 
 <hr class="uk-divider-icon"></hr>
-<div class="uk-padding uk-background-muted uk-width-1-2@s main-content-text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<h1 className='trend'>Trending Products</h1>
+<div className='container'>
+<div className='content-1'>
+<img className='img-cont' src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F3985096%2Fpexels-photo-3985096.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-gustavo-fring-3985096.jpg%26fm%3Djpg&f=1&nofb=1&ipt=5c7f6ae13d2c632c768d59e5d48cc4b31b5cee3a99592746e1bb4dc0f8523119&ipo=images" />
+<button>Buy Now</button>
 </div>
-<div className="container">
-<a href="#">
-  <img  className='main-content' src="https://images.pexels.com/photos/17917173/pexels-photo-17917173/free-photo-of-young-man-and-woman-posing-in-gym-clothing.jpeg?auto=compress&cs=tinysrgb&w=1600"></img>
-  <button class="uk-button uk-button-default">Button</button>
-  </a>
- 
+<div className='content-2'>
+<img className='img-cont' src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F3985096%2Fpexels-photo-3985096.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-gustavo-fring-3985096.jpg%26fm%3Djpg&f=1&nofb=1&ipt=5c7f6ae13d2c632c768d59e5d48cc4b31b5cee3a99592746e1bb4dc0f8523119&ipo=images" />
+<button>Buy Now</button>
 </div>
-<hr class="uk-divider-icon"></hr>
-<div class="uk-padding uk-background-muted uk-width-1-2@s main-content-text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+<div className='content-3'>
+<img className='img-cont' src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F3985096%2Fpexels-photo-3985096.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-gustavo-fring-3985096.jpg%26fm%3Djpg&f=1&nofb=1&ipt=5c7f6ae13d2c632c768d59e5d48cc4b31b5cee3a99592746e1bb4dc0f8523119&ipo=images" />
+<button>Buy Now</button>
 </div>
-<hr class="uk-divider-icon"></hr>
-{/* <hr class="uk-divider-icon"></hr> */}
-
-<div className="container">
-<a href="#">
-  <img  className='main-content' src="https://images.pexels.com/photos/17850454/pexels-photo-17850454/free-photo-of-young-man-in-a-casual-trendy-outfit-posing-in-studio-on-yellow-background.jpeg?auto=compress&cs=tinysrgb&w=1600"></img>
-  <button class="uk-button uk-button-default">Button</button>
-  </a>
-
-</div>
-<hr class="uk-divider-icon"></hr>
-<br/>
-{/* <div class="uk-padding uk-background-muted uk-width-1-2@s main-content-text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-</div> */}
-<div className="container">
-<a href="#">
-  <img  className='main-content' src="https://images.pexels.com/photos/17862339/pexels-photo-17862339/free-photo-of-man-with-backpack-holding-camera.jpeg?auto=compress&cs=tinysrgb&w=1600"></img>
-  <button class="uk-button uk-button-default">Button</button>
-  </a>
-</div>
-<div class="uk-padding uk-background-muted uk-width-1-2@s main-content-text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 </div>
 
-<hr class="uk-divider-icon"></hr>
-<div class="uk-padding uk-background-muted uk-width-1-2@s main-content-text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-</div>
-<div className="container">
-<a href="#">
-  <img  className='main-content' src="https://images.pexels.com/photos/17840324/pexels-photo-17840324/free-photo-of-man-in-vest-and-shadow-on-wall.jpeg?auto=compress&cs=tinysrgb&w=1600"></img>
-  <button class="uk-button uk-button-default">Button</button>
-  </a>
-</div>
-{/* <div class="uk-padding uk-background-muted uk-width-1-2@s">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-</div> */}
-  <br/>
-  <br/>
-  <hr class="uk-divider-icon"></hr>
-<div id="box">
+<div className='second-container'>
+    <div className='sub-cont'><div id="box">
     <div class="top"></div>
     <div>
      <span></span>
@@ -78,9 +40,110 @@ function Home() {
         <i class='tape'></i>
      </span>
    </div>
-  </div>
+  </div></div>
+    <div className='sub-cont-2'></div>
+    <div className='sub-cont-3'></div>
+</div>
 
-<h4 class="uk-heading-small uk-heading-bullet">Limited-Time Offer: Shop Ahead and Save Big! 🎉</h4>
+<div className='new-content'>
+<h2>Content Goes Here</h2>
+</div>
+<div className='middle-content'>
+<div className='mid-cont'></div>
+<div className='mid-cont2'></div>
+</div>
+
+<h4 class="uk-heading-small uk-heading-bullet">Limited-Time Offer: Shop Ahead and Save Big!</h4>
+<div className='semi-cont'>
+<div className='semi-1'></div>
+<div className='semi-2'></div>
+<div className='semi-3'></div>
+<div className='semi-4'></div>
+</div>
+
+<div className='faq'>
+<div className='faq1'>FAQ
+ <p>1. How do I place an order?</p>
+ <p>2. What payment methods do you accept?</p>
+ <p>3. How long does shipping take?</p>
+ <p>4. Can I return or exchange a product?</p>
+ <p>5. Are there any discounts or promotions available?</p>
+ </div>
+</div>
+
+
+
+
+{/* <div class="uk-padding uk-background-muted uk-width-1-2@s main-content-text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</div> */}
+{/* <div className="container">
+<a href="#">
+  <img  className='main-content' src="https://images.pexels.com/photos/17917173/pexels-photo-17917173/free-photo-of-young-man-and-woman-posing-in-gym-clothing.jpeg?auto=compress&cs=tinysrgb&w=1600"></img>
+  <button class="uk-button uk-button-default">Button</button>
+  </a>
+ 
+</div> */}
+<hr class="uk-divider-icon"></hr>
+{/* <div class="uk-padding uk-background-muted uk-width-1-2@s main-content-text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</div> */}
+<hr class="uk-divider-icon"></hr>
+{/* <hr class="uk-divider-icon"></hr> */}
+
+{/* <div className="container">
+<a href="#">
+  <img  className='main-content' src="https://images.pexels.com/photos/17850454/pexels-photo-17850454/free-photo-of-young-man-in-a-casual-trendy-outfit-posing-in-studio-on-yellow-background.jpeg?auto=compress&cs=tinysrgb&w=1600"></img>
+  <button class="uk-button uk-button-default">Button</button>
+  </a>
+
+</div> */}
+<hr class="uk-divider-icon"></hr>
+<br/>
+{/* <div class="uk-padding uk-background-muted uk-width-1-2@s main-content-text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</div> */}
+{/* <div className="container">
+<a href="#">
+  <img  className='main-content' src="https://images.pexels.com/photos/17862339/pexels-photo-17862339/free-photo-of-man-with-backpack-holding-camera.jpeg?auto=compress&cs=tinysrgb&w=1600"></img>
+  <button class="uk-button uk-button-default">Button</button>
+  </a>
+</div> */}
+{/* <div class="uk-padding uk-background-muted uk-width-1-2@s main-content-text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</div> */}
+
+<hr class="uk-divider-icon"></hr>
+{/* <div class="uk-padding uk-background-muted uk-width-1-2@s main-content-text">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</div> */}
+{/* <div className="container">
+<a href="#">
+  <img  className='main-content' src="https://images.pexels.com/photos/17840324/pexels-photo-17840324/free-photo-of-man-in-vest-and-shadow-on-wall.jpeg?auto=compress&cs=tinysrgb&w=1600"></img>
+  <button class="uk-button uk-button-default">Button</button>
+  </a>
+</div> */}
+{/* <div class="uk-padding uk-background-muted uk-width-1-2@s">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+</div> */}
+  <br/>
+  <br/>
+  <hr class="uk-divider-icon"></hr>
+{/* <div id="box">
+    <div class="top"></div>
+    <div>
+     <span></span>
+     <span>
+        <i class='tape'></i>
+     </span>
+     <span></span>
+     <span>
+        <i class='tape'></i>
+     </span>
+   </div>
+  </div> */}
+
+
 
 <br />
 <div uk-slider="center: true">

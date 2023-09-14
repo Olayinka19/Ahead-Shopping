@@ -37,6 +37,7 @@
 
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import NavBar from "./NavBar.js";
 import Item from "./Item.js";
 import { Link } from "react-router-dom";
 import Cart from "./Cart.js";
@@ -131,7 +132,7 @@ function Items() {
       )} */} 
       <div style={{ display: "flex", justifyContent: "center" }}>
 
-      <Cart cartItems={cartItems} />
+      <NavBar cartItems={cartItems} />
       </div>
       <div >
       {!orderSubmitted ? (
