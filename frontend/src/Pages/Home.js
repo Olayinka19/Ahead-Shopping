@@ -2,11 +2,68 @@ import React from 'react'
 import { Link } from "react-router-dom";
 
 
+
 function Home() {
   return (
-    <div style={{justifyContent: 'center'}}>
-        <video className='video' src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1800" height="1200" loop muted playsinline uk-video="autoplay: inview"></video>
-      
+    <div >
+        {/* <video className='video' src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1800" height="1200" loop muted playsinline uk-video="autoplay: inview"></video> */}
+
+       {/* Slider */}
+       <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: true">
+
+    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m">
+        <li>
+            <img className='Slide' src="https://img.freepik.com/free-photo/black-t-shirt-is-hanging-hanger-with-word-dope-it_1340-38184.jpg"  alt="" />
+            {/* <div class="uk-position-center uk-panel"><h1>1</h1></div> */}
+        </li>
+        <li>
+            <img className='Slide' src="https://img.freepik.com/free-photo/black-shirt-with-word-ultra-it_1340-37775.jpg"  alt="" />
+            {/* <div class="uk-position-center uk-panel"><h1>2</h1></div> */}
+        </li>
+        <li>
+            <img className='Slide' src="https://img.freepik.com/free-photo/red-shirt-is-box-with-red-box-background_1340-38146.jpg"  alt="" />
+            {/* <div class="uk-position-center uk-panel"><h1>3</h1></div> */}
+        </li>
+        <li>
+            <img className='Slide' src="https://img.freepik.com/free-photo/fashionable-men-winter-jacket-with-zipper-close-up-generated-by-ai_188544-43270.jpg"  alt="" />
+            {/* <div class="uk-position-center uk-panel"><h1>4</h1></div> */}
+        </li>
+        <li>
+            <img className='Slide' src="https://img.freepik.com/free-photo/dark-glass-bottle-with-single-liquid-drop-generative-ai_188544-9634.jpg"  alt="" />
+            {/* <div class="uk-position-center uk-panel"><h1>5</h1></div> */}
+
+        </li>
+        <li>
+            <img className='Slide' src="https://img.freepik.com/free-photo/young-couple-embracing-autumn-nature-smiling-generated-by-ai_188544-54279.jpg"  alt="" />
+            {/* <div class="uk-position-center uk-panel"><h1>6</h1></div> */}
+        </li>
+        <li>
+            <img className='Slide' src="https://img.freepik.com/free-photo/young-adults-funky-clothing-enjoying-outdoors-generated-by-ai_188544-37450.jpg"  alt="" />
+            {/* <div class="uk-position-center uk-panel"><h1>7</h1></div> */}
+        </li>
+        <li>
+            <img className='Slide' src="https://img.freepik.com/free-photo/multi-ethnic-group-young-adults-smiling-generated-by-ai_24640-81233.jpg"  alt="" />
+            {/* <div class="uk-position-center uk-panel"><h1>8</h1></div> */}
+        </li>
+        <li>
+            {/* <img className='Slide' src="https://img.freepik.com/free-photo/young-adults-embrace-fashionable-city-night-generated-by-ai_188544-38888.jpg"  alt="" /> */}
+            {/* <div class="uk-position-center uk-panel"><h1>9</h1></div> */}
+        </li>
+        <li>
+            {/* <img className='Slide' src="https://img.freepik.com/free-photo/two-women-are-standing-outside-store-one-them-is-wearing-green-jacket_1340-38174.jpg"  alt="" /> */}
+            {/* <div class="uk-position-center uk-panel"><h1>10</h1></div> */}
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+</div>
+
+
+
+
+       {/* Slider ending */}
 
 
 
@@ -14,21 +71,71 @@ function Home() {
 <h1 className='trend'>Trending Products</h1>
 <div className='container'>
 <div className='content-1'>
-<img className='img-cont' src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F3985096%2Fpexels-photo-3985096.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-gustavo-fring-3985096.jpg%26fm%3Djpg&f=1&nofb=1&ipt=5c7f6ae13d2c632c768d59e5d48cc4b31b5cee3a99592746e1bb4dc0f8523119&ipo=images" />
-<button>Buy Now</button>
+<h3>Women's dress under $40</h3>
+<div className='w-container'>
+<div className='w-d-1'>
+ <img src ="https://img.freepik.com/free-photo/denim-jacket-wooden-table-workshop-generated-by-ai_188544-37291.jpg" className='w-img' />
+ <a href="/Items"><h5>Jacket</h5></a>
 </div>
+<div className="w-d-2">
+<img src ="https://img.freepik.com/free-photo/young-adult-athlete-exercising-yellow-raincoat-generated-by-ai_188544-40053.jpg" className='w-img-2' />
+<a href="/Items"><h5>Hoodie</h5></a>
+
+</div>
+<div className="w-d-3">
+<img src ="https://img.freepik.com/free-photo/smiling-child-playing-wet-snow-generated-by-ai_188544-33131.jpg" className='w-img-2' />
+ 
+ <a href="/Items"><h5>Sweaters</h5></a>
+
+</div>
+<div className="w-d-4">
+<img src ="https://img.freepik.com/free-photo/winter-warmth-with-knitted-woolen-mittens-generated-by-ai_188544-11160.jpg" className='w-img-4' />
+ <h5 className='h-4'><a href="/Items">Head-scaff</a></h5>
+
+ </div>
+ 
+</div>
+{/* <div>
+<Link to="/Items"> <button>Shop and Save</button> </Link>
+</div> */}
+</div>
+
+
 <div className='content-2'>
-<img className='img-cont' src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F3985096%2Fpexels-photo-3985096.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-gustavo-fring-3985096.jpg%26fm%3Djpg&f=1&nofb=1&ipt=5c7f6ae13d2c632c768d59e5d48cc4b31b5cee3a99592746e1bb4dc0f8523119&ipo=images" />
-<button>Buy Now</button>
+<h3>Fall Dress Under $60</h3>
+<img className='img-cont' src="https://img.freepik.com/free-photo/portrait-smiling-man-snow_23-2150771181.jpg" />
+<div>
+    <div className='deal'>Up to 50% off</div>
+</div> 
+<p>Product is such an amazing item, tested and trusted</p>
+<br/>
+<br/>
+<button class="uk-button uk-button-link"><a className='a-off' href="/Items">See all deals</a></button>
 </div>
 <div className='content-3'>
-<img className='img-cont' src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F3985096%2Fpexels-photo-3985096.jpeg%3Fcs%3Dsrgb%26dl%3Dpexels-gustavo-fring-3985096.jpg%26fm%3Djpg&f=1&nofb=1&ipt=5c7f6ae13d2c632c768d59e5d48cc4b31b5cee3a99592746e1bb4dc0f8523119&ipo=images" />
-<button>Buy Now</button>
+<h4>Top Deal</h4>
+<img className='img-cont-3' src="https://img.freepik.com/free-photo/woven-wool-cardigan-sweater-multi-colored-pattern-generated-by-ai_188544-37136.jpg" />
+<div>
+    <div className='deal'>Up to 50% off</div>
+</div> 
+<p>Product is such an amazing item, tested and trusted</p>
+<br/>
+<br/>
+<button class="uk-button uk-button-link"><a className='a-off' href="/Items">See all deals</a></button>
 </div>
 </div>
 
 <div className='second-container'>
-    <div className='sub-cont'><div id="box">
+    <div className='sub-cont'>
+    <img className='img-cont' src="https://img.freepik.com/premium-photo/shot-young-man-woman-standing-together-cold-weather_762026-73225.jpg" />
+<div>
+    <div className='deal'>Up to 50% off</div>
+</div> 
+<p>Product is such an amazing item, tested and trusted</p>
+<br/>
+<br/>
+<button class="uk-button uk-button-link"><a className='a-off' href="/Items">See all deals</a></button>
+    {/* <div id="box">
     <div class="top"></div>
     <div>
      <span></span>
@@ -40,9 +147,61 @@ function Home() {
         <i class='tape'></i>
      </span>
    </div>
-  </div></div>
-    <div className='sub-cont-2'></div>
-    <div className='sub-cont-3'></div>
+  </div> */}
+  
+  </div>
+    <div className='sub-cont-2'>
+        <h5>Fall Favorite Fashion</h5>
+        <div className='w-container'>
+<div className='w-d-1'>
+ <img src ="https://img.freepik.com/free-photo/denim-jacket-wooden-table-workshop-generated-by-ai_188544-37291.jpg" className='w-img' />
+ <a href="/Items"><h5>Jacket</h5></a>
+</div>
+<div className="w-d-2">
+<img src ="https://img.freepik.com/free-photo/young-adult-athlete-exercising-yellow-raincoat-generated-by-ai_188544-40053.jpg" className='w-img-2' />
+<a href="/Items"><h5>Hoodie</h5></a>
+
+</div>
+<div className="w-d-3">
+<img src ="https://img.freepik.com/free-photo/smiling-child-playing-wet-snow-generated-by-ai_188544-33131.jpg" className='w-img-2' />
+ 
+ <a href="/Items"><h5>Sweaters</h5></a>
+
+</div>
+<div className="w-d-4">
+<img src ="https://img.freepik.com/free-photo/winter-warmth-with-knitted-woolen-mittens-generated-by-ai_188544-11160.jpg" className='w-img-4' />
+ <h5 className='h-4'><a href="/Items">Head-scaff</a></h5>
+
+ </div>
+ 
+</div>
+    </div>
+    <div className='sub-cont-3'>Men's deals Under $40
+    
+    <div className='w-container'>
+<div className='w-d-1'>
+ <img src ="https://img.freepik.com/free-photo/denim-jacket-wooden-table-workshop-generated-by-ai_188544-37291.jpg" className='w-img' />
+ <a href="/Items"><h5>Jacket</h5></a>
+</div>
+<div className="w-d-2">
+<img src ="https://img.freepik.com/free-photo/young-adult-athlete-exercising-yellow-raincoat-generated-by-ai_188544-40053.jpg" className='w-img-2' />
+<a href="/Items"><h5>Hoodie</h5></a>
+
+</div>
+<div className="w-d-3">
+<img src ="https://img.freepik.com/free-photo/smiling-child-playing-wet-snow-generated-by-ai_188544-33131.jpg" className='w-img-2' />
+ 
+ <a href="/Items"><h5>Sweaters</h5></a>
+
+</div>
+<div className="w-d-4">
+<img src ="https://img.freepik.com/free-photo/winter-warmth-with-knitted-woolen-mittens-generated-by-ai_188544-11160.jpg" className='w-img-4' />
+ <h5 className='h-4'><a href="/Items">Head-scaff</a></h5>
+
+ </div>
+ 
+</div>
+    </div>
 </div>
 
 <div className='new-content'>
@@ -146,7 +305,7 @@ function Home() {
 
 
 <br />
-<div uk-slider="center: true">
+<div uk-slider="autoplay: true">
 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
 
     <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
