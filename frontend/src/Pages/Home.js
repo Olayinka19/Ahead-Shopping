@@ -135,19 +135,7 @@ function Home() {
 <br/>
 <br/>
 <button class="uk-button uk-button-link"><a className='a-off' href="/Items">See all deals</a></button>
-    {/* <div id="box">
-    <div class="top"></div>
-    <div>
-     <span></span>
-     <span>
-        <i class='tape'></i>
-     </span>
-     <span></span>
-     <span>
-        <i class='tape'></i>
-     </span>
-   </div>
-  </div> */}
+  
   
   </div>
     <div className='sub-cont-2'>
@@ -204,20 +192,47 @@ function Home() {
     </div>
 </div>
 
-<div className='new-content'>
-<h2>Content Goes Here</h2>
+
+<marquee>
+<div className='scroller'>
+<img className='semi1-img' src="https://img.freepik.com/premium-photo/woman-is-holding-shopping-bags-sign-that-says-shopping_772412-4568.jpg" />
+<img className='semi1-img' src="https://img.freepik.com/premium-photo/woman-is-holding-shopping-bags-sign-that-says-shopping_772412-4568.jpg" />
+<img className='semi1-img' src="https://img.freepik.com/premium-photo/woman-is-holding-shopping-bags-sign-that-says-shopping_772412-4568.jpg" />
+<img className='semi1-img' src="https://img.freepik.com/premium-photo/woman-is-holding-shopping-bags-sign-that-says-shopping_772412-4568.jpg" />
 </div>
-<div className='middle-content'>
-<div className='mid-cont'></div>
-<div className='mid-cont2'></div>
+</marquee>
+
+<div className='trending-container'>
+<div className='trending-content'>
+ <div>
+    <h2>New release</h2>
+ </div>
+ <hr />
+</div>
+<div className='trending-content'>
+
+</div>
+<div className='trending-content'>
+
+</div>
+
+
 </div>
 
 <h4 class="uk-heading-small uk-heading-bullet">Limited-Time Offer: Shop Ahead and Save Big!</h4>
 <div className='semi-cont'>
-<div className='semi-1'></div>
-<div className='semi-2'></div>
-<div className='semi-3'></div>
-<div className='semi-4'></div>
+<div className='semi-1'>
+    <img className='semi1-img' src="https://img.freepik.com/premium-photo/woman-is-holding-shopping-bags-sign-that-says-shopping_772412-4568.jpg" />
+</div>
+<div className='semi-2'>
+<img className='semi1-img' src="https://img.freepik.com/premium-photo/woman-is-holding-shopping-bags-sign-that-says-shopping_772412-4568.jpg" />
+</div>
+<div className='semi-3'>
+<img className='semi1-img' src="https://img.freepik.com/premium-photo/woman-is-holding-shopping-bags-sign-that-says-shopping_772412-4568.jpg" />
+</div>
+<div className='semi-4'>
+<img className='semi1-img' src="https://img.freepik.com/premium-photo/woman-is-holding-shopping-bags-sign-that-says-shopping_772412-4568.jpg" />
+</div>
 </div>
 
 <div className='faq'>
