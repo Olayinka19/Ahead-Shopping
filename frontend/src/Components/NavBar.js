@@ -3,9 +3,9 @@ import Cart from './Cart';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
 
-const NavBar = ({ cartItems }) => {
+const NavBar = ({ cartItemCount, onCartClick }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const cartItemCount = cartItems.length;
+  // const cartItemCount = cartItems.length;
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -20,15 +20,18 @@ const NavBar = ({ cartItems }) => {
     <div className="logo"><Link to="/">Ahead-Store</Link></div>
     <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
     
-      <li><a class="uk-button uk-button-default" href="/Items">Shop</a></li>
+      <li><a class="uk-button uk-button-default" href="/Items">Products</a></li>
         <a class="uk-button uk-button-default" href="/AboutMe">About</a>
           <a class="uk-button uk-button-default" href="/BlogPost">BlogPost</a>
           <a class="uk-button uk-button-default" href="/ContactUs">Contact</a>
           
       <li className="dropdown">
       <div className="cart-icon nav-links">
-        🛒
-        <span className="cart-count">{cartItemCount}</span>
+        {/* 🛒 */}
+        {/* <span className="cart-count">{cartItemCount}</span> */}
+        <li>
+          <button class="uk-button uk-button-default" onClick={onCartClick}> 🛒 {cartItemCount}</button>
+        </li>
       </div>
         <div className="dropdown-content">
           {/* Add more dropdown items */}

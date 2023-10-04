@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { Link } from "react-router-dom";
 
 
@@ -68,7 +69,7 @@ function Home() {
 
 
 <hr class="uk-divider-icon"></hr>
-<h1 className='trend'>Trending Products</h1>
+<h1 className='trend uk-heading-small uk-heading-bullet'>Trending Products</h1>
 <div className='container'>
 <div className='content-1'>
 <h3>Women's dress under $40</h3>
@@ -124,7 +125,7 @@ function Home() {
 <button class="uk-button uk-button-link"><a className='a-off' href="/Items">See all deals</a></button>
 </div>
 </div>
-
+<h4 class="uk-heading-small uk-heading-bullet">Fall Dresses Under $60</h4>
 <div className='second-container'>
     <div className='sub-cont'>
     <img className='img-cont' src="https://img.freepik.com/premium-photo/shot-young-man-woman-standing-together-cold-weather_762026-73225.jpg" />
@@ -138,6 +139,7 @@ function Home() {
   
   
   </div>
+  
     <div className='sub-cont-2'>
         <h5>Fall Favorite Fashion</h5>
         <div className='w-container'>
@@ -193,15 +195,15 @@ function Home() {
 </div>
 
 
-<marquee>
+{/* <marquee>
 <div className='scroller'>
-<img className='semi1-img' src="https://img.freepik.com/premium-photo/woman-is-holding-shopping-bags-sign-that-says-shopping_772412-4568.jpg" />
+<img className='semi1-img' src="https://media.istockphoto.com/id/1328315054/photo/woman-influencer-selling-clothes-online.jpg?b=1&s=612x612&w=0&k=20&c=D4aS_SivXOeeKQzpk-FOd583HrODtYUHHNXOMjAAe10=" />
 <img className='semi1-img' src="https://img.freepik.com/premium-photo/woman-is-holding-shopping-bags-sign-that-says-shopping_772412-4568.jpg" />
 <img className='semi1-img' src="https://img.freepik.com/premium-photo/woman-is-holding-shopping-bags-sign-that-says-shopping_772412-4568.jpg" />
 <img className='semi1-img' src="https://img.freepik.com/premium-photo/woman-is-holding-shopping-bags-sign-that-says-shopping_772412-4568.jpg" />
 </div>
-</marquee>
-
+</marquee> */}
+<h4 class="uk-heading-small uk-heading-bullet">Limited-Time Offer: Shop Ahead and Save Big!</h4>
 <div className='trending-container'>
 <div className='trending-content'>
  <div>

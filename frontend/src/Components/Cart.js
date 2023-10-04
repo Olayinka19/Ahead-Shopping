@@ -69,34 +69,73 @@
 // Testing 
 
 
+// import React, { useState } from 'react';
+// import './Cart.css';
+
+// const Cart = () => {
+//   const [cartItems, setCartItems] = useState([]);
+  
+//   const addToCart = (item) => {
+//     setCartItems([...cartItems, item]);
+//   };
+
+//   const calculateTotal = () => {
+//     return cartItems.reduce((total, item) => total + item.price, 0);
+//   };
+
+//   return (
+//     <div className="cart">
+//       <h2>Your Cart</h2>
+//       <ul className="cart-items">
+//         {cartItems.map((item, index) => (
+//           <li key={index} className="cart-item">
+//             {item.name} - ${item.price}
+//           </li>
+//         ))}
+//       </ul>
+//       <div className="cart-total">
+//         <p>Total: ${calculateTotal()}</p>
+//         <button className="checkout-btn">Checkout</button>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Cart;
+
 import React, { useState } from 'react';
-import './Cart.css';
 
 const Cart = () => {
   const [cartItems, setCartItems] = useState([]);
   
   const addToCart = (item) => {
-    setCartItems([...cartItems, item]);
-  };
+    // Check if the item is already in the cart
+    const itemInCart = cartItems.find((cartItem) => cartItem.id === item.id);
 
-  const calculateTotal = () => {
-    return cartItems.reduce((total, item) => total + item.price, 0);
+    if (itemInCart) {
+      // If it's in the cart, increase the quantity
+      const updatedCart = cartItems.map((cartItem) =>
+        cartItem.id === item.id
+          ? { ...cartItem, quantity: cartItem.quantity + 1 }
+          : cartItem
+      );
+      setCartItems(updatedCart);
+    } else {
+      // If it's not in the cart, add it with quantity 1
+      setCartItems([...cartItems, { ...item, quantity: 1 }]);
+    }
   };
 
   return (
     <div className="cart">
-      <h2>Your Cart</h2>
-      <ul className="cart-items">
-        {cartItems.map((item, index) => (
-          <li key={index} className="cart-item">
-            {item.name} - ${item.price}
+      <h2>Shopping Cart</h2>
+      <ul>
+        {cartItems.map((item) => (
+          <li key={item.id}>
+            {item.name} - Quantity: {item.quantity}
           </li>
         ))}
       </ul>
-      <div className="cart-total">
-        <p>Total: ${calculateTotal()}</p>
-        <button className="checkout-btn">Checkout</button>
-      </div>
     </div>
   );
 };

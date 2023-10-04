@@ -33,13 +33,24 @@ import './App.css';
 
 function App() {
   const [cartItems, setCartItems] = useState([]); 
+  const [showCart, setShowCart] = useState(false);
+
+  const addToCart = (item) => {
+    // Your existing addToCart logic
+    const itemInCart = cartItems.find((cartItem) => cartItem.id === item.id);
+
+  };
+  const handleCartClick = () => {
+    setShowCart(!showCart);
+  };
   
   return (
     
   <div className="App">
   <Router>
   
-  <NavBar cartItems={cartItems} />
+  <NavBar cartItemCount={cartItems.length} onCartClick={handleCartClick} />
+  {showCart && <Cart />}
   <Routes>
     <Route path="/" element={<Home/>} />
   
