@@ -1,0 +1,35 @@
+/* .Trend{
+    display: flex !important;
+    padding: 3rem;
+    row-gap: 1rem;
+    justify-content: space-between !important;
+    margin: 10px;
+  }
+  /* Smartphones (portrait and landscape) ----------- */
+/* @media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  /* Styles */
+  /* .Trend{
+    display: grid !important;
+    padding: 3rem;
+    row-gap: 1rem;
+    justify-content: space-between !important;
+    margin: 10px;
+  }
+}  */
+
+
+/* Smartphones (landscape) ----------- */
+/* @media only screen 
+and (min-width : 321px) {
+  /* Styles */
+  /* .Trend{
+    display: grid !important;
+    padding: 3rem;
+    row-gap: 1rem;
+    justify-content: space-between !important;
+    margin: 10px;
+  }
+}  */
+

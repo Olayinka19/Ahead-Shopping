@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './Home.css'
 import { Link } from "react-router-dom";
 
 
@@ -70,7 +70,7 @@ function Home() {
 
 <hr class="uk-divider-icon"></hr>
 <h1 className='trend uk-heading-small uk-heading-bullet'>Trending Products</h1>
-<div className='container'>
+<div className='Trend'>
 <div className='content-1'>
 <h3>Women's dress under $40</h3>
 <div className='w-container'>
@@ -122,7 +122,7 @@ function Home() {
 <p>Product is such an amazing item, tested and trusted</p>
 <br/>
 <br/>
-<button class="uk-button uk-button-link"><a className='a-off' href="/Items">See all deals</a></button>
+<button class="uk-button uk-button-neutral"><a className='a-off' href="/Items">See all deals</a></button>
 </div>
 </div>
 <h4 class="uk-heading-small uk-heading-bullet">Fall Dresses Under $60</h4>
@@ -135,7 +135,7 @@ function Home() {
 <p>Product is such an amazing item, tested and trusted</p>
 <br/>
 <br/>
-<button class="uk-button uk-button-link"><a className='a-off' href="/Items">See all deals</a></button>
+<button class="uk-button uk-button-warning"><a className='a-off' href="/Items">See all deals</a></button>
   
   
   </div>
@@ -144,22 +144,22 @@ function Home() {
         <h5>Fall Favorite Fashion</h5>
         <div className='w-container'>
 <div className='w-d-1'>
- <img src ="https://img.freepik.com/free-photo/denim-jacket-wooden-table-workshop-generated-by-ai_188544-37291.jpg" className='w-img' />
+ <img src ="https://images.pexels.com/photos/1868735/pexels-photo-1868735.jpeg?auto=compress&cs=tinysrgb&w=1600" className='w-img' />
  <a href="/Items"><h5>Jacket</h5></a>
 </div>
 <div className="w-d-2">
-<img src ="https://img.freepik.com/free-photo/young-adult-athlete-exercising-yellow-raincoat-generated-by-ai_188544-40053.jpg" className='w-img-2' />
+<img src ="https://images.pexels.com/photos/16170/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1600" className='w-img-2' />
 <a href="/Items"><h5>Hoodie</h5></a>
 
 </div>
 <div className="w-d-3">
-<img src ="https://img.freepik.com/free-photo/smiling-child-playing-wet-snow-generated-by-ai_188544-33131.jpg" className='w-img-2' />
+<img src ="https://images.pexels.com/photos/905247/pexels-photo-905247.jpeg?auto=compress&cs=tinysrgb&w=1600" className='w-img-2' />
  
  <a href="/Items"><h5>Sweaters</h5></a>
 
 </div>
 <div className="w-d-4">
-<img src ="https://img.freepik.com/free-photo/winter-warmth-with-knitted-woolen-mittens-generated-by-ai_188544-11160.jpg" className='w-img-4' />
+<img src ="https://images.pexels.com/photos/1761683/pexels-photo-1761683.jpeg?auto=compress&cs=tinysrgb&w=1600" className='w-img-4' />
  <h5 className='h-4'><a href="/Items">Head-scaff</a></h5>
 
  </div>
@@ -170,16 +170,16 @@ function Home() {
     
     <div className='w-container'>
 <div className='w-d-1'>
- <img src ="https://img.freepik.com/free-photo/denim-jacket-wooden-table-workshop-generated-by-ai_188544-37291.jpg" className='w-img' />
+ <img src ="https://images.pexels.com/photos/1620654/pexels-photo-1620654.jpeg?auto=compress&cs=tinysrgb&w=1600" className='w-img' />
  <a href="/Items"><h5>Jacket</h5></a>
 </div>
 <div className="w-d-2">
-<img src ="https://img.freepik.com/free-photo/young-adult-athlete-exercising-yellow-raincoat-generated-by-ai_188544-40053.jpg" className='w-img-2' />
+<img src ="https://images.pexels.com/photos/7037431/pexels-photo-7037431.jpeg?auto=compress&cs=tinysrgb&w=1600" className='w-img-2' />
 <a href="/Items"><h5>Hoodie</h5></a>
 
 </div>
 <div className="w-d-3">
-<img src ="https://img.freepik.com/free-photo/smiling-child-playing-wet-snow-generated-by-ai_188544-33131.jpg" className='w-img-2' />
+<img src ="https://images.pexels.com/photos/1181498/pexels-photo-1181498.jpeg?auto=compress&cs=tinysrgb&w=1600" className='w-img-2' />
  
  <a href="/Items"><h5>Sweaters</h5></a>
 
@@ -205,17 +205,17 @@ function Home() {
 </marquee> */}
 <h4 class="uk-heading-small uk-heading-bullet">Limited-Time Offer: Shop Ahead and Save Big!</h4>
 <div className='trending-container'>
-<div className='trending-content'>
- <div>
-    <h2>New release</h2>
- </div>
+<div className=''>
+
+ <img className='semi1-img'  src="https://images.pexels.com/photos/7037433/pexels-photo-7037433.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+
  <hr />
 </div>
-<div className='trending-content'>
-
+<div className=''>
+<img className='semi1-img' src="https://images.pexels.com/photos/6816055/pexels-photo-6816055.jpeg?auto=compress&cs=tinysrgb&w=1600" />
 </div>
-<div className='trending-content'>
-
+<div className=''>
+<img className='semi1-img' src="https://images.pexels.com/photos/6816020/pexels-photo-6816020.jpeg?auto=compress&cs=tinysrgb&w=1600" />
 </div>
 
 
@@ -224,16 +224,16 @@ function Home() {
 <h4 class="uk-heading-small uk-heading-bullet">Limited-Time Offer: Shop Ahead and Save Big!</h4>
 <div className='semi-cont'>
 <div className='semi-1'>
-    <img className='semi1-img' src="https://img.freepik.com/premium-photo/woman-is-holding-shopping-bags-sign-that-says-shopping_772412-4568.jpg" />
+    <img className='semi1-img' src="https://images.pexels.com/photos/2008388/pexels-photo-2008388.jpeg?auto=compress&cs=tinysrgb&w=1600" />
 </div>
 <div className='semi-2'>
-<img className='semi1-img' src="https://img.freepik.com/premium-photo/woman-is-holding-shopping-bags-sign-that-says-shopping_772412-4568.jpg" />
+<img className='semi1-img' src="https://images.pexels.com/photos/5352635/pexels-photo-5352635.jpeg?auto=compress&cs=tinysrgb&w=1600" />
 </div>
 <div className='semi-3'>
-<img className='semi1-img' src="https://img.freepik.com/premium-photo/woman-is-holding-shopping-bags-sign-that-says-shopping_772412-4568.jpg" />
+<img className='semi1-img' src="https://images.pexels.com/photos/7037431/pexels-photo-7037431.jpeg?auto=compress&cs=tinysrgb&w=1600" />
 </div>
 <div className='semi-4'>
-<img className='semi1-img' src="https://img.freepik.com/premium-photo/woman-is-holding-shopping-bags-sign-that-says-shopping_772412-4568.jpg" />
+<img className='semi1-img' src="https://images.pexels.com/photos/6500568/pexels-photo-6500568.jpeg?auto=compress&cs=tinysrgb&w=1600" />
 </div>
 </div>
 

@@ -68,7 +68,7 @@ color: #007bff;
   .bar {
     width: 100%;
     height: 4px;
-    background-color: #fff;
+    background-color: #000000;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   }
   
@@ -92,10 +92,28 @@ color: #007bff;
       transform: translateY(0);
     }
   
-    .menu-toggle {
+    /* .menu-toggle {
       display: flex;
-      transform: rotate(${props => props.menuOpen ? '90deg' : '0deg'});
-    }
+      transform:
+            rotate($:;
+      -webkit-transform:;
+      -moz-transform:;
+      -ms-transform:;
+      -o-transform:;
+{props=>props.menuOpen?'90deg': '0deg'})    ;
+  
+} */
+
+.menu-toggle {
+  display: flex;
+  transform: rotate(${props => props.menuOpen ? '90deg' : '0deg'});
+  -webkit-transform: rotate(${props => props.menuOpen ? '90deg' : '0deg'});
+  -moz-transform: rotate(${props => props.menuOpen ? '90deg' : '0deg'});
+  -ms-transform: rotate(${props => props.menuOpen ? '90deg' : '0deg'});
+  -o-transform: rotate(${props => props.menuOpen ? '90deg' : '0deg'});
+  
+}
+
   
     .bar.open:nth-child(2) {
       opacity: 0;

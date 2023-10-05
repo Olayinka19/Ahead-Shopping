@@ -67,7 +67,8 @@ function Items() {
     const itemInCart = cartItems.find((cartItem) => cartItem.id === item.id);
 
     if (!itemInCart) {
-      setCartItems([...cartItems, item]);
+      // setCartItems([...cartItems, item]);
+      setCartItems([...cartItems, { ...item, quantity: 1 }]);
     }
     // setCartItems()
     // setCartItems([...cartItems, item]);
@@ -110,26 +111,14 @@ function Items() {
 
   return (
     <div className="Items">
+     
       <section>
         {items.map((item) => (
-          <Item key={item.id} item={item} addToCart={addToCart}  reviews={reviews}
+          <Item key={item.id} item={item} addToCart={addToCart}  reviews={reviews} cartItems={cartItems}
             setReviews={setReviews} />
         ))}
       </section>
-      <br />
-      {/* <div className="CartItm">
-
-      <Cart cartItems={cartItems} />
-      </div> */}
-      {/* <br />
-
-      {/* <Checkout cartItems={cartItems} /> */}
-      {/* <br />
-      {!orderSubmitted ? (
-        <Checkout cartItems={cartItems} onSubmit={handleSubmit} />
-      ) : (
-        <OrderConfirmation cartItems={cartItems} formData={formData} />
-      )} */} 
+      <br /> 
       <div style={{ display: "flex", justifyContent: "center" }}>
 
       <NavBar cartItems={cartItems} />
@@ -147,15 +136,7 @@ function Items() {
       <div style={{ display: "flex", justifyContent: "center" }}>
       <CustomerFeedback onSubmitFeedback={handleFeedbackSubmit} />
       </div>
-      {/* <CustomerFeedback  /> */}
-      {/* <div className="FeedbackSection">
-          <h4>Customer Feedback</h4>
-          {comments.map((comment, index) => (
-            <div key={index} className="FeedbackPost">
-              <p>{comment}</p>
-            </div>
-          ))}
-        </div> */}
+  
 </div>
 <br />
       <div>
