@@ -5,6 +5,9 @@
     padding: 20px;
     width: 300px;
     margin: 20px;
+    color:black !important;
+    display:inline-block;
+    /* float:right; */
   }
   
   .CheckoutForm h2 {

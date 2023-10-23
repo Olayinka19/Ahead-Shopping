@@ -28,69 +28,84 @@ function ItemDetails() {
     deleteitem();
   };
   return (
-    <div className="ItemShow" style={{ display: "flex", justifyContent: "center" }}>
-      <article>
-        <h3>
-           {item.name}
-        </h3>
-        <img className="imag" src={item.image_url} alt={item.name} height={200} width={200} />
-        <h2>In-stock: {item.quantity} Pcs</h2>
+    <div className="ItemShow">
+    <br/>
+    <br/>
+   
+      <div className="stock-container">
+       
+        <img className="imag" src={item.image_url} alt={item.name} />
+        
+    
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="clsActivated: uk-transition-active; center: true">
         
 
-    <ul class="uk-slider-items uk-grid">
-        <li class="uk-width-3-4">
-            <div class="uk-panel">
-                <img className="imag" src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load" width="450" height="400" alt="" />
-                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                    <h3 class="uk-margin-remove">${item.price}</h3>
-                    <p class="uk-margin-remove">{item.category}.</p>
-                </div>
-            </div>
-        </li>
-        <li class="uk-width-3-4">
-            <div class="uk-panel">
-                <img className="imag" src="https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width="450" height="400" alt="" />
-                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                <h3 class="uk-margin-remove">${item.price}</h3>
-                    <p class="uk-margin-remove">{item.category}.</p>
-                </div>
-            </div>
-        </li>
-        <li class="uk-width-3-4">
-            <div class="uk-panel">
-                <img className="imag" src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"  alt="" />
-                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                <h3 class="uk-margin-remove">${item.price}</h3>
-                    <p class="uk-margin-remove">{item.category}.</p>
-                </div>
-            </div>
-        </li>
-       
-        <li class="uk-width-3-4">
-            <div class="uk-panel">
-                <img className="imag" src="https://images.pexels.com/photos/3919865/pexels-photo-3919865.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load"  alt=""/>
-                <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
-                <h3 class="uk-margin-remove">${item.price}</h3>
-                    <p class="uk-margin-remove">{item.category}.</p>
-                </div>
-            </div>
-        </li>
-    </ul>
-
-    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-
+    
 </div>
-        {/* <h2>Price:$ {item.price}</h2> */}
-        <h5><b>Description</b>: {item.description}</h5>
-        <h5>Category: {item.category}</h5>
+<div>
+
+
+
+  
+</div>
+<div></div>
         
+
+       
+        <ul uk-accordion="collapsible: false">
+    <li>
+        <a class="uk-accordion-title" href>Product session</a>
+        <div class="uk-accordion-content">
+        <h2>
+           {item.name}
+        </h2>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href>In Stock</a>
+        <div class="uk-accordion-content">
+        <h2>{item.quantity} Pcs</h2>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href>Price</a>
+        <div class="uk-accordion-content">
+        <h2>${item.price}</h2>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href>Description</a>
+        <div class="uk-accordion-content">
+        <p> {item.description}</p>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href>Category: </a>
+        <div class="uk-accordion-content">
+        <h5>{item.category}</h5>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href>Buy Now</a>
+        <div class="uk-accordion-content">
         <Link to ="/PaymentSlip"><button class="uk-button uk-button-default">Make Payment</button></Link>
+        </div>
+    </li>
+    <li>
+        <a class="uk-accordion-title" href>Add To Cart</a>
+        <div class="uk-accordion-content">
+        <Link >
+              <button class="uk-button uk-button-default">Add to  Cart</button>
+            </Link>
+        </div>
+    </li>
+</ul>
+        
+        
+        
         <div className="showNavigation">
        <br />
-       {/* <Cart cartItems={cartItems} /> */}
-      {/* <Checkout cartItems={cartItems} /> */}
+       
 
           <div>
             {" "}
@@ -98,17 +113,22 @@ function ItemDetails() {
             <button class="uk-button uk-button-default">Back</button>
             </Link>
           </div>
+          <br/>
           <div>
-            <Link to={`/items/${id}/edit`}>
-              <button>Edit</button>
-            </Link>
+          
           </div>
           <div>
-            {/* <button onClick={handleDelete}>Delete</button> */}
-            <button class="uk-button uk-button-default" onClick={handleDelete}>Delete</button>
+            
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
           </div>
         </div>
-      </article>
+      </div>
     </div>
   );
 }

@@ -61,26 +61,28 @@ function Item({ item, addToCart, ratings, comments , reviews ,setReviews}) {
   };
 
   return (
-    <div className="Item-content">
+    <div className="ahead-items">
     <div >
 
     <br/>
     <br/>
      
-      <div className="Item-container">
+      <div className="ahead-item-container">
       <Link to={`/items/${item.id}`}>
-     <img  src={item.image_url} alt={item.name} height={450} width={400} />
+     <img className="uk-card uk-card-default uk-card-body uk-animation-slide-left image_item" src={item.image_url} alt={item.name}  />
       </Link>
 
-      </div>
-      <div className="item-content">
+      
+      <div className="">
       <h3>{item.name}</h3>
       <p>${item.price}</p>
       <button class="uk-button uk-button-primary" onClick={addToCart}><a href="/Cart"></a>Add to Cart</button>
-      
-      {/* <StarRating rating={item.average_rating} /> */}
       </div>
-      <button class="uk-button uk-button-danger">Buy Now</button>
+      <br/>
+      {/* <StarRating rating={item.average_rating} /> */}
+      <Link to={`/items/${item.id}`}><button class="uk-button uk-button-danger">Buy Now</button></Link>
+      
+      </div>
       
       
       {/* <p>Ratings: {ratings.join(", ")}</p> */}

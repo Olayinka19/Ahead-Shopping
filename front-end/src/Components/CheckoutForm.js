@@ -23,7 +23,7 @@ function CheckoutForm({ onSubmit }) {
 
   return (
     <div className="CheckoutForm">
-      <h2>Checkout</h2>
+      <h1>Checkout</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name:</label>
         <input

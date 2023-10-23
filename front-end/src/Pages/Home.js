@@ -122,7 +122,7 @@ function Home() {
 <p>Product is such an amazing item, tested and trusted</p>
 <br/>
 <br/>
-<button class="uk-button uk-button-neutral"><a className='a-off' href="/Items">See all deals</a></button>
+<button class="uk-button uk-button-default"><a className='a-off' href="/Items">See all deals</a></button>
 </div>
 </div>
 <h4 class="uk-heading-small uk-heading-bullet">Fall Dresses Under $60</h4>
@@ -208,14 +208,20 @@ function Home() {
 <div className=''>
 
  <img className='semi1-img'  src="https://images.pexels.com/photos/7037433/pexels-photo-7037433.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+ <br/>
+<button class="uk-button uk-button-default">Buy Now</button>
 
- <hr />
+ {/* <hr /> */}
 </div>
 <div className=''>
 <img className='semi1-img' src="https://images.pexels.com/photos/6816055/pexels-photo-6816055.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+<br/>
+<button class="uk-button uk-button-default">Buy Now</button>
 </div>
 <div className=''>
 <img className='semi1-img' src="https://images.pexels.com/photos/6816020/pexels-photo-6816020.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+<br/>
+<button class="uk-button uk-button-default">Buy Now</button>
 </div>
 
 
@@ -225,27 +231,25 @@ function Home() {
 <div className='semi-cont'>
 <div className='semi-1'>
     <img className='semi1-img' src="https://images.pexels.com/photos/2008388/pexels-photo-2008388.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+    <br/>
+<button class="uk-button uk-button-default">Buy Now</button>
 </div>
-<div className='semi-2'>
+{/* <div className='semi-2'>
 <img className='semi1-img' src="https://images.pexels.com/photos/5352635/pexels-photo-5352635.jpeg?auto=compress&cs=tinysrgb&w=1600" />
-</div>
+</div> */}
 <div className='semi-3'>
 <img className='semi1-img' src="https://images.pexels.com/photos/7037431/pexels-photo-7037431.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+<br/>
+<button class="uk-button uk-button-default">Buy Now</button>
 </div>
 <div className='semi-4'>
 <img className='semi1-img' src="https://images.pexels.com/photos/6500568/pexels-photo-6500568.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+<br/>
+<button class="uk-button uk-button-default">Buy Now</button>
 </div>
 </div>
 
-<div className='faq'>
-<div className='faq1'>FAQ
- <p>1. How do I place an order?</p>
- <p>2. What payment methods do you accept?</p>
- <p>3. How long does shipping take?</p>
- <p>4. Can I return or exchange a product?</p>
- <p>5. Are there any discounts or promotions available?</p>
- </div>
-</div>
+
 
 
 
@@ -260,11 +264,11 @@ function Home() {
   </a>
  
 </div> */}
-<hr class="uk-divider-icon"></hr>
+{/* <hr class="uk-divider-icon"></hr> */}
 {/* <div class="uk-padding uk-background-muted uk-width-1-2@s main-content-text">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 </div> */}
-<hr class="uk-divider-icon"></hr>
+{/* <hr class="uk-divider-icon"></hr> */}
 {/* <hr class="uk-divider-icon"></hr> */}
 
 {/* <div className="container">
@@ -274,7 +278,7 @@ function Home() {
   </a>
 
 </div> */}
-<hr class="uk-divider-icon"></hr>
+{/* <hr class="uk-divider-icon"></hr> */}
 <br/>
 {/* <div class="uk-padding uk-background-muted uk-width-1-2@s main-content-text">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -289,7 +293,7 @@ function Home() {
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 </div> */}
 
-<hr class="uk-divider-icon"></hr>
+{/* <hr class="uk-divider-icon"></hr> */}
 {/* <div class="uk-padding uk-background-muted uk-width-1-2@s main-content-text">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 </div> */}
@@ -304,7 +308,7 @@ function Home() {
 </div> */}
   <br/>
   <br/>
-  <hr class="uk-divider-icon"></hr>
+  {/* <hr class="uk-divider-icon"></hr> */}
 {/* <div id="box">
     <div class="top"></div>
     <div>
@@ -380,7 +384,7 @@ function Home() {
 
 
 
-  <hr class="uk-divider-icon"></hr>
+ 
   
   
 <button class="uk-button uk-button-default"><a href="" uk-totop>Top</a></button>

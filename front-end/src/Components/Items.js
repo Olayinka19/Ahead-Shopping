@@ -121,21 +121,19 @@ function Items() {
       <br /> 
       <div style={{ display: "flex", justifyContent: "center" }}>
 
-      <NavBar cartItems={cartItems} />
+      {/* <NavBar cartItems={cartItems} /> */}
       </div>
       <div >
-      {!orderSubmitted ? (
+      {/* {!orderSubmitted ? (
         <div >
           <CheckoutForm onSubmit={handleSubmit} />
-          <Cart cartItems={cartItems} /> {/* Display cart items */}
+         
         </div>
       ) : (
         <OrderConfirmation cartItems={cartItems} formData={formData} />
-      )}
+      )} */}
       {/* Other components */}
-      <div style={{ display: "flex", justifyContent: "center" }}>
-      <CustomerFeedback onSubmitFeedback={handleFeedbackSubmit} />
-      </div>
+      
   
 </div>
 <br />
