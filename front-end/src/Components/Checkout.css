@@ -1,4 +1,4 @@
-/* Checkout.css */
+
 .Checkout {
     background-color: #ffffff;
     border: 1px solid #d8d8d8;
@@ -36,16 +36,16 @@
     cursor: pointer;
   }
   
-  /* Checkout.css */
+
 .Checkout {
-    /* Existing styles */
-    opacity: 0; /* Start with 0 opacity */
-    transform: translateY(20px); /* Move component slightly down */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Add transition for opacity and transform */
+  
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 0.3s ease, transform 0.3s ease; 
   }
   
   .Checkout.show {
-    opacity: 1; /* Show component with full opacity */
-    transform: translateY(0); /* Reset transform */
+    opacity: 1; 
+    transform: translateY(0); 
   }
   
