@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div >
-        <video className='video' src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1800" height="1200" loop muted playsinline uk-video="autoplay: inview"></video>
+        {/* <video className='video' src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1800" height="1200" loop muted playsinline uk-video="autoplay: inview"></video> */}
 
        {/* Slider */}
        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider="autoplay: true">
@@ -203,7 +203,7 @@ function Home() {
 <img className='semi1-img' src="https://img.freepik.com/premium-photo/woman-is-holding-shopping-bags-sign-that-says-shopping_772412-4568.jpg" />
 </div>
 </marquee> */}
-<h4 class="uk-heading-small uk-heading-bullet">Limited-Time Offer: Shop Ahead and Save Big!</h4>
+
 <div className='trending-container'>
 <div className=''>
 
@@ -227,7 +227,8 @@ function Home() {
 
 </div>
 
-<h4 class="uk-heading-small uk-heading-bullet">Limited-Time Offer: Shop Ahead and Save Big!</h4>
+
+<h1 class="uk-heading-small uk-heading-bullet">Limited-Time Offer: Shop Ahead and Save Big!</h1>
 <div className='semi-cont'>
 <div className='semi-1'>
     <img className='semi1-img' src="https://images.pexels.com/photos/2008388/pexels-photo-2008388.jpeg?auto=compress&cs=tinysrgb&w=1600" />
@@ -254,74 +255,11 @@ function Home() {
 
 
 
-{/* <div class="uk-padding uk-background-muted uk-width-1-2@s main-content-text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-</div> */}
-<div className="container">
-<a href="#">
-  <img  className='main-content' src="https://images.pexels.com/photos/17917173/pexels-photo-17917173/free-photo-of-young-man-and-woman-posing-in-gym-clothing.jpeg?auto=compress&cs=tinysrgb&w=1600"></img>
-  <button class="uk-button uk-button-default">Button</button>
-  </a>
+
+  <br/>
+  <br/>
  
-</div>
-{/* <hr class="uk-divider-icon"></hr> */}
-{/* <div class="uk-padding uk-background-muted uk-width-1-2@s main-content-text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-</div> */}
-{/* <hr class="uk-divider-icon"></hr> */}
-{/* <hr class="uk-divider-icon"></hr> */}
 
-{/* <div className="container">
-<a href="#">
-  <img  className='main-content' src="https://images.pexels.com/photos/17850454/pexels-photo-17850454/free-photo-of-young-man-in-a-casual-trendy-outfit-posing-in-studio-on-yellow-background.jpeg?auto=compress&cs=tinysrgb&w=1600"></img>
-  <button class="uk-button uk-button-default">Button</button>
-  </a>
-
-</div> */}
-{/* <hr class="uk-divider-icon"></hr> */}
-<br/>
-{/* <div class="uk-padding uk-background-muted uk-width-1-2@s main-content-text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-</div> */}
-{/* <div className="container">
-<a href="#">
-  <img  className='main-content' src="https://images.pexels.com/photos/17862339/pexels-photo-17862339/free-photo-of-man-with-backpack-holding-camera.jpeg?auto=compress&cs=tinysrgb&w=1600"></img>
-  <button class="uk-button uk-button-default">Button</button>
-  </a>
-</div> */}
-{/* <div class="uk-padding uk-background-muted uk-width-1-2@s main-content-text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-</div> */}
-
-{/* <hr class="uk-divider-icon"></hr> */}
-{/* <div class="uk-padding uk-background-muted uk-width-1-2@s main-content-text">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-</div> */}
-{/* <div className="container">
-<a href="#">
-  <img  className='main-content' src="https://images.pexels.com/photos/17840324/pexels-photo-17840324/free-photo-of-man-in-vest-and-shadow-on-wall.jpeg?auto=compress&cs=tinysrgb&w=1600"></img>
-  <button class="uk-button uk-button-default">Button</button>
-  </a>
-</div> */}
-{/* <div class="uk-padding uk-background-muted uk-width-1-2@s">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-</div> */}
-  <br/>
-  <br/>
-  {/* <hr class="uk-divider-icon"></hr> */}
-{/* <div id="box">
-    <div class="top"></div>
-    <div>
-     <span></span>
-     <span>
-        <i class='tape'></i>
-     </span>
-     <span></span>
-     <span>
-        <i class='tape'></i>
-     </span>
-   </div>
-  </div> */}
 
 
 
@@ -384,11 +322,109 @@ function Home() {
 
 
 
- 
-  
-  
-<button class="uk-button uk-button-default"><a href="" uk-totop>Top</a></button>
+ <h1 class="uk-heading-small uk-heading-bullet">Best Sellers in Grocery & Food</h1>
+ <div className="bestSellers" >
+ <img className='sellers' src=" https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b96c2b7-6ff7-4ed6-b3bb-3d2793cfaed7/dgbpkuq-7ba207b2-0f1d-4f88-b409-effea2812e83.jpg/v1/fit/w_828,h_1060,q_70,strp/an_angel_for_the_holy_land_by_hylanvahr_dgbpkuq-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMxMiIsInBhdGgiOiJcL2ZcLzliOTZjMmI3LTZmZjctNGVkNi1iM2JiLTNkMjc5M2NmYWVkN1wvZGdicGt1cS03YmEyMDdiMi0wZjFkLTRmODgtYjQwOS1lZmZlYTI4MTJlODMuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.5N8YScgnEsymB9-pnmNA3VVpgGTG2eEbyAmM7TlaxMs" />
+ <img className='sellers' src=" https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b96c2b7-6ff7-4ed6-b3bb-3d2793cfaed7/dgdhqcg-7bfc29c2-8498-4758-8640-fe61123f9f22.jpg/v1/fit/w_828,h_1210,q_70,strp/scryer__the_hand_of_thoth_by_hylanvahr_dgdhqcg-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ5NiIsInBhdGgiOiJcL2ZcLzliOTZjMmI3LTZmZjctNGVkNi1iM2JiLTNkMjc5M2NmYWVkN1wvZGdkaHFjZy03YmZjMjljMi04NDk4LTQ3NTgtODY0MC1mZTYxMTIzZjlmMjIuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.6bj7ojjKTjv7IR9t5x78OA2-G92qWBStYY6VIhnxtRw" />
+ <img className="sellers" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b96c2b7-6ff7-4ed6-b3bb-3d2793cfaed7/dgbd6it-1c9bd867-0d08-4c3d-bc14-5ba729920f09.jpg/v1/fit/w_828,h_1210,q_70,strp/forever_red_by_hylanvahr_dgbd6it-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ5NiIsInBhdGgiOiJcL2ZcLzliOTZjMmI3LTZmZjctNGVkNi1iM2JiLTNkMjc5M2NmYWVkN1wvZGdiZDZpdC0xYzliZDg2Ny0wZDA4LTRjM2QtYmMxNC01YmE3Mjk5MjBmMDkuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.vRgoR0xVOd4XRB6uwCaCQbMekI-PaKupAingVai4LQ4 " />
+ <img className="sellers" src=" " />
+ <img className="sellers" src=" " />
+ <img className='sellers' src=" " />
+ <img className='sellers' src=" " />
+ <img className='sellers' src=" " />
 
+ </div>
+ <br/>
+<h1 class="uk-heading-small uk-heading-bullet">Ahead Live | Store Streams</h1>
+ <div className='ahead-live' >
+ <iframe src="https://www.youtube.com/watch?v=ScKCy2udln8&t=449s&ab_channel=freeCodeCamp.org" width="300px" height="300px" />
+
+ 
+ <img className="ahead-live-sellers" src=" " />
+ <img className="ahead-live-sellers" src=" " />
+ <img className='ahead-live-sellers' src=" " />
+ <img className='ahead-live-sellers' src=" " />
+ <img className='ahead-live-ellers' src=" " />
+
+ </div>
+  
+  <br/>
+  <h1 class="uk-heading-small uk-heading-bullet">Best Sellers in Books</h1>
+  <div>
+  <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+    <li>
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b96c2b7-6ff7-4ed6-b3bb-3d2793cfaed7/dgbd6it-1c9bd867-0d08-4c3d-bc14-5ba729920f09.jpg/v1/fit/w_828,h_1210,q_70,strp/forever_red_by_hylanvahr_dgbd6it-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ5NiIsInBhdGgiOiJcL2ZcLzliOTZjMmI3LTZmZjctNGVkNi1iM2JiLTNkMjc5M2NmYWVkN1wvZGdiZDZpdC0xYzliZDg2Ny0wZDA4LTRjM2QtYmMxNC01YmE3Mjk5MjBmMDkuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.vRgoR0xVOd4XRB6uwCaCQbMekI-PaKupAingVai4LQ4" width="400" height="400" alt="" />
+        <div class="uk-position-center uk-panel"><h1>1</h1></div>
+    </li>
+    <li>
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b96c2b7-6ff7-4ed6-b3bb-3d2793cfaed7/dgbd6it-1c9bd867-0d08-4c3d-bc14-5ba729920f09.jpg/v1/fit/w_828,h_1210,q_70,strp/forever_red_by_hylanvahr_dgbd6it-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ5NiIsInBhdGgiOiJcL2ZcLzliOTZjMmI3LTZmZjctNGVkNi1iM2JiLTNkMjc5M2NmYWVkN1wvZGdiZDZpdC0xYzliZDg2Ny0wZDA4LTRjM2QtYmMxNC01YmE3Mjk5MjBmMDkuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.vRgoR0xVOd4XRB6uwCaCQbMekI-PaKupAingVai4LQ4" width="400" height="400" alt="" />
+        <div class="uk-position-center uk-panel"><h1>2</h1></div>
+    </li>
+    <li>
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b96c2b7-6ff7-4ed6-b3bb-3d2793cfaed7/dgbd6it-1c9bd867-0d08-4c3d-bc14-5ba729920f09.jpg/v1/fit/w_828,h_1210,q_70,strp/forever_red_by_hylanvahr_dgbd6it-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ5NiIsInBhdGgiOiJcL2ZcLzliOTZjMmI3LTZmZjctNGVkNi1iM2JiLTNkMjc5M2NmYWVkN1wvZGdiZDZpdC0xYzliZDg2Ny0wZDA4LTRjM2QtYmMxNC01YmE3Mjk5MjBmMDkuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.vRgoR0xVOd4XRB6uwCaCQbMekI-PaKupAingVai4LQ4" width="400" height="400" alt="" />
+        <div class="uk-position-center uk-panel"><h1>3</h1></div>
+    </li>
+    <li>
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b96c2b7-6ff7-4ed6-b3bb-3d2793cfaed7/dgbd6it-1c9bd867-0d08-4c3d-bc14-5ba729920f09.jpg/v1/fit/w_828,h_1210,q_70,strp/forever_red_by_hylanvahr_dgbd6it-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ5NiIsInBhdGgiOiJcL2ZcLzliOTZjMmI3LTZmZjctNGVkNi1iM2JiLTNkMjc5M2NmYWVkN1wvZGdiZDZpdC0xYzliZDg2Ny0wZDA4LTRjM2QtYmMxNC01YmE3Mjk5MjBmMDkuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.vRgoR0xVOd4XRB6uwCaCQbMekI-PaKupAingVai4LQ4" width="400" height="400" alt="" />
+        <div class="uk-position-center uk-panel"><h1>4</h1></div>
+    </li>
+  
+   
+    
+   
+   
+</ul>
+
+<a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous uk-slider-item="previous"></a>
+<a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next uk-slider-item="next"></a>
+
+</div>
+<br />
+<h1 class="uk-heading-small uk-heading-bullet">Best Sellers in Movies</h1>
+<div className="last-clothing">
+    <div className="clothing-1">
+    <h1>Get the movie</h1>
+    <img className="clothing-1-image" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b96c2b7-6ff7-4ed6-b3bb-3d2793cfaed7/dgbd6it-1c9bd867-0d08-4c3d-bc14-5ba729920f09.jpg/v1/fit/w_828,h_1210,q_70,strp/forever_red_by_hylanvahr_dgbd6it-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ5NiIsInBhdGgiOiJcL2ZcLzliOTZjMmI3LTZmZjctNGVkNi1iM2JiLTNkMjc5M2NmYWVkN1wvZGdiZDZpdC0xYzliZDg2Ny0wZDA4LTRjM2QtYmMxNC01YmE3Mjk5MjBmMDkuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.vRgoR0xVOd4XRB6uwCaCQbMekI-PaKupAingVai4LQ4 " />
+    <button className='clothing-btn'>Get Movie</button>
+    </div>
+
+    <div className="clothing-1">
+    <h1>Get the movie</h1>
+    <img className="clothing-1-image" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b96c2b7-6ff7-4ed6-b3bb-3d2793cfaed7/dgbd6it-1c9bd867-0d08-4c3d-bc14-5ba729920f09.jpg/v1/fit/w_828,h_1210,q_70,strp/forever_red_by_hylanvahr_dgbd6it-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ5NiIsInBhdGgiOiJcL2ZcLzliOTZjMmI3LTZmZjctNGVkNi1iM2JiLTNkMjc5M2NmYWVkN1wvZGdiZDZpdC0xYzliZDg2Ny0wZDA4LTRjM2QtYmMxNC01YmE3Mjk5MjBmMDkuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.vRgoR0xVOd4XRB6uwCaCQbMekI-PaKupAingVai4LQ4 " />
+    <button className='clothing-btn'>Get Movie</button>
+    </div>
+
+    <div className="clothing-1">
+    <h1>Get the movie</h1>
+    <img className="clothing-1-image" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b96c2b7-6ff7-4ed6-b3bb-3d2793cfaed7/dgbd6it-1c9bd867-0d08-4c3d-bc14-5ba729920f09.jpg/v1/fit/w_828,h_1210,q_70,strp/forever_red_by_hylanvahr_dgbd6it-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ5NiIsInBhdGgiOiJcL2ZcLzliOTZjMmI3LTZmZjctNGVkNi1iM2JiLTNkMjc5M2NmYWVkN1wvZGdiZDZpdC0xYzliZDg2Ny0wZDA4LTRjM2QtYmMxNC01YmE3Mjk5MjBmMDkuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.vRgoR0xVOd4XRB6uwCaCQbMekI-PaKupAingVai4LQ4 " />
+    <button className='clothing-btn'>Get Movie</button>
+    </div>
+
+    <div className="clothing-1">
+    <h1>Get the movie</h1>
+    <img className="clothing-1-image" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b96c2b7-6ff7-4ed6-b3bb-3d2793cfaed7/dgbd6it-1c9bd867-0d08-4c3d-bc14-5ba729920f09.jpg/v1/fit/w_828,h_1210,q_70,strp/forever_red_by_hylanvahr_dgbd6it-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ5NiIsInBhdGgiOiJcL2ZcLzliOTZjMmI3LTZmZjctNGVkNi1iM2JiLTNkMjc5M2NmYWVkN1wvZGdiZDZpdC0xYzliZDg2Ny0wZDA4LTRjM2QtYmMxNC01YmE3Mjk5MjBmMDkuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.vRgoR0xVOd4XRB6uwCaCQbMekI-PaKupAingVai4LQ4 " />
+    <button className='clothing-btn'>Get Movie</button>
+    </div>
+</div>
+  </div>
+  <br/>
+  <h1 class="uk-heading-small uk-heading-bullet">Best Sellers in Clothing, shoes and jeweries</h1>
+ <div className="bestSellers" >
+ <img className='sellers' src=" https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b96c2b7-6ff7-4ed6-b3bb-3d2793cfaed7/dgbpkuq-7ba207b2-0f1d-4f88-b409-effea2812e83.jpg/v1/fit/w_828,h_1060,q_70,strp/an_angel_for_the_holy_land_by_hylanvahr_dgbpkuq-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMxMiIsInBhdGgiOiJcL2ZcLzliOTZjMmI3LTZmZjctNGVkNi1iM2JiLTNkMjc5M2NmYWVkN1wvZGdicGt1cS03YmEyMDdiMi0wZjFkLTRmODgtYjQwOS1lZmZlYTI4MTJlODMuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.5N8YScgnEsymB9-pnmNA3VVpgGTG2eEbyAmM7TlaxMs" />
+ <img className='sellers' src=" https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b96c2b7-6ff7-4ed6-b3bb-3d2793cfaed7/dgdhqcg-7bfc29c2-8498-4758-8640-fe61123f9f22.jpg/v1/fit/w_828,h_1210,q_70,strp/scryer__the_hand_of_thoth_by_hylanvahr_dgdhqcg-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ5NiIsInBhdGgiOiJcL2ZcLzliOTZjMmI3LTZmZjctNGVkNi1iM2JiLTNkMjc5M2NmYWVkN1wvZGdkaHFjZy03YmZjMjljMi04NDk4LTQ3NTgtODY0MC1mZTYxMTIzZjlmMjIuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.6bj7ojjKTjv7IR9t5x78OA2-G92qWBStYY6VIhnxtRw" />
+ <img className="sellers" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b96c2b7-6ff7-4ed6-b3bb-3d2793cfaed7/dgbd6it-1c9bd867-0d08-4c3d-bc14-5ba729920f09.jpg/v1/fit/w_828,h_1210,q_70,strp/forever_red_by_hylanvahr_dgbd6it-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ5NiIsInBhdGgiOiJcL2ZcLzliOTZjMmI3LTZmZjctNGVkNi1iM2JiLTNkMjc5M2NmYWVkN1wvZGdiZDZpdC0xYzliZDg2Ny0wZDA4LTRjM2QtYmMxNC01YmE3Mjk5MjBmMDkuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.vRgoR0xVOd4XRB6uwCaCQbMekI-PaKupAingVai4LQ4 " />
+ <img className="sellers" src=" " />
+ <img className="sellers" src=" " />
+ <img className='sellers' src=" " />
+ <img className='sellers' src=" " />
+ <img className='sellers' src=" " />
+
+ </div>
+ <br />
+<button class="uk-button uk-button-default"><a href="" uk-totop>Back To Top</a></button>
+<br/>
     </div>
   )
 }
