@@ -257,13 +257,13 @@ function Home() {
 {/* <div class="uk-padding uk-background-muted uk-width-1-2@s main-content-text">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 </div> */}
-{/* <div className="container">
+<div className="container">
 <a href="#">
   <img  className='main-content' src="https://images.pexels.com/photos/17917173/pexels-photo-17917173/free-photo-of-young-man-and-woman-posing-in-gym-clothing.jpeg?auto=compress&cs=tinysrgb&w=1600"></img>
   <button class="uk-button uk-button-default">Button</button>
   </a>
  
-</div> */}
+</div>
 {/* <hr class="uk-divider-icon"></hr> */}
 {/* <div class="uk-padding uk-background-muted uk-width-1-2@s main-content-text">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
