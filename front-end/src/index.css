@@ -15,16 +15,26 @@ code {
     monospace;
 }
 .ahead-items{
- 
-  display: flex;
+
+  display: flex !important;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
+.item-btn{
+  width:700px;
+  height:70px;
+  border-radius:12px;
+  -webkit-border-radius:12px;
+  -moz-border-radius:12px;
+  -ms-border-radius:12px;
+  -o-border-radius:12px;
+}
 .ahead-item-container{
- width:400px;
- height:580px;
- background-color:white;
+ width:800px;
+ height:950px;
+ padding:20px;
+ background-color:rgb(9, 9, 9);
  border:2px solid;
  border-radius:12px;
  -webkit-border-radius:12px;
@@ -38,8 +48,8 @@ code {
 
 }
 .image_item{
-  width:400px !important;
-  height: 400px  !important;
+  width:750px !important;
+  height: 600px  !important;
 }
 
 .trending-container{
@@ -471,10 +481,49 @@ justify-content: space-around;
   .page{
     object-fit: cover;
   }
+  .item-btn{
+    width:150px;
+    height:100px;
+    border-radius:12px;
+    -webkit-border-radius:12px;
+    -moz-border-radius:12px;
+    -ms-border-radius:12px;
+    -o-border-radius:12px;
+  }
+  .ahead-item-container{
+    width:300px;
+    height:750px;
+    padding:20px;
+    background-color:rgb(9, 9, 9);
+    border:2px solid;
+    border-radius:12px;
+    -webkit-border-radius:12px;
+    -moz-border-radius:12px;
+    -ms-border-radius:12px;
+    -o-border-radius:12px;
+   }
+   .ahead-item-container img{
+     max-width: 100%;
+     height: auto;
+   
+   }
+   .image_item{
+     width:750px !important;
+     height: 600px  !important;
+   }
   .slider{
     width:600px;
     height:500px;
     /* background-color: #f44336; */
+  }
+  .item-btn{
+    width:120px;
+    height:70px;
+    border-radius:12px;
+    -webkit-border-radius:12px;
+    -moz-border-radius:12px;
+    -ms-border-radius:12px;
+    -o-border-radius:12px;
   }
 }
 /* For iPhone XR, and iPhone 11: */
@@ -486,6 +535,15 @@ justify-content: space-around;
   width: 600px;
   height: 500px;
 
+}
+.item-btn{
+  width:80px;
+  height:80px;
+  border-radius:12px;
+  -webkit-border-radius:12px;
+  -moz-border-radius:12px;
+  -ms-border-radius:12px;
+  -o-border-radius:12px;
 }
 .Trend{
   display: grid !important;
@@ -725,6 +783,7 @@ span:nth-child(4) .tape
 
     }
 
+
     @media only screen 
     and (width: 375px) 
     and (height: 667px) 
@@ -733,6 +792,15 @@ span:nth-child(4) .tape
   width: 600px;
   height: 500px;
 
+  .item-btn{
+    width:70px;
+    height:70px;
+    border-radius:12px;
+    -webkit-border-radius:12px;
+    -moz-border-radius:12px;
+    -ms-border-radius:12px;
+    -o-border-radius:12px;
+  }
 }
 .video{
   width:450px !important;
@@ -1071,6 +1139,15 @@ span:nth-child(4) .tape
         width: 500px;
         height: 400px;
       
+}
+.item-btn{
+  width:70px;
+  height:70px;
+  border-radius:12px;
+  -webkit-border-radius:12px;
+  -moz-border-radius:12px;
+  -ms-border-radius:12px;
+  -o-border-radius:12px;
 }
 .Trend{
   display: flex !important;

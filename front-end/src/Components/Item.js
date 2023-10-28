@@ -69,18 +69,20 @@ function Item({ item, addToCart, ratings, comments , reviews ,setReviews}) {
      
       <div className="ahead-item-container">
       <Link to={`/items/${item.id}`}>
-     <img className="uk-card uk-card-default uk-card-body uk-animation-slide-left image_item" src={item.image_url} alt={item.name}  />
+     <img className=" image_item" src={item.image_url} alt={item.name}  />
       </Link>
 
-      
+      <br/>
       <div className="">
-      <h3>{item.name}</h3>
-      <p>${item.price}</p>
-      <button class="uk-button uk-button-primary" onClick={addToCart}><a href="/Cart"></a>Add to Cart</button>
+      <h3>Category: {item.name}</h3>
+      <br/>
+      <h3>Price: ${item.price}</h3>
+      <br/>
+      <button class="item-btn uk-button uk-button-primary" onClick={addToCart}><a href="/Cart"></a>Add to Cart</button>
       </div>
       <br/>
       {/* <StarRating rating={item.average_rating} /> */}
-      <Link to={`/items/${item.id}`}><button class="uk-button uk-button-danger">Buy Now</button></Link>
+      <Link to={`/items/${item.id}`}><button class=" item-btn uk-button uk-button-primary">Buy Now</button></Link>
       
       </div>
       
