@@ -34,3 +34,15 @@ INSERT INTO items (name, price , quantity , image_url , description, category) V
   
  
   
+INSERT INTO mens(
+ name, brand, size , price , instock, image
+) VALUES (
+    'T-Shirt, 'Nike' , 'XS S M L XL', 150 , 50 , 'https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' ' 
+
+)
+INSERT INTO womens(
+ name, brand, size , price , instock, image
+) VALUES (
+    'T-Shirt, 'Nike' , 'XS S M L XL', 150 , 50 , 'https://images.pexels.com/photos/8485730/pexels-photo-8485730.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' ' 
+
+)

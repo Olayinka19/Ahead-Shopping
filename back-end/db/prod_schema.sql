@@ -13,6 +13,23 @@ CREATE TABLE items (
   category VARCHAR(255) NOT NULL
 );
 
+CREATE Table mens(
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  brand VARCHAR(255) NOT NULL,
+  size INTEGER NOT NULL,
+  price INTEGER NOT NULL,
+  instock BOOLEAN NOT NULL
+)
+CREATE Table womens(
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  brand VARCHAR(255) NOT NULL,
+  size INTEGER NOT NULL,
+  price INTEGER NOT NULL,
+  instock BOOLEAN NOT NULL
+)
+
 CREATE TABLE reviews (
   id SERIAL PRIMARY KEY,
   reviewer VARCHAR(255),

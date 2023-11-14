@@ -47,9 +47,9 @@ function Home() {
             {/* <div class="uk-position-center uk-panel"><h1>8</h1></div> */}
         </li>
         <li>
-            {/* <img className='Slide' src="https://img.freepik.com/free-photo/young-adults-embrace-fashionable-city-night-generated-by-ai_188544-38888.jpg"  alt="" /> */}
-            {/* <div class="uk-position-center uk-panel"><h1>9</h1></div> */}
-        </li>
+            <img className='Slide' src="https://img.freepik.com/free-photo/young-adults-embrace-fashionable-city-night-generated-by-ai_188544-38888.jpg"  alt="" /> 
+            {/* <div class="uk-position-center uk-panel"><h1>9</h1></div>
+        </li> 
         <li>
             {/* <img className='Slide' src="https://img.freepik.com/free-photo/two-women-are-standing-outside-store-one-them-is-wearing-green-jacket_1340-38174.jpg"  alt="" /> */}
             {/* <div class="uk-position-center uk-panel"><h1>10</h1></div> */}
@@ -68,30 +68,30 @@ function Home() {
 
 
 
-<hr class="uk-divider-icon"></hr>
-<h1 className='trend uk-heading-small uk-heading-bullet'>Trending Products</h1>
+{/* <hr class="uk-divider-icon"></hr> */}
+<h4 class="clothing-btn uk-heading-small ">Trending Products</h4>
 <div className='Trend'>
 <div className='content-1'>
-<h3>Women's dress under $40</h3>
+<h3 className='clothing-btn'>Women's dress under $100</h3>
 <div className='w-container'>
 <div className='w-d-1'>
- <img src ="https://img.freepik.com/free-photo/denim-jacket-wooden-table-workshop-generated-by-ai_188544-37291.jpg" className='w-img' />
- <a href="/Items"><h5>Jacket</h5></a>
+ <img src ="https://m.media-amazon.com/images/I/81A8w8ndNZL._AC_UL640_FMwebp_QL65_.jpg" className='w-img' />
+ <a href="/Items"><h5 className='clothing-btn'>Faux Suede</h5></a>
 </div>
 <div className="w-d-2">
-<img src ="https://img.freepik.com/free-photo/young-adult-athlete-exercising-yellow-raincoat-generated-by-ai_188544-40053.jpg" className='w-img-2' />
-<a href="/Items"><h5>Hoodie</h5></a>
+<img src ="https://m.media-amazon.com/images/I/71vPL6iW5oL._AC_UL640_FMwebp_QL65_.jpg" className='w-img-2' />
+<a href="/Items"><h5 className='clothing-btn'>Quilted Jacket</h5></a>
 
 </div>
 <div className="w-d-3">
-<img src ="https://img.freepik.com/free-photo/smiling-child-playing-wet-snow-generated-by-ai_188544-33131.jpg" className='w-img-2' />
+<img src ="https://m.media-amazon.com/images/I/810NyDjBwCL._AC_UL640_FMwebp_QL65_.jpg" className='w-img-2' />
  
- <a href="/Items"><h5>Sweaters</h5></a>
+ <a href="/Items"><h5 className='clothing-btn'>Sherpa Jacket</h5></a>
 
 </div>
 <div className="w-d-4">
-<img src ="https://img.freepik.com/free-photo/winter-warmth-with-knitted-woolen-mittens-generated-by-ai_188544-11160.jpg" className='w-img-4' />
- <h5 className='h-4'><a href="/Items">Head-scaff</a></h5>
+<img src ="https://m.media-amazon.com/images/I/71N8jBBw3AL._AC_UL640_FMwebp_QL65_.jpg" className='w-img-4' />
+ <h5 className='clothing-btn h-4'><a href="/Items">Water-Resistant</a></h5>
 
  </div>
  
@@ -103,21 +103,21 @@ function Home() {
 
 
 <div className='content-2'>
-<h3>Fall Dress Under $60</h3>
+<h3 className='clothing-btn'>Fall Dress Under $60</h3>
 <img className='img-cont' src="https://img.freepik.com/free-photo/portrait-smiling-man-snow_23-2150771181.jpg" />
 <div>
-    <div className='deal'>Up to 50% off</div>
+    <div className='clothing-btn deal'>Up to 50% off</div>
 </div> 
-<p>Product is such an amazing item, tested and trusted</p>
+<p className='clothing-btn'>Product is such an amazing item, tested and trusted</p>
 <br/>
 <br/>
-<button class="uk-button uk-button-link"><a className='a-off' href="/Items">See all deals</a></button>
+<button class="clothing-btn uk-button uk-button-link"><a className='a-off' href="/Items">See all deals</a></button>
 </div>
 <div className='content-3'>
-<h4>Top Deal</h4>
+<h4 className='clothing-btn'>Top Deal</h4>
 <img className='img-cont-3' src="https://img.freepik.com/free-photo/woven-wool-cardigan-sweater-multi-colored-pattern-generated-by-ai_188544-37136.jpg" />
 <div>
-    <div className='deal'>Up to 50% off</div>
+    <div className='clothing-btn deal'>Up to 50% off</div>
 </div> 
 <p>Product is such an amazing item, tested and trusted</p>
 <br/>
@@ -125,14 +125,15 @@ function Home() {
 <button class="uk-button uk-button-default"><a className='a-off' href="/Items">See all deals</a></button>
 </div>
 </div>
-<h4 class="uk-heading-small uk-heading-bullet">Fall Dresses Under $60</h4>
+<h4 class="clothing-btn uk-heading-small ">Fall Dresses Under $60</h4>
 <div className='second-container'>
     <div className='sub-cont'>
     <img className='img-cont' src="https://img.freepik.com/premium-photo/shot-young-man-woman-standing-together-cold-weather_762026-73225.jpg" />
 <div>
-    <div className='deal'>Up to 50% off</div>
+    <div className='clothing-btn deal'>Up to 50% off</div>
 </div> 
-<p>Product is such an amazing item, tested and trusted</p>
+
+<p className='clothing-btn'>Product is such an amazing item, tested and trusted</p>
 <br/>
 <br/>
 <button class="uk-button uk-button-warning"><a className='a-off' href="/Items">See all deals</a></button>
@@ -141,52 +142,52 @@ function Home() {
   </div>
   
     <div className='sub-cont-2'>
-        <h5>Fall Favorite Fashion</h5>
+        <h5 className='clothing-btn'>Fall Favorite Fashion</h5>
         <div className='w-container'>
 <div className='w-d-1'>
- <img src ="https://images.pexels.com/photos/1868735/pexels-photo-1868735.jpeg?auto=compress&cs=tinysrgb&w=1600" className='w-img' />
- <a href="/Items"><h5>Jacket</h5></a>
+ <img src ="https://m.media-amazon.com/images/I/71owDjjbaeL._AC_UL640_FMwebp_QL65_.jpg" className='w-img' />
+ <a href="/Items"><h5 className='clothing-btn'>Jacket</h5></a>
 </div>
 <div className="w-d-2">
 <img src ="https://images.pexels.com/photos/16170/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1600" className='w-img-2' />
-<a href="/Items"><h5>Hoodie</h5></a>
+<a href="/Items"><h5 className='clothing-btn'>Hoodie</h5></a>
 
 </div>
 <div className="w-d-3">
-<img src ="https://images.pexels.com/photos/905247/pexels-photo-905247.jpeg?auto=compress&cs=tinysrgb&w=1600" className='w-img-2' />
+<img src ="https://m.media-amazon.com/images/I/61YCt73E3sL._AC_UL640_FMwebp_QL65_.jpg" className='w-img-2' />
  
- <a href="/Items"><h5>Sweaters</h5></a>
+ <a href="/Items"><h5 className='clothing-btn'>Sweaters</h5></a>
 
 </div>
 <div className="w-d-4">
 <img src ="https://images.pexels.com/photos/1761683/pexels-photo-1761683.jpeg?auto=compress&cs=tinysrgb&w=1600" className='w-img-4' />
- <h5 className='h-4'><a href="/Items">Head-scaff</a></h5>
+ <h5 className='clothing-btn h-4'><a href="/Items">Head-scaff</a></h5>
 
  </div>
  
 </div>
     </div>
-    <div className='sub-cont-3'>Men's deals Under $40
+    <div className='clothing-btn sub-cont-3'>Men's deals Under $40
     
     <div className='w-container'>
 <div className='w-d-1'>
- <img src ="https://images.pexels.com/photos/1620654/pexels-photo-1620654.jpeg?auto=compress&cs=tinysrgb&w=1600" className='w-img' />
- <a href="/Items"><h5>Jacket</h5></a>
+ <img src ="https://m.media-amazon.com/images/I/81c502BwSDL._AC_UL640_FMwebp_QL65_.jpg" className='w-img' />
+ <a href="/Items"><h5 className='clothing-btn'>Water-Resistant</h5></a>
 </div>
 <div className="w-d-2">
-<img src ="https://images.pexels.com/photos/7037431/pexels-photo-7037431.jpeg?auto=compress&cs=tinysrgb&w=1600" className='w-img-2' />
-<a href="/Items"><h5>Hoodie</h5></a>
+<img src ="https://m.media-amazon.com/images/I/71BUr7zXEJL._AC_UL640_FMwebp_QL65_.jpg" className='w-img-2' />
+<a href="/Items"><h5 className='clothing-btn'>Tactical Jacket</h5></a>
 
 </div>
 <div className="w-d-3">
-<img src ="https://images.pexels.com/photos/1181498/pexels-photo-1181498.jpeg?auto=compress&cs=tinysrgb&w=1600" className='w-img-2' />
+<img src ="https://m.media-amazon.com/images/I/81IEG8E82wL._AC_UL640_FMwebp_QL65_.jpg" className='w-img-2' />
  
- <a href="/Items"><h5>Sweaters</h5></a>
+ <a href="/Items"><h5 className='clothing-btn'>Golf Jacket</h5></a>
 
 </div>
 <div className="w-d-4">
-<img src ="https://img.freepik.com/free-photo/winter-warmth-with-knitted-woolen-mittens-generated-by-ai_188544-11160.jpg" className='w-img-4' />
- <h5 className='h-4'><a href="/Items">Head-scaff</a></h5>
+<img src ="https://m.media-amazon.com/images/I/71zT0tJ2CjL._AC_UL640_FMwebp_QL65_.jpg" className='w-img-4' />
+ <h5 className= 'clothing-btn h-4'><a href="/Items">Thermal Jacket</a></h5>
 
  </div>
  
@@ -195,58 +196,48 @@ function Home() {
 </div>
 
 
-{/* <marquee>
-<div className='scroller'>
-<img className='semi1-img' src="https://media.istockphoto.com/id/1328315054/photo/woman-influencer-selling-clothes-online.jpg?b=1&s=612x612&w=0&k=20&c=D4aS_SivXOeeKQzpk-FOd583HrODtYUHHNXOMjAAe10=" />
-<img className='semi1-img' src="https://img.freepik.com/premium-photo/woman-is-holding-shopping-bags-sign-that-says-shopping_772412-4568.jpg" />
-<img className='semi1-img' src="https://img.freepik.com/premium-photo/woman-is-holding-shopping-bags-sign-that-says-shopping_772412-4568.jpg" />
-<img className='semi1-img' src="https://img.freepik.com/premium-photo/woman-is-holding-shopping-bags-sign-that-says-shopping_772412-4568.jpg" />
-</div>
-</marquee> */}
+
 
 <div className='trending-container'>
 <div className=''>
 
- <img className='semi1-img'  src="https://images.pexels.com/photos/7037433/pexels-photo-7037433.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+ <img className='semi1-img'  src="https://m.media-amazon.com/images/I/71CX6OXqbLL._AC_UL640_FMwebp_QL65_.jpg" />
  <br/>
-<button class="uk-button uk-button-default">Buy Now</button>
+<button class=" btn uk-button uk-button-default">Buy Now</button>
 
- {/* <hr /> */}
 </div>
 <div className=''>
-<img className='semi1-img' src="https://images.pexels.com/photos/6816055/pexels-photo-6816055.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+<img className='semi1-img' src="https://m.media-amazon.com/images/I/61IvqTyrR8S._AC_UL640_FMwebp_QL65_.jpg" />
 <br/>
-<button class="uk-button uk-button-default">Buy Now</button>
+<button class=" btn first-line:uk-button uk-button-default">Buy Now</button>
 </div>
 <div className=''>
-<img className='semi1-img' src="https://images.pexels.com/photos/6816020/pexels-photo-6816020.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+<img className='semi1-img' src="https://m.media-amazon.com/images/I/61XyfyFMxbL._AC_UL640_FMwebp_QL65_.jpg" />
 <br/>
-<button class="uk-button uk-button-default">Buy Now</button>
+<button class="btn uk-button uk-button-default">Buy Now</button>
 </div>
 
 
 </div>
 
 
-<h1 class="uk-heading-small uk-heading-bullet">Limited-Time Offer: Shop Ahead and Save Big!</h1>
+<h1 class="clothing-btn uk-heading-small ">Limited-Time Offer: Shop Ahead and Save Big!</h1>
 <div className='semi-cont'>
 <div className='semi-1'>
-    <img className='semi1-img' src="https://images.pexels.com/photos/2008388/pexels-photo-2008388.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+    <img className='semi1-img' src="https://m.media-amazon.com/images/I/610WM+-SQBL._AC_UY436_QL65_.jpg" />
     <br/>
-<button class="uk-button uk-button-default">Buy Now</button>
+<button  class="btn uk-button uk-button-default">Buy Now</button>
 </div>
-{/* <div className='semi-2'>
-<img className='semi1-img' src="https://images.pexels.com/photos/5352635/pexels-photo-5352635.jpeg?auto=compress&cs=tinysrgb&w=1600" />
-</div> */}
+
 <div className='semi-3'>
-<img className='semi1-img' src="https://images.pexels.com/photos/7037431/pexels-photo-7037431.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+<img className='semi1-img' src="https://m.media-amazon.com/images/I/6181N8ZKgtL._AC_UY436_QL65_.jpg" />
 <br/>
-<button class="uk-button uk-button-default">Buy Now</button>
+<button class="btn uk-button uk-button-default">Buy Now</button>
 </div>
 <div className='semi-4'>
-<img className='semi1-img' src="https://images.pexels.com/photos/6500568/pexels-photo-6500568.jpeg?auto=compress&cs=tinysrgb&w=1600" />
+<img className='semi1-img' src="https://m.media-amazon.com/images/I/61kLRcroWtL._AC_UY436_QL65_.jpg" />
 <br/>
-<button class="uk-button uk-button-default">Buy Now</button>
+<button class="btn uk-button uk-button-default">Buy Now</button>
 </div>
 </div>
 
@@ -322,52 +313,56 @@ function Home() {
 
 
 
- <h1 class="uk-heading-small uk-heading-bullet">Best Sellers in Grocery & Food</h1>
+ <h1 class="clothing-btn uk-heading-small ">Best Sellers in Grocery & Food</h1>
+ <marquee>
  <div className="bestSellers" >
- <img className='sellers' src=" https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b96c2b7-6ff7-4ed6-b3bb-3d2793cfaed7/dgbpkuq-7ba207b2-0f1d-4f88-b409-effea2812e83.jpg/v1/fit/w_828,h_1060,q_70,strp/an_angel_for_the_holy_land_by_hylanvahr_dgbpkuq-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMxMiIsInBhdGgiOiJcL2ZcLzliOTZjMmI3LTZmZjctNGVkNi1iM2JiLTNkMjc5M2NmYWVkN1wvZGdicGt1cS03YmEyMDdiMi0wZjFkLTRmODgtYjQwOS1lZmZlYTI4MTJlODMuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.5N8YScgnEsymB9-pnmNA3VVpgGTG2eEbyAmM7TlaxMs" />
- <img className='sellers' src=" https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b96c2b7-6ff7-4ed6-b3bb-3d2793cfaed7/dgdhqcg-7bfc29c2-8498-4758-8640-fe61123f9f22.jpg/v1/fit/w_828,h_1210,q_70,strp/scryer__the_hand_of_thoth_by_hylanvahr_dgdhqcg-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ5NiIsInBhdGgiOiJcL2ZcLzliOTZjMmI3LTZmZjctNGVkNi1iM2JiLTNkMjc5M2NmYWVkN1wvZGdkaHFjZy03YmZjMjljMi04NDk4LTQ3NTgtODY0MC1mZTYxMTIzZjlmMjIuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.6bj7ojjKTjv7IR9t5x78OA2-G92qWBStYY6VIhnxtRw" />
- <img className="sellers" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b96c2b7-6ff7-4ed6-b3bb-3d2793cfaed7/dgbd6it-1c9bd867-0d08-4c3d-bc14-5ba729920f09.jpg/v1/fit/w_828,h_1210,q_70,strp/forever_red_by_hylanvahr_dgbd6it-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ5NiIsInBhdGgiOiJcL2ZcLzliOTZjMmI3LTZmZjctNGVkNi1iM2JiLTNkMjc5M2NmYWVkN1wvZGdiZDZpdC0xYzliZDg2Ny0wZDA4LTRjM2QtYmMxNC01YmE3Mjk5MjBmMDkuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.vRgoR0xVOd4XRB6uwCaCQbMekI-PaKupAingVai4LQ4 " />
- <img className="sellers" src=" " />
- <img className="sellers" src=" " />
- <img className='sellers' src=" " />
- <img className='sellers' src=" " />
- <img className='sellers' src=" " />
+  <img className='sellers' src=" https://m.media-amazon.com/images/I/71DhrQk0BXL._SX679_PIbundle-10,TopRight,0,0_SX679SY541SH20_.jpg" />
+ <img className='sellers' src=" https://m.media-amazon.com/images/I/819nEBi+uIL._AC_UL640_FMwebp_QL65_.jpg" />
+ <img className="sellers" src="https://m.media-amazon.com/images/I/81FJ6bkzhxL._AC_UL640_FMwebp_QL65_.jpg " />
+ <img className="sellers" src="https://m.media-amazon.com/images/I/917mQRphu5L._AC_UL640_FMwebp_QL65_.jpg " />
+ <img className="sellers" src=" https://m.media-amazon.com/images/I/71B7nJt7KqL._AC_UL640_FMwebp_QL65_.jpg" />
+ <img className='sellers' src="https://m.media-amazon.com/images/I/716K7XEhiqL._AC_UL640_FMwebp_QL65_.jpg " />
+ <img className='sellers' src="https://m.media-amazon.com/images/I/71Ib0KQ26nL._AC_UL640_FMwebp_QL65_.jpg " />
+ <img className='sellers' src="https://m.media-amazon.com/images/I/81MAeXwh79L._AC_UL640_FMwebp_QL65_.jpg " />
+
 
  </div>
+ </marquee>
  <br/>
-<h1 class="uk-heading-small uk-heading-bullet">Ahead Live | Store Streams</h1>
+<h1 class="h-1 uk-heading-small ">Ahead Live | Store Streams</h1>
  <div className='ahead-live' >
- <iframe src="https://www.youtube.com/watch?v=ScKCy2udln8&t=449s&ab_channel=freeCodeCamp.org" width="300px" height="300px" />
+ {/* <iframe src="https://www.youtube.com/watch?v=GIb1I4BwRr8&ab_channel=APATATV%2B" width="300px" height="300px"></iframe> */}
 
+ <a href="https://www.amazon.com/NBCUniversal-Media-LLC-NBC-Sports/dp/B01923M8T6/ref=sr_1_31?crid=153DNHBP5GHXU&keywords=sports+streaming&qid=1698547515&sprefix=sports+streaming%2Caps%2C115&sr=8-31"><img className="ahead-live-sellers" src="https://m.media-amazon.com/images/I/51heoqzIRkL._AC_UY436_FMwebp_QL65_.png " /></a>
  
- <img className="ahead-live-sellers" src=" " />
- <img className="ahead-live-sellers" src=" " />
- <img className='ahead-live-sellers' src=" " />
- <img className='ahead-live-sellers' src=" " />
- <img className='ahead-live-ellers' src=" " />
+ <img className="ahead-live-sellers" src="https://m.media-amazon.com/images/I/714AjbU333L._AC_UY436_FMwebp_QL65_.jpg " />
+ <img className="ahead-live-sellers" src="https://m.media-amazon.com/images/I/81mJZ01VVtL._AC_UY436_FMwebp_QL65_.jpg " />
+ <img className='ahead-live-sellers' src="https://m.media-amazon.com/images/I/816YjfPUoaL._AC_UY436_QL65_.jpg " />
+ {/* <img className='ahead-live-sellers' src="https://m.media-amazon.com/images/I/71u8UY71YML._AC_UY436_QL65_.jpg " /> */}
+ {/* <img className='ahead-live-ellers' src=" " /> */}
 
  </div>
   
   <br/>
-  <h1 class="uk-heading-small uk-heading-bullet">Best Sellers in Books</h1>
+  <h1 class="h-1 uk-heading-small ">Best Sellers in Books</h1>
   <div>
   <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
 
 <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
     <li>
-        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b96c2b7-6ff7-4ed6-b3bb-3d2793cfaed7/dgbd6it-1c9bd867-0d08-4c3d-bc14-5ba729920f09.jpg/v1/fit/w_828,h_1210,q_70,strp/forever_red_by_hylanvahr_dgbd6it-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ5NiIsInBhdGgiOiJcL2ZcLzliOTZjMmI3LTZmZjctNGVkNi1iM2JiLTNkMjc5M2NmYWVkN1wvZGdiZDZpdC0xYzliZDg2Ny0wZDA4LTRjM2QtYmMxNC01YmE3Mjk5MjBmMDkuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.vRgoR0xVOd4XRB6uwCaCQbMekI-PaKupAingVai4LQ4" width="400" height="400" alt="" />
+        <img src="https://m.media-amazon.com/images/I/61wH9jGaI8L._SY522_.jpg" width="400" height="400" alt="" />
         <div class="uk-position-center uk-panel"><h1>1</h1></div>
     </li>
     <li>
-        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b96c2b7-6ff7-4ed6-b3bb-3d2793cfaed7/dgbd6it-1c9bd867-0d08-4c3d-bc14-5ba729920f09.jpg/v1/fit/w_828,h_1210,q_70,strp/forever_red_by_hylanvahr_dgbd6it-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ5NiIsInBhdGgiOiJcL2ZcLzliOTZjMmI3LTZmZjctNGVkNi1iM2JiLTNkMjc5M2NmYWVkN1wvZGdiZDZpdC0xYzliZDg2Ny0wZDA4LTRjM2QtYmMxNC01YmE3Mjk5MjBmMDkuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.vRgoR0xVOd4XRB6uwCaCQbMekI-PaKupAingVai4LQ4" width="400" height="400" alt="" />
+        <img src="https://m.media-amazon.com/images/I/41vt+u8zb4L._SY445_SX342_.jpg" width="400" height="400" alt="" />
         <div class="uk-position-center uk-panel"><h1>2</h1></div>
     </li>
     <li>
-        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b96c2b7-6ff7-4ed6-b3bb-3d2793cfaed7/dgbd6it-1c9bd867-0d08-4c3d-bc14-5ba729920f09.jpg/v1/fit/w_828,h_1210,q_70,strp/forever_red_by_hylanvahr_dgbd6it-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ5NiIsInBhdGgiOiJcL2ZcLzliOTZjMmI3LTZmZjctNGVkNi1iM2JiLTNkMjc5M2NmYWVkN1wvZGdiZDZpdC0xYzliZDg2Ny0wZDA4LTRjM2QtYmMxNC01YmE3Mjk5MjBmMDkuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.vRgoR0xVOd4XRB6uwCaCQbMekI-PaKupAingVai4LQ4" width="400" height="400" alt="" />
+        <img src="https://m.media-amazon.com/images/I/516xTKZATSL._SY445_SX342_.jpg" width="400" height="400" alt="" />
         <div class="uk-position-center uk-panel"><h1>3</h1></div>
     </li>
     <li>
-        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b96c2b7-6ff7-4ed6-b3bb-3d2793cfaed7/dgbd6it-1c9bd867-0d08-4c3d-bc14-5ba729920f09.jpg/v1/fit/w_828,h_1210,q_70,strp/forever_red_by_hylanvahr_dgbd6it-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ5NiIsInBhdGgiOiJcL2ZcLzliOTZjMmI3LTZmZjctNGVkNi1iM2JiLTNkMjc5M2NmYWVkN1wvZGdiZDZpdC0xYzliZDg2Ny0wZDA4LTRjM2QtYmMxNC01YmE3Mjk5MjBmMDkuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.vRgoR0xVOd4XRB6uwCaCQbMekI-PaKupAingVai4LQ4" width="400" height="400" alt="" />
+        <img src="https://m.media-amazon.com/images/I/51Y1zZbGcGL._SY445_SX342_.jpg" width="400" height="400" alt="" />
         <div class="uk-position-center uk-panel"><h1>4</h1></div>
     </li>
   
@@ -382,48 +377,116 @@ function Home() {
 
 </div>
 <br />
-<h1 class="uk-heading-small uk-heading-bullet">Best Sellers in Movies</h1>
+
+<h1 class="h-1 uk-heading-small ">Best Sellers in Movies</h1>
+<video className='video' src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1800" height="1200" loop muted playsinline uk-video="autoplay: inview"></video>
+<br />
+<br />
+<br />
 <div className="last-clothing">
     <div className="clothing-1">
-    <h1>Get the movie</h1>
-    <img className="clothing-1-image" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b96c2b7-6ff7-4ed6-b3bb-3d2793cfaed7/dgbd6it-1c9bd867-0d08-4c3d-bc14-5ba729920f09.jpg/v1/fit/w_828,h_1210,q_70,strp/forever_red_by_hylanvahr_dgbd6it-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ5NiIsInBhdGgiOiJcL2ZcLzliOTZjMmI3LTZmZjctNGVkNi1iM2JiLTNkMjc5M2NmYWVkN1wvZGdiZDZpdC0xYzliZDg2Ny0wZDA4LTRjM2QtYmMxNC01YmE3Mjk5MjBmMDkuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.vRgoR0xVOd4XRB6uwCaCQbMekI-PaKupAingVai4LQ4 " />
+    <h1 className='clothing-btn'>Unexpected Places</h1>
+    <img className="clothing-1-image" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F6c%2Fbc%2F6e%2F6cbc6ef92ce7fda26b65d25715f3bf0a.jpg&f=1&nofb=1&ipt=ae218bce8605278bc31ae0467d34f170b2682f7d5c4b85f4bda6c009ade1e6b9&ipo=images " />
     <button className='clothing-btn'>Get Movie</button>
     </div>
 
     <div className="clothing-1">
-    <h1>Get the movie</h1>
-    <img className="clothing-1-image" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b96c2b7-6ff7-4ed6-b3bb-3d2793cfaed7/dgbd6it-1c9bd867-0d08-4c3d-bc14-5ba729920f09.jpg/v1/fit/w_828,h_1210,q_70,strp/forever_red_by_hylanvahr_dgbd6it-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ5NiIsInBhdGgiOiJcL2ZcLzliOTZjMmI3LTZmZjctNGVkNi1iM2JiLTNkMjc5M2NmYWVkN1wvZGdiZDZpdC0xYzliZDg2Ny0wZDA4LTRjM2QtYmMxNC01YmE3Mjk5MjBmMDkuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.vRgoR0xVOd4XRB6uwCaCQbMekI-PaKupAingVai4LQ4 " />
+    <h1 className='clothing-btn'>Spider man</h1>
+    <img className="clothing-1-image" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.denofgeek.com%2Fwp-content%2Fuploads%2F2021%2F03%2Fupcoming-movies-march-2021.jpg%3Ffit%3D1920%252C1080&f=1&nofb=1&ipt=4960d42c5fec5879ec20c90c406c23638d2dcb5f198ecc292799bdae458bf01e&ipo=images " />
     <button className='clothing-btn'>Get Movie</button>
     </div>
 
     <div className="clothing-1">
-    <h1>Get the movie</h1>
-    <img className="clothing-1-image" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b96c2b7-6ff7-4ed6-b3bb-3d2793cfaed7/dgbd6it-1c9bd867-0d08-4c3d-bc14-5ba729920f09.jpg/v1/fit/w_828,h_1210,q_70,strp/forever_red_by_hylanvahr_dgbd6it-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ5NiIsInBhdGgiOiJcL2ZcLzliOTZjMmI3LTZmZjctNGVkNi1iM2JiLTNkMjc5M2NmYWVkN1wvZGdiZDZpdC0xYzliZDg2Ny0wZDA4LTRjM2QtYmMxNC01YmE3Mjk5MjBmMDkuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.vRgoR0xVOd4XRB6uwCaCQbMekI-PaKupAingVai4LQ4 " />
+    <h1 className='clothing-btn'>The Turning</h1>
+    <img className="clothing-1-image" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Famc-theatres-res.cloudinary.com%2Fv1570638992%2Famc-cdn%2Fproduction%2F2%2Fmovies%2F57100%2F57118%2FPosterDynamic%2F93385.jpg&f=1&nofb=1&ipt=d2300057b21cb2c444f3b0089b6f3c0a4df0802ce32fafb70c9fc00f0291f628&ipo=images" />
     <button className='clothing-btn'>Get Movie</button>
     </div>
 
     <div className="clothing-1">
-    <h1>Get the movie</h1>
-    <img className="clothing-1-image" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b96c2b7-6ff7-4ed6-b3bb-3d2793cfaed7/dgbd6it-1c9bd867-0d08-4c3d-bc14-5ba729920f09.jpg/v1/fit/w_828,h_1210,q_70,strp/forever_red_by_hylanvahr_dgbd6it-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ5NiIsInBhdGgiOiJcL2ZcLzliOTZjMmI3LTZmZjctNGVkNi1iM2JiLTNkMjc5M2NmYWVkN1wvZGdiZDZpdC0xYzliZDg2Ny0wZDA4LTRjM2QtYmMxNC01YmE3Mjk5MjBmMDkuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.vRgoR0xVOd4XRB6uwCaCQbMekI-PaKupAingVai4LQ4 " />
+    <h1 className='clothing-btn'>Black Panther</h1>
+    <img className="clothing-1-image" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fgatornews.org%2Fwp-content%2Fuploads%2F2018%2F02%2Fr_blackpanther_hero_09b05dc9-475x193.jpg&f=1&nofb=1&ipt=6cae1c7d76c3ccc5a8386604119fa04d9014535ce975279a335b85d416fa962f&ipo=images" />
     <button className='clothing-btn'>Get Movie</button>
     </div>
 </div>
   </div>
   <br/>
-  <h1 class="uk-heading-small uk-heading-bullet">Best Sellers in Clothing, shoes and jeweries</h1>
+  <h1 class="h-1 uk-heading-small ">Best Sellers in Clothing, shoes and jeweries</h1>
  <div className="bestSellers" >
- <img className='sellers' src=" https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b96c2b7-6ff7-4ed6-b3bb-3d2793cfaed7/dgbpkuq-7ba207b2-0f1d-4f88-b409-effea2812e83.jpg/v1/fit/w_828,h_1060,q_70,strp/an_angel_for_the_holy_land_by_hylanvahr_dgbpkuq-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMxMiIsInBhdGgiOiJcL2ZcLzliOTZjMmI3LTZmZjctNGVkNi1iM2JiLTNkMjc5M2NmYWVkN1wvZGdicGt1cS03YmEyMDdiMi0wZjFkLTRmODgtYjQwOS1lZmZlYTI4MTJlODMuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.5N8YScgnEsymB9-pnmNA3VVpgGTG2eEbyAmM7TlaxMs" />
- <img className='sellers' src=" https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b96c2b7-6ff7-4ed6-b3bb-3d2793cfaed7/dgdhqcg-7bfc29c2-8498-4758-8640-fe61123f9f22.jpg/v1/fit/w_828,h_1210,q_70,strp/scryer__the_hand_of_thoth_by_hylanvahr_dgdhqcg-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ5NiIsInBhdGgiOiJcL2ZcLzliOTZjMmI3LTZmZjctNGVkNi1iM2JiLTNkMjc5M2NmYWVkN1wvZGdkaHFjZy03YmZjMjljMi04NDk4LTQ3NTgtODY0MC1mZTYxMTIzZjlmMjIuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.6bj7ojjKTjv7IR9t5x78OA2-G92qWBStYY6VIhnxtRw" />
- <img className="sellers" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9b96c2b7-6ff7-4ed6-b3bb-3d2793cfaed7/dgbd6it-1c9bd867-0d08-4c3d-bc14-5ba729920f09.jpg/v1/fit/w_828,h_1210,q_70,strp/forever_red_by_hylanvahr_dgbd6it-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ5NiIsInBhdGgiOiJcL2ZcLzliOTZjMmI3LTZmZjctNGVkNi1iM2JiLTNkMjc5M2NmYWVkN1wvZGdiZDZpdC0xYzliZDg2Ny0wZDA4LTRjM2QtYmMxNC01YmE3Mjk5MjBmMDkuanBnIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.vRgoR0xVOd4XRB6uwCaCQbMekI-PaKupAingVai4LQ4 " />
- <img className="sellers" src=" " />
- <img className="sellers" src=" " />
- <img className='sellers' src=" " />
- <img className='sellers' src=" " />
- <img className='sellers' src=" " />
+ <img className='sellers' src=" https://m.media-amazon.com/images/I/71PrNGakKkL._AC_UL640_FMwebp_QL65_.jpg" />
+ <img className='sellers' src=" https://m.media-amazon.com/images/I/71MW74qH8dL._AC_UL640_FMwebp_QL65_.jpg" />
+ <img className="sellers" src="https://m.media-amazon.com/images/I/61LGoXPTs+L._AC_UL640_FMwebp_QL65_.jpg" />
+ <img className="sellers" src="https://m.media-amazon.com/images/I/51rpwE8hFOL._AC_UL640_FMwebp_QL65_.jpg " />
+ <img className="sellers" src=" https://m.media-amazon.com/images/I/71Eff15EiGL._AC_UL640_FMwebp_QL65_.jpg" />
+ <img className='sellers' src="https://m.media-amazon.com/images/I/618zcfCdPJL._AC_SX679_.jpg " />
+ <img className='sellers' src="https://m.media-amazon.com/images/I/41qCPkU6f8L._AC_SR160,160_.jpg " />
+ <img className='sellers' src=" https://m.media-amazon.com/images/I/51zr-4-WhYL._AC_SR480,480_.jpg" />
 
  </div>
  <br />
+ <div className="base">
+ <div className="container-base">
+    <div className="base1">
+        <div className="base01">
+        <h1 class="clothing-btn uk-heading-small">Olayinka👨🏽‍💻🤯</h1>
+        </div>
+        
+    </div>
+     <div className="base02">
+     <img class="img_base02" src=" https://m.media-amazon.com/images/I/51zr-4-WhYL._AC_SR480,480_.jpg" />
+        </div>
+        <div className="base03">
+        <button class="btn-bs03 uk-button uk-button-default">
+        Learn More</button>
+        {/* <p>One of it's kind</p> */}
+
+</div>
+ </div>2
+ <div  className="container-base">
+ <div className="base22">
+
+</div>
+ <div className="base22">
+
+</div>
+ <div className="base22">
+
+</div>
+
+ </div>
+ <div className="container-base">
+ <div className="base22">
+
+</div>
+ <div className="base22">
+
+</div>
+ <div className="base22">
+
+</div>
+    
+ </div>
+ {/* <div className="container-base"></div> */}
+ <div className="container-base">
+ <div className="base1">
+        <div className="base01">
+<img src="" />
+        </div>
+        
+    </div>
+    <div className="base02">
+    <img class="img_base02" src=" https://m.media-amazon.com/images/I/51zr-4-WhYL._AC_SR480,480_.jpg" />
+
+        </div>
+        <div className="base03">
+
+</div>
+ </div>
+    
+ </div>
+ <br />
 <button class="uk-button uk-button-default"><a href="" uk-totop>Back To Top</a></button>
+<br/>
+<br/>
 <br/>
     </div>
   )
