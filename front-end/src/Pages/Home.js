@@ -80,13 +80,13 @@ function Home() {
 </div>
 <div className="w-d-2">
 <img src ="https://m.media-amazon.com/images/I/71vPL6iW5oL._AC_UL640_FMwebp_QL65_.jpg" className='w-img-2' />
-<a href="/Items"><h5 className='clothing-btn'>Quilted Jacket</h5></a>
+{/* <a href="/Items"><h5 className='clothing-btn'>Quilted Jacket</h5></a> */}
 
 </div>
 <div className="w-d-3">
 <img src ="https://m.media-amazon.com/images/I/810NyDjBwCL._AC_UL640_FMwebp_QL65_.jpg" className='w-img-2' />
  
- <a href="/Items"><h5 className='clothing-btn'>Sherpa Jacket</h5></a>
+ {/* <a href="/Items"><h5 className='clothing-btn'>Sherpa Jacket</h5></a> */}
 
 </div>
 <div className="w-d-4">

@@ -179,8 +179,9 @@ a:hover{
  width: 180px;
  height:180px;
  border: 2px solid transparent;
- background-color: #a09494;
- 
+ /* border-radius: 2rem; */
+ /*background-color: #a09494;
+ */
  
 }
 .w-d-2{
@@ -198,7 +199,7 @@ a:hover{
   width: 180px;
  height:180px;
  border: 2px solid transparent;
- background-color: #a09494;
+ /* background-color: #a09494; */
  margin-top: 1.5rem;
 }
 .w-d-4{
@@ -223,17 +224,17 @@ a:hover{
   -o-border-radius:8px;
 }
 .Slide{
-  width: 600px !important;
+  min-width: 485px !important;
   height: 500px !important;
   padding: 12px;
   object-fit: cover !important;
   justify-content: space-between;
   border:3px solid transparent;
-  border-radius: 6rem !important;
-  -webkit-border-radius: 6rem !important;
-  -moz-border-radius: 6rem !important;
-  -ms-border-radius: 6rem !important;
-  -o-border-radius: 6rem !important;
+  border-radius: 2rem !important;
+  -webkit-border-radius: 2rem !important;
+  -moz-border-radius: 2rem !important;
+  -ms-border-radius: 2rem !important;
+  -o-border-radius: 2rem !important;
 }
 .container{
   display: flex !important;
@@ -244,8 +245,8 @@ a:hover{
 .content-1{
   width:500px;
   height:520px;
-  border: 3px solid black;
-  padding:3rem;
+  border: 3px solid #ced3d6;
+  padding:12px;
   border-radius: 12px;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
@@ -255,18 +256,21 @@ a:hover{
 .content-2{
   width:500px;
   height:520px;
-  border: 3px solid black;
-  padding:3rem;
+  border: 3px solid #ced3d6;
+  padding:12px;
   border-radius: 12px;
 
 }
 .content-3{
   width:500px;
-  height:500px;
-  border: 3px solid black;
-  padding:3rem;
+  height:520px;
+  border: 3px solid #ced3d6;
+  padding:12px;
   border-radius: 12px;
-
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
 }
 
 .second-container{
@@ -278,8 +282,8 @@ a:hover{
 .sub-cont{
   width:500px;
   height:500px;
-  border: 3px solid black;
-  padding:6rem;
+  border: 3px solid #ced3d6;
+  padding:12px;
   border-radius: 12px;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
@@ -289,8 +293,8 @@ a:hover{
 .sub-cont-2{
   width:500px;
   height:500px;
-  border: 3px solid black;
-  padding:3rem;
+  border: 3px solid #ced3d6;
+  padding:12px;
   border-radius: 12px;
  
 
@@ -298,8 +302,8 @@ a:hover{
 .sub-cont-3{
   width:500px;
   height:500px;
-  border: 3px solid black;
-  padding:3rem;
+  border: 3px solid #ced3d6;
+  padding:12px;
   border-radius: 12px;
   font-family: arvo !important;
   

@@ -64,10 +64,11 @@ function Item({ item, addToCart, ratings, comments , reviews ,setReviews}) {
   return (
     <div className="ahead-items">
     <div >
+    
 
     <br/>
     <br/>
-     
+    
       <div className="ahead-item-container">
       <Link to={`/items/${item.id}`}>
      <img className=" image_item" src={item.image_url} alt={item.name}  />
