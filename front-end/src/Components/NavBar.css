@@ -3,12 +3,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: black;
   }
   
   ul li {
     list-style: none;
     margin: 0 auto;
-    border-left: 2px solid #ecf0f2;
+    /* border-left: 2px solid #ecf0f2; */
     display: inline-block;
     padding: 0 30px;
     position: relative;
@@ -22,7 +23,7 @@
   }
 
   li a:hover {
-    color: #3ca0e7;
+    color: #ced3d6;
   }
 
   li:hover {
@@ -36,7 +37,7 @@
 padding-left: 0;
     left: 0;
     display: none;
-    background: #0C2139;
+    background: #d9dde0;
   }
 
   ul li:hover > ul,
@@ -47,7 +48,7 @@ padding-left: 0;
     min-width: 250px;
     text-align: left;
     padding-top: 20px;
-    box-shadow: 0px 3px 5px -1px #ccc;
+    box-shadow: 0px 3px 5px -1px #080808;
   }
 
   ul li ul li {
@@ -60,7 +61,7 @@ padding-left: 0;
 
   ul li ul li a:hover {
     padding-left: 10px;
-    border-left: 2px solid #3ca0e7;
+    border-left: 3px solid #3ca0e7;
     transition: all 0.3s ease;
   }
 
@@ -85,7 +86,7 @@ ul li ul li a { transition: all 0.5s ease; }
     justify-content: space-between;
     align-items: center;
     /* background-color: #101010; */
-    background-color: #0C2139;
+    background-color: #eaeaea;
     padding: 10px 20px;
     position: fixed;
     top: 0;
@@ -122,10 +123,10 @@ ul li ul li a { transition: all 0.5s ease; }
   }
   
   .nav-links a:hover {
-    color: #007bff;
+    color: #cad2da;
   }
   .cart-icon:hover{
-color: #007bff;
+color: #adb1b6;
   }
   
   /* Styling for the menu toggle icon */
@@ -143,7 +144,7 @@ color: #007bff;
   .bar {
     width: 100%;
     height: 4px;
-    background-color: #f7f5f5;
+    background-color: #050404;
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   }
   

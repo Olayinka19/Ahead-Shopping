@@ -1,14 +1,10 @@
-.ItemShow {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns: item and description */
-    gap: 20px; /* Gap between columns */
-  }
+
   
-  .stock-container{
-width:400px;
+  /* .stock-container{
+width:500px;
 height:400px;
 border: 3px solid;
-  }
+  } */
   @media (max-width: 768px) {
     .ItemShow {
       grid-template-columns: 1fr; /* Single column for mobile view */

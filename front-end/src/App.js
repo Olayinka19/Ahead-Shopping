@@ -24,6 +24,10 @@ import ContactUs from "./Components/ContactUs";
 import AIPodcast from "./Components/AIPodcast";
 import Projects from "./Components/Projects";
 import cartProduct from "./Components/cartProduct";
+import Signin from './Pages/Signin';
+import SignUp from './Pages/SignUp';
+import Account from './Pages/Account';
+import Register from './Components/Register';
 
 import {AuthContextProvider} from './Context/AuthContext';
 
@@ -47,13 +51,16 @@ function App() {
   return (
     
   <div className="App">
+  <AuthContextProvider>
   <Router>
   
   <NavBar cartItemCount={cartItems.length} onCartClick={handleCartClick} />
   {showCart && <Cart />}
   <Routes>
     <Route path="/" element={<Home/>} />
-  
+    <Route path="/Register" element={<Register/>} />
+    <Route path="/SignUp" element={<SignUp/>} />
+    <Route path='/account' element={<Account/>} />
     <Route path="/Projects" element={<Projects/>} />
     <Route path="/AIPodcast" element={<AIPodcast/>} />
     <Route path="/ContactUs" element={<ContactUs/>} />
@@ -61,6 +68,7 @@ function App() {
     <Route path="/BlogPost" element={<BlogPost/>} />
     <Route path="/OrderHistory" element={<OrderHistory/>} />
     <Route path="/Cart" element={<Cart/>} />
+    <Route path='/signin' element={<Signin/>} />
     <Route path="/cartProduct" element={<cartProduct/>} />
     <Route path="/CustomerFeedback" element={<CustomerFeedback/>} />
     <Route path="/ItemReview" element={<ItemReview/>} />
@@ -79,6 +87,7 @@ function App() {
 
   </Router>
   <Footer />
+  </AuthContextProvider>
   </div>
   );
 }

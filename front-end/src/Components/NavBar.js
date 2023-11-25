@@ -1,16 +1,26 @@
 import React, { useState } from 'react';
 import Cart from './Cart';
 import { Link } from 'react-router-dom';
+import Signin from '../Components/Signin';
+import { UserAuth } from '../Context/AuthContext';
 import './NavBar.css';
 
 const NavBar = ({ cartItemCount, onCartClick, item }) => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { user, logOut } = UserAuth();
   // const cartItemCount = cartItems.length;
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
   const [isCartOpen, setIsCartOpen] = useState(false);
 
+  const handleSignOut = async () => {
+    try {
+      await logOut()
+    } catch (error) {
+      console.log(error)
+    }
+  }
   const toggleCart = () => {
     setIsCartOpen(!isCartOpen);
   };
@@ -21,19 +31,19 @@ const NavBar = ({ cartItemCount, onCartClick, item }) => {
     <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
     
       {/* <li><a class="uk-button uk-button-default" href="/Items">Products</a></li> */}
-      <li><a href="/Items">Products</a>
+      {/* <li><a href="/Items">Products</a>
       <ul class="dropdown">
         <li><a href="#">Handbags</a></li>
         <li><a href="#">Travel</a></li>
         <li><a href="#">Women</a></li>
         <li><a href="#">Men</a></li>
       </ul>
-    </li>
+    </li> */}
         {/* <li>
         <a class="uk-button uk-button-default" href="/">Categories</a></li> */}
         <li><a href="#">Categories</a>
       <ul class="dropdown">
-        <li><a href="#">Handbags</a></li>
+        <li><a href="/Items">Products</a></li>
         <li><a href="#">Travel</a></li>
         <li><a href="#">Women</a></li>
         <li><a href="#"><Link to={`/items/${item}`}></Link>Men</a></li>
@@ -45,8 +55,8 @@ const NavBar = ({ cartItemCount, onCartClick, item }) => {
     </li>
     <li><a href="#">Account</a>
       <ul class="dropdown">
-        <li><a href="#">Profile</a></li>
-        <li><a href="#">Order History</a></li>
+        <li><a href="/account">Profile</a></li>
+        <li><a href="/orderHistory">Order History</a></li>
         <li><a href="#">Wishlist</a></li>
         <li><a href="#">Log Out</a></li>
       </ul>
@@ -75,13 +85,23 @@ const NavBar = ({ cartItemCount, onCartClick, item }) => {
         <li><a href="#">Men</a></li>
       </ul>
     </li>
-    <li><a href="#">🛒</a>
-      <ul class="dropdown">
+    <li><a onClick={onCartClick} href="#">🛒</a>
+      {/* <ul class="dropdown">
         <li><a href="#"><button class="uk-button uk-button-default" onClick={onCartClick}> 🛒 {cartItemCount}</button></a></li>
-        {/* <li><a href="#">Travel</a></li>
-        <li><a href="#">Women</a></li>
-        <li><a href="#">Men</a></li> */}
-      </ul>
+       
+      </ul> */}
+    </li>
+  
+     
+    <li>
+    {user?.displayName ? (
+        <button onClick={handleSignOut}>Logout</button>
+      ) : (
+        <Link to='/signin'>Log In</Link>
+      )}
+      {/* <ul class="dropdown">
+        <li><a href="#"> </a> </li>
+      </ul> */}
     </li>
         
        

@@ -40,6 +40,7 @@ import { useState } from "react";
 import StarRating from "./StarRating";
 
 
+
 function Item({ item, addToCart, ratings, comments , reviews ,setReviews}) {
   const [feedback, setFeedback] = useState("");
   const ratingsArray = ratings || [];
@@ -78,19 +79,13 @@ function Item({ item, addToCart, ratings, comments , reviews ,setReviews}) {
       <br/>
       <h3>Price: ${item.price}</h3>
       <br/>
-      <button class="item-btn uk-button uk-button-primary" onClick={addToCart}><a href="/Cart"></a>Add to Cart</button>
+      {/* <button class="item-btn uk-button uk-button-primary"><a href="/Checkout"></a>Checkout</button> */}
       </div>
       <br/>
-      {/* <StarRating rating={item.average_rating} /> */}
-      <Link to={`/items/${item.id}`}><button class=" item-btn uk-button uk-button-primary">Buy Now</button></Link>
+    
       
       </div>
-      
-      
-      {/* <p>Ratings: {ratings.join(", ")}</p> */}
-      {/* <p>{}</p> */}
-      {/* <button class="uk-button uk-button-default" onClick={() => addToCart(item)}>UIkit.notification("<span uk-icon='icon: check'>Add To Cart</span> Message");</button> */}
-      {/* <button onClick={() => addToCart(item)} class="uk-button uk-button-default demo">Add To Cart</button> */} 
+  
     
 </div>
     </div>

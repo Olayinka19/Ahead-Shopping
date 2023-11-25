@@ -76,7 +76,7 @@ function Home() {
 <div className='w-container'>
 <div className='w-d-1'>
  <img src ="https://m.media-amazon.com/images/I/81A8w8ndNZL._AC_UL640_FMwebp_QL65_.jpg" className='w-img' />
- <a href="/Items"><h5 className='clothing-btn'>Faux Suede</h5></a>
+ {/* <a href="/Items"><h5 className='clothing-btn'>Faux Suede</h5></a> */}
 </div>
 <div className="w-d-2">
 <img src ="https://m.media-amazon.com/images/I/71vPL6iW5oL._AC_UL640_FMwebp_QL65_.jpg" className='w-img-2' />
@@ -91,7 +91,7 @@ function Home() {
 </div>
 <div className="w-d-4">
 <img src ="https://m.media-amazon.com/images/I/71N8jBBw3AL._AC_UL640_FMwebp_QL65_.jpg" className='w-img-4' />
- <h5 className='clothing-btn h-4'><a href="/Items">Water-Resistant</a></h5>
+ {/* <h5 className='clothing-btn h-4'><a href="/Items">Water-Resistant</a></h5> */}
 
  </div>
  
@@ -146,22 +146,22 @@ function Home() {
         <div className='w-container'>
 <div className='w-d-1'>
  <img src ="https://m.media-amazon.com/images/I/71owDjjbaeL._AC_UL640_FMwebp_QL65_.jpg" className='w-img' />
- <a href="/Items"><h5 className='clothing-btn'>Jacket</h5></a>
+ {/* <a href="/Items"><h5 className='clothing-btn'>Jacket</h5></a> */}
 </div>
 <div className="w-d-2">
 <img src ="https://images.pexels.com/photos/16170/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1600" className='w-img-2' />
-<a href="/Items"><h5 className='clothing-btn'>Hoodie</h5></a>
+{/* <a href="/Items"><h5 className='clothing-btn'>Hoodie</h5></a> */}
 
 </div>
 <div className="w-d-3">
 <img src ="https://m.media-amazon.com/images/I/61YCt73E3sL._AC_UL640_FMwebp_QL65_.jpg" className='w-img-2' />
  
- <a href="/Items"><h5 className='clothing-btn'>Sweaters</h5></a>
+ {/* <a href="/Items"><h5 className='clothing-btn'>Sweaters</h5></a> */}
 
 </div>
 <div className="w-d-4">
 <img src ="https://images.pexels.com/photos/1761683/pexels-photo-1761683.jpeg?auto=compress&cs=tinysrgb&w=1600" className='w-img-4' />
- <h5 className='clothing-btn h-4'><a href="/Items">Head-scaff</a></h5>
+ {/* <h5 className='clothing-btn h-4'><a href="/Items">Head-scaff</a></h5> */}
 
  </div>
  
@@ -172,22 +172,22 @@ function Home() {
     <div className='w-container'>
 <div className='w-d-1'>
  <img src ="https://m.media-amazon.com/images/I/81c502BwSDL._AC_UL640_FMwebp_QL65_.jpg" className='w-img' />
- <a href="/Items"><h5 className='clothing-btn'>Water-Resistant</h5></a>
+ {/* <a href="/Items"><h5 className='clothing-btn'>Water-Resistant</h5></a> */}
 </div>
 <div className="w-d-2">
 <img src ="https://m.media-amazon.com/images/I/71BUr7zXEJL._AC_UL640_FMwebp_QL65_.jpg" className='w-img-2' />
-<a href="/Items"><h5 className='clothing-btn'>Tactical Jacket</h5></a>
+{/* <a href="/Items"><h5 className='clothing-btn'>Tactical Jacket</h5></a> */}
 
 </div>
 <div className="w-d-3">
 <img src ="https://m.media-amazon.com/images/I/81IEG8E82wL._AC_UL640_FMwebp_QL65_.jpg" className='w-img-2' />
  
- <a href="/Items"><h5 className='clothing-btn'>Golf Jacket</h5></a>
+ {/* <a href="/Items"><h5 className='clothing-btn'>Golf Jacket</h5></a> */}
 
 </div>
 <div className="w-d-4">
 <img src ="https://m.media-amazon.com/images/I/71zT0tJ2CjL._AC_UL640_FMwebp_QL65_.jpg" className='w-img-4' />
- <h5 className= 'clothing-btn h-4'><a href="/Items">Thermal Jacket</a></h5>
+ {/* <h5 className= 'clothing-btn h-4'><a href="/Items">Thermal Jacket</a></h5> */}
 
  </div>
  
@@ -195,67 +195,7 @@ function Home() {
     </div>
 </div>
 
-
-
-
-<div className='trending-container'>
-<div className=''>
-
- <img className='semi1-img'  src="https://m.media-amazon.com/images/I/71CX6OXqbLL._AC_UL640_FMwebp_QL65_.jpg" />
- <br/>
-<button class=" btn uk-button uk-button-default">Buy Now</button>
-
-</div>
-<div className=''>
-<img className='semi1-img' src="https://m.media-amazon.com/images/I/61IvqTyrR8S._AC_UL640_FMwebp_QL65_.jpg" />
-<br/>
-<button class=" btn first-line:uk-button uk-button-default">Buy Now</button>
-</div>
-<div className=''>
-<img className='semi1-img' src="https://m.media-amazon.com/images/I/61XyfyFMxbL._AC_UL640_FMwebp_QL65_.jpg" />
-<br/>
-<button class="btn uk-button uk-button-default">Buy Now</button>
-</div>
-
-
-</div>
-
-
-<h1 class="clothing-btn uk-heading-small ">Limited-Time Offer: Shop Ahead and Save Big!</h1>
-<div className='semi-cont'>
-<div className='semi-1'>
-    <img className='semi1-img' src="https://m.media-amazon.com/images/I/610WM+-SQBL._AC_UY436_QL65_.jpg" />
-    <br/>
-<button  class="btn uk-button uk-button-default">Buy Now</button>
-</div>
-
-<div className='semi-3'>
-<img className='semi1-img' src="https://m.media-amazon.com/images/I/6181N8ZKgtL._AC_UY436_QL65_.jpg" />
-<br/>
-<button class="btn uk-button uk-button-default">Buy Now</button>
-</div>
-<div className='semi-4'>
-<img className='semi1-img' src="https://m.media-amazon.com/images/I/61kLRcroWtL._AC_UY436_QL65_.jpg" />
-<br/>
-<button class="btn uk-button uk-button-default">Buy Now</button>
-</div>
-</div>
-
-
-
-
-
-
-
-  <br/>
-  <br/>
- 
-
-
-
-
-<br />
-{/* <div uk-slider="autoplay: true">
+<div uk-slider="autoplay: true">
 <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
 
     <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
@@ -305,7 +245,120 @@ function Home() {
     <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
 
 </div>
-</div> */}
+</div>
+<br />
+<br />
+<br />
+
+<h1 class="clothing-btn uk-heading-small ">Limited-Time Offer: Shop Ahead and Save Big!</h1>
+<div className='trending-container'>
+<div className=''>
+
+ <img className='semi1-img'  src="https://m.media-amazon.com/images/I/71CX6OXqbLL._AC_UL640_FMwebp_QL65_.jpg" />
+ <br/>
+<button class=" btn uk-button uk-button-default">Buy Now</button>
+
+</div>
+<div className=''>
+<img className='semi1-img' src="https://m.media-amazon.com/images/I/61IvqTyrR8S._AC_UL640_FMwebp_QL65_.jpg" />
+<br/>
+<button class=" btn first-line:uk-button uk-button-default">Buy Now</button>
+</div>
+<div className=''>
+<img className='semi1-img' src="https://m.media-amazon.com/images/I/61XyfyFMxbL._AC_UL640_FMwebp_QL65_.jpg" />
+<br/>
+<button class="btn uk-button uk-button-default">Buy Now</button>
+</div>
+
+
+</div>
+
+
+
+<div className='semi-cont'>
+<div className='semi-1'>
+    <img className='semi1-img' src="https://m.media-amazon.com/images/I/610WM+-SQBL._AC_UY436_QL65_.jpg" />
+    <br/>
+<button  class="btn uk-button uk-button-default">Buy Now</button>
+</div>
+
+<div className='semi-3'>
+<img className='semi1-img' src="https://m.media-amazon.com/images/I/6181N8ZKgtL._AC_UY436_QL65_.jpg" />
+<br/>
+<button class="btn uk-button uk-button-default">Buy Now</button>
+</div>
+<div className='semi-4'>
+<img className='semi1-img' src="https://m.media-amazon.com/images/I/61kLRcroWtL._AC_UY436_QL65_.jpg" />
+<br/>
+<button class="btn uk-button uk-button-default">Buy Now</button>
+</div>
+</div>
+
+
+
+
+
+
+
+  <br/>
+  <br/>
+ 
+
+
+
+
+<br />
+<div uk-slider="autoplay: true">
+<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+    <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid">
+        <li>
+            <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/81b724fa419569fb2d2be18e7d368291.jpg?imageView2/2/w/800/q/70/format/webp" className="imag" alt="" />
+            <div class="uk-position-center uk-panel"><h1>1</h1></div>
+        </li>
+        <li>
+            <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/95363959a8937b7ce4f79fbaff76b110.jpg?imageView2/2/w/800/q/70/format/webp" className="imag" alt="" />
+            <div class="uk-position-center uk-panel"><h1>2</h1></div>
+        </li>
+        <li>
+            <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/8e08eea04a5b73e8f7baa594017ff542.jpg?imageView2/2/w/800/q/70/format/webp" className="imag" alt="" />
+            <div class="uk-position-center uk-panel"><h1>3</h1></div>
+        </li>
+        <li>
+            <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/01241c3fb2980fffb2c4363ed4cc9ee7.jpg?imageView2/2/w/800/q/70/format/webp" className="imag" alt="" />
+            <div class="uk-position-center uk-panel"><h1>4</h1></div>
+        </li>
+        <li>
+            <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/cd0c4b460808171d67c34f2cbd93d94b.jpg?imageView2/2/w/800/q/70/format/webp" className="imag" alt="" />
+            <div class="uk-position-center uk-panel"><h1>5</h1></div>
+        </li>
+        <li>
+            <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/b62946d2db73e73bd3efa94e89b18849.jpg?imageView2/2/w/800/q/70/format/webp" className="imag" alt="" />
+            <div class="uk-position-center uk-panel"><h1>6</h1></div>
+        </li>
+        <li>
+            <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/ee24713b1b0ce238fec971aa91910e7e.jpg?imageView2/2/w/800/q/70/format/webp" className="imag" alt="" />
+            <div class="uk-position-center uk-panel"><h1>7</h1></div>
+        </li>
+        <li>
+            <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/ab34676b4e58cdf36a983c1133b9e63b.jpg?imageView2/2/w/800/q/70/format/webp" className="imag" alt="" />
+            <div class="uk-position-center uk-panel"><h1>8</h1></div>
+        </li>
+        <li>
+            <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/c3233a685d4ceb7e7266bf7a46254f2d.jpg?imageView2/2/w/800/q/70/format/webp" className="imag" alt="" />
+            <div class="uk-position-center uk-panel"><h1>9</h1></div>
+        </li>
+        <li>
+            <img className="imag" src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/09abf0f28ca19d41ef50109159829bde.jpg?imageView2/2/w/800/q/70/format/webp"  alt="" />
+            <div class="uk-position-center uk-panel"><h1>10</h1></div>
+        </li>
+    </ul>
+
+    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
+</div>
+</div>
 
 
 {/* <hr class="uk-divider-icon"></hr> */}
@@ -314,7 +367,7 @@ function Home() {
 
 
  <h1 class="clothing-btn uk-heading-small ">Best Sellers in Grocery & Food</h1>
- <marquee>
+
  <div className="bestSellers" >
   <img className='sellers' src=" https://m.media-amazon.com/images/I/71DhrQk0BXL._SX679_PIbundle-10,TopRight,0,0_SX679SY541SH20_.jpg" />
  <img className='sellers' src=" https://m.media-amazon.com/images/I/819nEBi+uIL._AC_UL640_FMwebp_QL65_.jpg" />
@@ -327,7 +380,7 @@ function Home() {
 
 
  </div>
- </marquee>
+
  <br/>
 <h1 class="h-1 uk-heading-small ">Ahead Live | Store Streams</h1>
  <div className='ahead-live' >
@@ -427,7 +480,7 @@ function Home() {
  <div className="container-base">
     <div className="base1">
         <div className="base01">
-        <h1 class="clothing-btn uk-heading-small">Olayinka👨🏽‍💻🤯</h1>
+        <marquee direction="up"><h1 class="clothing-btn uk-heading-small">50% off!</h1></marquee>
         </div>
         
     </div>
@@ -435,25 +488,51 @@ function Home() {
      <img class="img_base02" src=" https://m.media-amazon.com/images/I/51zr-4-WhYL._AC_SR480,480_.jpg" />
         </div>
         <div className="base03">
-        <button class="btn-bs03 uk-button uk-button-default">
-        Learn More</button>
+        <marquee direction="up"><h1 class="clothing-btn uk-heading-small">50% off!</h1></marquee>
         {/* <p>One of it's kind</p> */}
 
 </div>
- </div>2
- <div  className="container-base">
- <div className="base22">
+ </div>
+   
+ <div className='sub-cont-2'>
+        <h5 className='clothing-btn'>Fall Favorite Fashion</h5>
+        <div className='w-container'>
+<div className='w-d-1'>
+ <img src ="https://m.media-amazon.com/images/I/71owDjjbaeL._AC_UL640_FMwebp_QL65_.jpg" className='w-img' />
+ <a href="/Items"><h5 className='clothing-btn'>Jacket</h5></a>
+</div>
+<div className="w-d-2">
+<img src ="https://images.pexels.com/photos/16170/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1600" className='w-img-2' />
+{/* <a href="/Items"><h5 className='clothing-btn'>Hoodie</h5></a> */}
 
 </div>
- <div className="base22">
+<div className="w-d-3">
+<img src ="https://m.media-amazon.com/images/I/61YCt73E3sL._AC_UL640_FMwebp_QL65_.jpg" className='w-img-2' />
+ 
+ <a href="/Items"><h5 className='clothing-btn'>Sweaters</h5></a>
 
 </div>
- <div className="base22">
-
-</div>
+<div className="w-d-4">
+<img src ="https://images.pexels.com/photos/1761683/pexels-photo-1761683.jpeg?auto=compress&cs=tinysrgb&w=1600" className='w-img-4' />
+ <h5 className='clothing-btn h-4'><a href="/Items">Head-scaff</a></h5>
 
  </div>
- <div className="container-base">
+ 
+</div>
+    </div>
+ {/* <div  className="container-base">
+ <div className="base22">
+
+</div>
+ <div className="base22">
+
+</div>
+ <div className="base22">
+
+</div>
+
+ </div> */}
+ {/* <div className="container-base">
  <div className="base22">
 
 </div>
@@ -464,9 +543,9 @@ function Home() {
 
 </div>
     
- </div>
+ </div> */}
  {/* <div className="container-base"></div> */}
- <div className="container-base">
+ {/* <div className="container-base">
  <div className="base1">
         <div className="base01">
 <img src="" />
@@ -480,11 +559,33 @@ function Home() {
         <div className="base03">
 
 </div>
- </div>
+ </div> */}
+ <div className='content-2'>
+<h3 className='clothing-btn'>Fall Dress Under $60</h3>
+<img className='img-cont' src="https://img.freepik.com/free-photo/portrait-smiling-man-snow_23-2150771181.jpg" />
+<div>
+    <div className='clothing-btn deal'>Up to 50% off</div>
+</div> 
+<p className='clothing-btn'>Product is such an amazing item, tested and trusted</p>
+<br/>
+<br/>
+<button class="clothing-btn uk-button uk-button-link"><a className='a-off' href="/Items">See all deals</a></button>
+</div>
     
  </div>
  <br />
 <button class="uk-button uk-button-default"><a href="" uk-totop>Back To Top</a></button>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 <br/>
 <br/>
 <br/>
