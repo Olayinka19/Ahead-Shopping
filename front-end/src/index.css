@@ -1,6 +1,5 @@
 body {
   margin: 12px;
-  
   padding-top: 5rem;
   background-color:  #F7F7F7; 
   color: #040404 !important;
@@ -547,312 +546,9 @@ justify-content: space-around;
 
 
 /* Extra small devices (portrait phones) */
-@media (max-width: 480px) {
-  /* Your CSS rules for small mobile devices here */
-  .page{
-    object-fit: cover;
-  }
-  .item-btn{
-    width:150px;
-    height:100px;
-    border-radius:12px;
-    -webkit-border-radius:12px;
-    -moz-border-radius:12px;
-    -ms-border-radius:12px;
-    -o-border-radius:12px;
-  }
-  .ahead-item-container{
-    width:300px;
-    height:750px;
-    padding:20px;
-    background-color:rgb(9, 9, 9);
-    border:2px solid;
-    border-radius:12px;
-    -webkit-border-radius:12px;
-    -moz-border-radius:12px;
-    -ms-border-radius:12px;
-    -o-border-radius:12px;
-   }
-   .ahead-item-container img{
-     max-width: 100%;
-     height: auto;
-   
-   }
-   .image_item{
-     width:750px !important;
-     height: 600px  !important;
-   }
-  .slider{
-    width:600px;
-    height:500px;
-    /* background-color: #f44336; */
-  }
-  .item-btn{
-    width:120px;
-    height:70px;
-    border-radius:12px;
-    -webkit-border-radius:12px;
-    -moz-border-radius:12px;
-    -ms-border-radius:12px;
-    -o-border-radius:12px;
-  }
-}
-/* For iPhone XR, and iPhone 11: */
-@media only screen 
-    and (width: 414px) 
-    and (height: 896px) 
-    and (-webkit-device-pixel-ratio: 2) { 
- .slider{
-  width: 600px;
-  height: 500px;
-
-}
-.item-btn{
-  width:80px;
-  height:80px;
-  border-radius:12px;
-  -webkit-border-radius:12px;
-  -moz-border-radius:12px;
-  -ms-border-radius:12px;
-  -o-border-radius:12px;
-}
-.Trend{
-  display: grid !important;
-  padding: 3rem;
-  row-gap: 1rem;
-  justify-content: space-between !important;
-  margin: 10px;
-}
-.video{
-  width:450px !important;
-  height:300px !important;
-}
-.container{
-  display: inline-block;
-}
-.main-content-text{
-  display: inline-block;
-  border:3px solid;
-  display: flexbox;
-  height: fit-content;
-  border-radius: 13px;
-}
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background: rgb(236, 229, 229);
-}
-
-
-.main-content-text{
-  display: inline-block;
-  border:3px solid;
-  display: flexbox;
-  width:150px;
-  border-radius: 13px;
-  
-  -webkit-border-radius: 13px;
-  -moz-border-radius: 13px;
-  -ms-border-radius: 13px;
-  -o-border-radius: 13px;
-}
 
 
 
-#box
-{
-  position: relative;
-  width: 200px;
-  height: 200px;
-  display: inline-block;
-  transform-style: preserve-3d;
-  animation: animate 10s linear infinite;
-}
-
-@keyframes animate
-{
-  0%
-  {
-      transform: rotateX(-30deg) rotateY(360deg);
-  }
-  100%
-  {
-      transform: rotateX(-30deg) rotateY(0);
-  }
-}
-
-#box::before
-{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 200px;
-  background: rgba(0, 0, 0, 0.1);
-  transform: rotateX(90deg) translateZ(-220px);
-  filter: blur(25px);           
-}
-
-#box div
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform-style: preserve-3d;
-}
-
-#box div span
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  background: #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#box div span:nth-child(1)
-{
-  transform: rotateY(0) translate3d(0,0,150px);
-  background: #d8aa77;
-}
-#box div span:nth-child(1)::before
-{
-  content: '';
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  background: url(https://images.pexels.com/photos/17855845/pexels-photo-17855845/free-photo-of-a-man-standing-in-the-ruins-of-a-castle.jpeg?auto=compress&cs=tinysrgb&w=1600);
-  background-size: 200px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-#box div span:nth-child(2)
-{
-  transform: rotateY(90deg) translate3d(0,0,150px);
-  background: #ca9864;
-}
-#box div span:nth-child(3)
-{
-  transform: rotateY(180deg) translate3d(0,0, 150px);
-  background: #d8aa77;
-}
-#box div span:nth-child(3)::before
-{
-  content: '';
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  background: url(https://images.pexels.com/photos/17927911/pexels-photo-17927911/free-photo-of-man-sitting-on-chair-and-posing.jpeg?auto=compress&cs=tinysrgb&w=1600);
-  background-size: 200px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-#box div span:nth-child(4)
-{
-  transform: rotateY(270deg) translate3d(0,0, 150px);
-  background: #ca9864;
-}
-#box .top
-{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 300px;
-  height: 300px;
-  background: #e8bb84;
-  display: flex;
-  align-items: center;
-  transform: rotateX(90deg) translate3d(0,0,150px);
-}
-#box .top::before
-{
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 60px;
-  background: #111 url(https://lh4.googleusercontent.com/EqxRh5t4jhe2n-nC0oAA1QJBYVvWNr6Uziyt9k_MfF993EATOcg5xsHRyF4rvWhS_fJZPGBMObp6AyO5fWTN=w1214-h920);
-  background-size: 85px;
-}
-.tape
-{
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  transform: translateX(-50%) rotate(90deg);
-  width: 120px;
-  height: 60px;
-  background: #111 url(https://lh4.googleusercontent.com/EqxRh5t4jhe2n-nC0oAA1QJBYVvWNr6Uziyt9k_MfF993EATOcg5xsHRyF4rvWhS_fJZPGBMObp6AyO5fWTN=w1214-h920);
-  background-size: 85px;
-  background-position-x: 45px;
-}
-span:nth-child(4) .tape
-{
-  transform: translateX(-50%) rotate(270deg);
-  background-position-x: 30px;
-}
-
-
-
-
-
-
-.content{
-  display: flex;
-  padding:20px;
-  border-radius: 12px;
-  justify-content: center;
-  justify-content: space-between !important;
-  border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -o-border-radius: 12px;
-}
-.content-img{
-  justify-content: space-between !important;
-  align-content: space-between !important;
-  border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -o-border-radius: 12px;
-}
-.main-content{
-  display: flex;
-  border: 2px solid #ccc;
-  width: 370px;
-  justify-content: center;
-  border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -o-border-radius: 12px;
-}
-.second-main-content{
-  display: flex;
-  border: 2px solid #ccc;
-  width: 370px;
-  float: right;
-  display: grid;
-  justify-content: center;
-  border-radius: 12px;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  -ms-border-radius: 12px;
-  -o-border-radius: 12px;
-}
-
-    }
 
 
     @media only screen 
@@ -1201,16 +897,26 @@ span:nth-child(4) .tape
       }    
 
     }
-
+/* For iPhone XR, and iPhone 11: */
     @media only screen 
     and (width: 414px) 
     and (height: 896px) 
-    and (-webkit-device-pixel-ratio: 3) { 
-      .slider{
-        width: 500px;
-        height: 400px;
-      
-}
+     { 
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: #101010; */
+        background-color: #535151;
+        padding: 10px 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        transition: background-color 0.3s ease-in-out;
+      }
+     
 .item-btn{
   width:70px;
   height:70px;
@@ -1222,22 +928,18 @@ span:nth-child(4) .tape
 }
 .Trend{
   display: flex !important;
-  padding: 3rem;
-  row-gap: 1rem;
+  /* padding: 3rem; */
+  /* row-gap: 1rem; */
   justify-content: space-between !important;
-  margin: 10px;
+  /* margin: 10px; */
 }
 .Slide{
   width: 400px !important;
   height: 300px !important;
   padding: 12px;
-  justify-content: space-between;
   border:3px solid transparent;
-  border-radius: 6rem !important;
-  -webkit-border-radius: 6rem !important;
-  -moz-border-radius: 6rem !important;
-  -ms-border-radius: 6rem !important;
-  -o-border-radius: 6rem !important;
+  /* border-radius: 6rem !important; */
+ 
 }
 .container{
   display: grid !important;
@@ -1384,7 +1086,7 @@ order: 5;
   width:350px;
   height:200px;
   border:2px solid black !important;
-  background-color: #f44336;
+  background-color: #d8e1d9;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -1428,9 +1130,29 @@ order: 5;
 }
 
     }
-
-@media (min-width: 481px) and (max-width: 767px) {
-
+/* Iphone 11 and XR media querie */
+@media (width: 414px) and (height: 896px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #101010; */
+    background-color: #ad1e1e;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .logo {
+    color: #151313;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
   .page{
     object-fit: cover;
   }
@@ -1442,17 +1164,17 @@ order: 5;
     margin: 10px;
   }
   .Slide{
-    width: 400px !important;
+    width: 300px !important;
     height: 300px !important;
     padding: 12px;
     justify-content: space-between;
     border:2px solid transparent;
-    border-radius: 6rem !important;
-    -webkit-border-radius: 6rem !important;
-    -moz-border-radius: 6rem !important;
-    -ms-border-radius: 6rem !important;
-    -o-border-radius: 6rem !important;
-  }
+    border-radius: 2rem !important;
+    -webkit-border-radius: 2rem !important;
+    -moz-border-radius: 2rem !important;
+    -ms-border-radius: 2rem !important;
+    -o-border-radius: 2rem !important;
+}
   .imag {
     border-radius:12px;
     width: 300px;
@@ -1472,10 +1194,10 @@ order: 5;
     justify-content: space-between;
   }
   .content-1{
-    width:150px;
-    height:150px;
-    border: 3px solid black;
-    padding:3rem;
+    width:350px;
+    height:420px;
+    border: 3px solid rgb(181, 174, 174);
+    padding:12px;
     border-radius: 12px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
@@ -1483,18 +1205,18 @@ order: 5;
     -o-border-radius: 12px;
   }
   .content-2{
-    width:300px;
-    height:320px;
-    border: 3px solid black;
-    padding:3rem;
+    width:350px;
+    height:380px;
+    border: 3px solid rgb(209, 203, 203);
+    padding:12px;
     border-radius: 12px;
-  
-  }
+    
+}
   .content-3{
-    width:300px;
-    height:300px;
-    border: 3px solid black;
-    padding:3rem;
+    width:350px;
+    height:480px;
+    border: 3px solid rgb(179, 173, 173);
+    padding: 12px;
     border-radius: 12px;
   
   }
@@ -1510,15 +1232,15 @@ order: 5;
     padding:10rem;
   }
   .middle-content{
-  padding: 10rem;
+  padding: 12px;
   display: flex;
   justify-content: space-around;
   }
   .mid-cont{
-    width: 600px;
+    width: 400px;
     height:700px;
-    border:4px solid black;
-    box-shadow: #1e8b1e;
+    border:4px solid rgb(166, 159, 159);
+    box-shadow: #8f9c8f;
     border-radius: 12px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
@@ -1529,7 +1251,7 @@ order: 5;
   .mid-cont2{
     width: 600px;
     height:700px;
-    border:4px solid black;
+    border:4px solid rgb(206, 200, 200);
     border-radius: 12px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
@@ -1539,15 +1261,17 @@ order: 5;
   }
   
   .semi-cont{
-    display: flex !important;
-    padding:3rem;
-    justify-content: space-between;
+    display: grid !important;
+    padding:12px;
+    /* row-gap: 3; */
+    /* justify-content: space-between; */
   }
   .semi-1{
     width:350px;
-    height:200px;
-    border:2px solid black !important;
-    background-color: #f44336;
+    height:400px;
+
+    border:2px solid rgb(182, 177, 177) !important;
+    /* background-color: #f44336; */
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -1556,47 +1280,57 @@ order: 5;
   }
   .semi-2{
     width:350px;
-    height:200px;
-    border:2px solid black !important;
-    background-color: #108760;
+    height:400px;
+    border:2px solid rgb(195, 186, 186) !important;
+    /* background-color: #108760; */
     border-radius: 10px;
   }
   .semi-3{
     width:350px;
     height:200px;
-    border:2px solid black !important;
-    background-color: #475907;
+    border:2px solid rgb(191, 186, 186) !important;
+ 
     border-radius: 10px;
   }
   .semi-4{
     width:350px;
-    height:200px;
-    border:2px solid black !important;
-    background-color: #72460a;
+    height:400px;
+    border:2px solid rgb(165, 161, 161) !important;
+    
     border-radius: 10px;
   }
+  .bestSellers{
+    display: hidden;
+  }
+ 
   .faq{
     display: inline-block;
   }
   .faq1{
     width: 700px;
     height: 250px;
-    border: 3px solid black;
-    padding: 4rem;
+    border: 3px solid rgb(170, 165, 165);
+    padding: 12px;
     border-radius: 12px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
   }
+
+  
 }
 
 
-@media (min-width: 375px) and (max-width: 667px) {
+@media (width: 375px) and (height: 667px) {
  
   .page{
     object-fit: cover;
   }
+  *{
+    background-color: #e2e4e6;
+  }
+  
   .Trend{
     display: grid!important;
     padding: 3rem;
@@ -1605,17 +1339,19 @@ order: 5;
     margin: 10px;
   }
   .Slide{
-    width: 400px !important;
+    width: 450px !important;
     height: 300px !important;
-    padding: 12px;
+    object-fit: cover !important;
+    /* padding: 12px; */
     justify-content: space-between;
+    object-fit: cover !important;
     border:3px solid transparent;
-    border-radius: 6rem !important;
-    -webkit-border-radius: 6rem !important;
-    -moz-border-radius: 6rem !important;
-    -ms-border-radius: 6rem !important;
-    -o-border-radius: 6rem !important;
-  }
+    border-radius: 2rem !important;
+    -webkit-border-radius: 2rem !important;
+    -moz-border-radius: 2rem !important;
+    -ms-border-radius: 2rem !important;
+    -o-border-radius: 2rem !important;
+}
   .imag {
     border-radius:12px;
     width: 300px;
@@ -1628,14 +1364,7 @@ order: 5;
     width: 500px;
     height: 400px;
    }
-   .Trend{
-    display: grid !important;
-    flex-wrap:wrap;
-    padding: 3rem;
-    row-gap: 1rem;
-    justify-content: space-between !important;
-    margin: 10px;
-  }
+  
 
   .w-d-1{
     width:80px;
@@ -1723,9 +1452,9 @@ order: 5;
   
   .content-1{
     width:300px;
-    height:320px;
-    border: 3px solid black;
-    padding:3rem;
+    height:370px;
+    border: 3px solid rgb(172, 171, 171);
+    padding:12px;
     border-radius: 12px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
@@ -1737,26 +1466,33 @@ order: 5;
   }
   .content-2{
     width:300px;
-    height:320px;
-    border: 3px solid black;
-    padding:3rem;
+    height:370px;
+    border: 3px solid rgb(173, 170, 170);
+    padding:12px;
     border-radius: 12px;
   
   }
   .content-3{
     width:300px;
-    height:320px;
-    border: 3px solid black;
-    padding:3rem;
+    height:600px;
+    border: 3px solid rgb(171, 170, 170);
+    padding:12px;
     border-radius: 12px;
-  
-  }
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
   .img-cont-3{
-  border: 3px solid;
-  width:200px;
+  border-radius: 12px !important;
+  width:300px;
   height:300px;
-  object-fit: fill;
-  }
+  object-fit: fit;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
 
   .second-container{
     display: grid !important;
@@ -1766,9 +1502,9 @@ order: 5;
   }
   .sub-cont{
     width:300px;
-    height:300px;
-    border: 3px solid black;
-    padding:6rem;
+    height:380px;
+    border: 3px solid rgb(152, 146, 146);
+    padding: 12px;
     border-radius: 12px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
@@ -1777,24 +1513,24 @@ order: 5;
   }
   .sub-cont-2{
     width:300px;
-    height:300px;
-    border: 3px solid black;
-    padding:3rem;
+    height:340px;
+    border: 3px solid rgb(186, 182, 182);
+    padding: 12px;
     border-radius: 12px;
-    background-color: #381c7f;
+    /* background-color: #484256; */
   
   }
   .sub-cont-3{
     width:300px;
-    height:300px;
-    border: 3px solid black;
-    padding:3rem;
+    height:340px;
+    border: 3px solid rgb(167, 162, 162);
+    padding:12px;
     border-radius: 12px;
   
   }
   .new-content{
     max-width: 100rem;
-    border:3px solid burlywood;
+    border:3px solid rgb(182, 179, 174);
     height:20rem;
     border-radius: 12px;
     -webkit-border-radius: 12px;
@@ -1811,7 +1547,7 @@ order: 5;
   .mid-cont{
     width: 600px;
     height:700px;
-    border:4px solid black;
+    border:4px solid rgb(136, 132, 132);
     box-shadow: #3b813b;
     border-radius: 12px;
     -webkit-border-radius: 12px;
@@ -1841,7 +1577,7 @@ order: 5;
     width:350px;
     height:200px;
     border:2px solid black !important;
-    background-color: #f44336;
+    background-color: #b8a7a6;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -1852,21 +1588,21 @@ order: 5;
     width:350px;
     height:200px;
     border:2px solid black !important;
-    background-color: #108760;
+    /* background-color: #108760; */
     border-radius: 10px;
   }
   .semi-3{
     width:350px;
     height:200px;
-    border:2px solid black !important;
-    background-color: #475907;
+    border:2px solid rgb(181, 173, 173) !important;
+    /* background-color: #475907; */
     border-radius: 10px;
   }
   .semi-4{
     width:350px;
     height:200px;
-    border:2px solid black !important;
-    background-color: #72460a;
+    border:2px solid rgb(157, 146, 146) !important;
+    /* background-color: #72460a; */
     border-radius: 10px;
   }
   .faq{
@@ -1875,8 +1611,8 @@ order: 5;
   .faq1{
     width: 400px;
     height: 250px;
-    border: 3px solid black;
-    padding: 4rem;
+    border: 3px solid rgb(170, 165, 165);
+    padding: 12px;
     border-radius: 12px;
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;

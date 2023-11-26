@@ -44,20 +44,20 @@ const NavBar = ({ cartItemCount, onCartClick, item }) => {
         <li><a href="#">Categories</a>
       <ul class="dropdown">
         <li><a href="/Items">Products</a></li>
-        <li><a href="#">Travel</a></li>
+        {/* <li><a href="#">Travel</a></li>
         <li><a href="#">Women</a></li>
         <li><a href="#"><Link to={`/items/${item}`}></Link>Men</a></li>
         <li><a href="#">Children</a></li>
         <li><a href="#">Jewelry & Watches</a></li>
         <li><a href="#">Beauty</a></li>
-        <li><a href="#">Lifestyle</a></li>
+        <li><a href="#">Lifestyle</a></li> */}
       </ul>
     </li>
     <li><a href="#">Account</a>
       <ul class="dropdown">
         <li><a href="/account">Profile</a></li>
-        <li><a href="/orderHistory">Order History</a></li>
-        <li><a href="#">Wishlist</a></li>
+        {/* <li><a href="/orderHistory">Order History</a></li>
+        <li><a href="#">Wishlist</a></li> */}
         <li><a href="#">Log Out</a></li>
       </ul>
     </li>

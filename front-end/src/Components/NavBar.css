@@ -37,7 +37,7 @@
 padding-left: 0;
     left: 0;
     display: none;
-    background: #d9dde0;
+    background: #b4b8bc;
   }
 
   ul li:hover > ul,
@@ -149,11 +149,11 @@ color: #adb1b6;
   }
   
   /* Media query for responsive design */
-  @media screen and (max-width: 768px) {
+  @media (width: 414px) and (height: 896px) {
     .nav-links {
       display: none;
       flex-direction: column;
-      background-color: #333;
+      background-color: #b0b6b2;
       width: 100%;
       position: absolute;
       top: 60px;
@@ -167,6 +167,7 @@ color: #adb1b6;
       display: flex;
       transform: translateY(0);
     }
+    
   
     /* .menu-toggle {
       display: flex;
