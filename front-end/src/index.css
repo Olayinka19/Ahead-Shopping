@@ -916,7 +916,9 @@ span:nth-child(4) .tape
         z-index: 1000;
         transition: background-color 0.3s ease-in-out;
       }
-     
+     .books{
+      display: inline;
+     }
 .item-btn{
   width:70px;
   height:70px;
@@ -1137,7 +1139,7 @@ order: 5;
     justify-content: space-between;
     align-items: center;
     /* background-color: #101010; */
-    background-color: #ad1e1e;
+    /* background-color: #ad1e1e; */
     padding: 10px 20px;
     position: fixed;
     top: 0;
@@ -1145,6 +1147,52 @@ order: 5;
     width: 100%;
     z-index: 1000;
     transition: background-color 0.3s ease-in-out;
+  }
+  .menu-toggle {
+    display: none;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .sub-cont-2{
+    display: inline-block;
+    padding:12px;
+  }
+  .w-container{
+    width:300px;
+    height:300px;
+  }
+  .w-d-1{
+    width:90px;
+    height:20px;
+    margin-top: -20px;
+  }
+  .w-d-2{
+    width:90px;
+    height:20px;
+  }
+  .w-d-3{
+    width:90px;
+    height:20px;
+  }
+  .w-d-4{
+    width:90px;
+    height:20px;
+  }
+  .w-img{
+    object-fit: cover;
+    
+  }
+  .bar {
+    width: 100%;
+    height: 4px;
+    background-color: #050404;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
   }
   .logo {
     color: #151313;
@@ -1164,7 +1212,7 @@ order: 5;
     margin: 10px;
   }
   .Slide{
-    width: 300px !important;
+    width: 700px !important;
     height: 300px !important;
     padding: 12px;
     justify-content: space-between;

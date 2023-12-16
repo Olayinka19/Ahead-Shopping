@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Cart from './Cart';
+// import Cart from './Cart';
 import { Link } from 'react-router-dom';
-import Signin from '../Components/Signin';
+// import Signin from '../Components/Signin';
 import { UserAuth } from '../Context/AuthContext';
 import './NavBar.css';
 
@@ -12,7 +12,7 @@ const NavBar = ({ cartItemCount, onCartClick, item }) => {
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
-  const [isCartOpen, setIsCartOpen] = useState(false);
+  // const [isCartOpen, setIsCartOpen] = useState(false);
 
   const handleSignOut = async () => {
     try {
@@ -21,9 +21,9 @@ const NavBar = ({ cartItemCount, onCartClick, item }) => {
       console.log(error)
     }
   }
-  const toggleCart = () => {
-    setIsCartOpen(!isCartOpen);
-  };
+  // const toggleCart = () => {
+  //   setIsCartOpen(!isCartOpen);
+  // };
 
   return (
     <nav className={`navbar ${menuOpen ? 'active' : ''}`}>
@@ -41,50 +41,36 @@ const NavBar = ({ cartItemCount, onCartClick, item }) => {
     </li> */}
         {/* <li>
         <a class="uk-button uk-button-default" href="/">Categories</a></li> */}
-        <li><a href="#">Categories</a>
-      <ul class="dropdown">
         <li><a href="/Items">Products</a></li>
-        {/* <li><a href="#">Travel</a></li>
-        <li><a href="#">Women</a></li>
-        <li><a href="#"><Link to={`/items/${item}`}></Link>Men</a></li>
-        <li><a href="#">Children</a></li>
-        <li><a href="#">Jewelry & Watches</a></li>
-        <li><a href="#">Beauty</a></li>
-        <li><a href="#">Lifestyle</a></li> */}
-      </ul>
-    </li>
-    <li><a href="#">Account</a>
+    {/* <li><a href="#">Account</a>
       <ul class="dropdown">
         <li><a href="/account">Profile</a></li>
-        {/* <li><a href="/orderHistory">Order History</a></li>
-        <li><a href="#">Wishlist</a></li> */}
+    
         <li><a href="#">Log Out</a></li>
       </ul>
-    </li>
-    <li><a href="#">Blog Post</a>
+    </li> */}
+    {/* <li><a href="#">Blog Post</a>
       <ul class="dropdown">
         <li><a href="#">Product Updates</a></li>
         <li><a href="#">How-to Guides</a></li>
         <li><a href="#">Ahead-store News</a></li>
-        {/* <li><a href="#">Log Out</a></li> */}
+        
       </ul>
-    </li>
-    <li><a href="#">Contacts</a>
+    </li> */}
+    {/* <li><a href="#">Contacts</a>
       <ul class="dropdown">
         <li><a href="#">Customer Support</a></li>
         <li><a href="#">Live Chat</a></li>
         <li><a href="#">Help Center</a></li>
         <li><a href="#">Log Out</a></li>
       </ul>
-    </li>
-    <li><a href="#">Dashboard</a>
+    </li> */}
+    {/* <li><a href="#">Dashboard</a>
       <ul class="dropdown">
         <li><a href="#">Overview</a></li>
-        <li><a href="#">Notifications</a></li>
-        <li><a href="#">Quick Actions</a></li>
-        <li><a href="#">Men</a></li>
+      
       </ul>
-    </li>
+    </li> */}
     <li><a onClick={onCartClick} href="#">🛒</a>
       {/* <ul class="dropdown">
         <li><a href="#"><button class="uk-button uk-button-default" onClick={onCartClick}> 🛒 {cartItemCount}</button></a></li>
