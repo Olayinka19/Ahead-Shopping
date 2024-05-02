@@ -734,7 +734,7 @@ function Home() {
       </div> */}
 
       <br />
-      <h1 class="h-1 uk-heading-small ">New Available Products</h1>
+      <h1 class="h-1 uk-heading-small ">New Products</h1>
       {/* <div className="books">
         <div
           class="uk-position-relative uk-visible-toggle uk-light"
