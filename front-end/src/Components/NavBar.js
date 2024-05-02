@@ -2,15 +2,22 @@ import React, { useState } from 'react';
 // import Cart from './Cart';
 import { Link } from 'react-router-dom';
 // import Signin from '../Components/Signin';
+import hendrix from '../assets/hendrix.JPG';
 import { UserAuth } from '../Context/AuthContext';
 import './NavBar.css';
 
 const NavBar = ({ cartItemCount, onCartClick, item }) => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isLogoDropdownOpen, setIsLogoDropdownOpen] = useState(false);
+
   const { user, logOut } = UserAuth();
   // const cartItemCount = cartItems.length;
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+
+}
+const toggleLogoDropdown = () => {
+    setIsLogoDropdownOpen(!isLogoDropdownOpen);
   };
   // const [isCartOpen, setIsCartOpen] = useState(false);
 
@@ -26,60 +33,16 @@ const NavBar = ({ cartItemCount, onCartClick, item }) => {
   // };
 
   return (
-    <nav className={`navbar ${menuOpen ? 'active' : ''}`}>
-    <div className="logo"><Link to="/">Ahead-Store</Link></div>
-    <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
-    
-      {/* <li><a class="uk-button uk-button-default" href="/Items">Products</a></li> */}
-      {/* <li><a href="/Items">Products</a>
-      <ul class="dropdown">
-        <li><a href="#">Handbags</a></li>
-        <li><a href="#">Travel</a></li>
-        <li><a href="#">Women</a></li>
-        <li><a href="#">Men</a></li>
-      </ul>
-    </li> */}
-        {/* <li>
-        <a class="uk-button uk-button-default" href="/">Categories</a></li> */}
-        <li><a href="/Items">Products</a></li>
-    {/* <li><a href="#">Account</a>
-      <ul class="dropdown">
-        <li><a href="/account">Profile</a></li>
-    
-        <li><a href="#">Log Out</a></li>
-      </ul>
-    </li> */}
-    {/* <li><a href="#">Blog Post</a>
-      <ul class="dropdown">
-        <li><a href="#">Product Updates</a></li>
-        <li><a href="#">How-to Guides</a></li>
-        <li><a href="#">Ahead-store News</a></li>
-        
-      </ul>
-    </li> */}
-    {/* <li><a href="#">Contacts</a>
-      <ul class="dropdown">
-        <li><a href="#">Customer Support</a></li>
-        <li><a href="#">Live Chat</a></li>
-        <li><a href="#">Help Center</a></li>
-        <li><a href="#">Log Out</a></li>
-      </ul>
-    </li> */}
-    {/* <li><a href="#">Dashboard</a>
-      <ul class="dropdown">
-        <li><a href="#">Overview</a></li>
-      
-      </ul>
-    </li> */}
-    <li><a onClick={onCartClick} href="#">🛒</a>
-      {/* <ul class="dropdown">
-        <li><a href="#"><button class="uk-button uk-button-default" onClick={onCartClick}> 🛒 {cartItemCount}</button></a></li>
-       
-      </ul> */}
-    </li>
-  
-     
-    <li>
+    <div class="Nav">
+    <nav className="navbar">
+       <div className="navbar-container">
+         <div className={`navbar-logo ${isLogoDropdownOpen ? 'active' : ''}`} onClick={toggleLogoDropdown}>
+           <a href="/"><img alt="pfp" src={hendrix} width="50px" height="50px" ></img> </a>
+           
+           <div className="dropdown-content">
+             
+            
+           <li>
     {user?.displayName ? (
         <button onClick={handleSignOut}>Logout</button>
       ) : (
@@ -89,29 +52,37 @@ const NavBar = ({ cartItemCount, onCartClick, item }) => {
         <li><a href="#"> </a> </li>
       </ul> */}
     </li>
-        
-       
-          {/* <li><a class="uk-button uk-button-default" href="/">SignUp</a></li> */}
-          {/* <a class="uk-button uk-button-default" href="/ContactUs">Contact</a> */}
-          
-      <li className="dropdown">
-      <div className="cart-icon nav-links">
-        {/* <li>
-          <button class="uk-button uk-button-default" onClick={onCartClick}> 🛒 {cartItemCount}</button>
-        </li> */}
-      </div>
-        <div className="dropdown-content">
-          {/* Add more dropdown items */}
-        </div>
-      </li>
-      {/* Add more navigation links */}
-    </ul>
-    <div className="menu-toggle" onClick={toggleMenu}>
-      <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
-      <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
-      <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
-    </div>
-  </nav>
+             <a href="/Products">Products</a>
+             <a href="/Learn">☞Learn📚</a>
+             {/* <a href="/podcast">Podcast🎙️</a>
+             <a href="/Projects">Projects🎖️</a>
+             <a href="/Resume">Resume👨🏽‍💻</a>
+             <a href="/Soccer">☞Soccer🎮</a>
+             <a href="/Skills">☞Skills🌟</a>
+             <a href="/Blog">☞Blog✍🏽</a> */}
+           </div>
+         </div>
+         <h2>Ahead-store </h2>
+         <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
+          <h2><a href="/">Home</a></h2> 
+           <h2><a href="/">Blog</a></h2>
+           {/* <a href="/Tutorials">Tutorials</a> */}
+           {/* <div className="dropdown">
+             <button className="dropbtn">Projects <i className="fas fa-chevron-down"></i></button>
+             <div className="dropdown-content">
+               <a href="/https://ahead-store.netlify.app/">Ahead-Shopping</a>
+               <a href="/">Pawster</a>
+               <a href="/">NFT Project</a>
+             </div>
+           </div> */}
+          <h2><a href="/Contact">Contact</a></h2> 
+         </div>
+         <div className="navbar-toggle" onClick={toggleNavbar}>
+           <i className={`fas fa-${isOpen ? 'times' : 'bars'}`}></i>
+         </div>
+       </div>
+     </nav>
+     </div>
   );
 };
 

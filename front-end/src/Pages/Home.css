@@ -32,8 +32,56 @@ and (min-width : 321px) {
     margin: 10px;
   }
 }  */
+.intro{
+  width: auto !important;
+  height:auto;
+  border: 3px solid  transparent !important;
+  border-radius:
+  12px;
+  background-color: rgb(0, 0, 0);
+  color:rgb(243, 240, 240) !important;
+  text-align: left;
+  padding:20px 20px 20px 20px;
+  margin: 20px;
+ 
+}
+.intro2{
+  width: auto;
+  height:auto;
+  border: 3px solid transparent !important;
+  /* background-color: white; */
+ padding:20px;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ flex-grow: 4;
+ flex-wrap: wrap;
+ row-gap: 45px;
+ column-gap: 20px;
+}
+.port-1{
+  width: 420px;
+  height:410px;
+  border: 3px solid transparent;
+  padding: 20px 20px;
+  background-color:#eeeaea;
+  border-radius:12px; 
+  color: white;
 
-
+}
+.pfp1{
+  width:500px;
+  height: 370px;
+  border: 3px solid transparent;
+  padding: 20px 20px;
+  background-color:#eeeaea;
+  border-radius:12%;
+  color: white;
+  -webkit-border-radius:12%;
+  -moz-border-radius:12%;
+  -ms-border-radius:12%;
+  -o-border-radius:12%;
+}
 .bestSellers{
   border-radius: 12px;
   width: 100%;
