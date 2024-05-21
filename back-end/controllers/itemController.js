@@ -1,22 +1,22 @@
 
 const express = require("express");
-const items = express.Router();
+const fruits = express.Router();
 
 
 const {
-    getAllItems,
-    getItem,
-    createItem,
-    deleteItem,
-    updateItem
-  } = require("../queries/items.js");
-  const { checkName, validateUrl } = require("../validations/checkItems.js")
+    getAllFruits,
+    getFruit,
+    createFruit,
+    deleteFruit,
+    updateFruit
+  } = require("../queries/fruits.js");
+  const { checkName, validateUrl } = require("../validations/checkFruits.js")
 
-  items.get("/", async (req, res) => {
-    const allItems = await getAllItems();
-    console.log(allItems)
-    if (allItems) {
-      res.status(200).json({payload: allItems, success: true});
+  fruits.get("/", async (req, res) => {
+    const allFruits = await getAllFruits();
+    console.log(allFruits)
+    if (allFruits) {
+      res.status(200).json({payload: allFruits, success: true});
     } else {
       res.status(500).json({ error: "server error!" });
     }
@@ -25,47 +25,47 @@ const {
   
   
  
-  items.get("/:id", async (req, res) => {
+  fruits.get("/:id", async (req, res) => {
     const { id } = req.params;
-    const item = await getItem(id);
-    if (item.id) {
-      res.json({payload: item, success: true});
+    const fruit = await getFruit(id);
+    if (fruit.id) {
+      res.json({payload: fruit, success: true});
     } else {
-      res.status(404).json({ payload: "not found", success: false, error: "item not found" });
+      res.status(404).json({ payload: "not found", success: false, error: "fruit not found" });
     }
   });
 
-  items.post("/", checkName, validateUrl, async (req, res) => {
+  fruits.post("/", checkName, validateUrl, async (req, res) => {
     try {
-      const item = await createItem(req.body);
-      res.json(item)
+      const fruit = await createFruit(req.body);
+      res.json(fruit)
     } catch (error) {
       return error;
     }
   });
   
 
-  items.delete("/:id", async (req, res) => {
+  fruits.delete("/:id", async (req, res) => {
     const { id } = req.params;
-    const deletedItem = await deleteItem(id);
-    if (deletedItem.id) {
-      res.json({payload: deleteItem,success: true});
+    const deletedFruit = await deleteFruit(id);
+    if (deletedFruit.id) {
+      res.json({payload: deleteFruit,success: true});
     } else {
-      res.status(404).json({payload: "not found", success:false, error:"item not found"})
+      res.status(404).json({payload: "not found", success:false, error:"fruit not found"})
     }
   });
   
 
-  items.put("/:id", validateUrl, checkName, async (req, res) => {
+  fruits.put("/:id", validateUrl, checkName, async (req, res) => {
     const { id } = req.params;
   
-    const updatedItem = await updateItem(req.body, id);
-    if (updatedItem.id) {
-      res.json(updatedItem);
+    const updatedFruit = await updateFruit(req.body, id);
+    if (updatedFruit.id) {
+      res.json(updatedFruit);
     } else {
-      res.status(404).json({payload: "not found", success:false, error:"item not found"})
+      res.status(404).json({payload: "not found", success:false, error:"fruit not found"})
     }
   })
   
 
-  module.exports = items;
+  module.exports = fruits;

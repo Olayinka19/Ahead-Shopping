@@ -12,5 +12,5 @@ const PORT = process.env.PORT;
 // LISTEN
 
 app.listen(PORT, () => {
-    console.log(`Welcome to Ahead-shopping! ${PORT} `);
+    console.log(`Welcome to OlaFolio Fruits! ${PORT} `);
   });

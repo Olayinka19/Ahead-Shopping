@@ -32,6 +32,17 @@ and (min-width : 321px) {
     margin: 10px;
   }
 }  */
+.site{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  color:white;
+  background-color: black;
+background-attachment: fixed;
+}
 .intro{
   width: auto !important;
   height:auto;

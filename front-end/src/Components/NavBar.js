@@ -62,7 +62,7 @@ const toggleLogoDropdown = () => {
              <a href="/Blog">☞Blog✍🏽</a> */}
            </div>
          </div>
-         <h2>Ahead-store </h2>
+         <h2>OlaFolio Fruits </h2>
          <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
           <h2><a href="/">Home</a></h2> 
            <h2><a href="/">Blog</a></h2>

@@ -10,11 +10,11 @@ app.use(cors());
 app.use(express.json());
 
 
-app.use("/items"
+app.use("/fruits"
 , itemController);
 
 app.get("/", (req, res) => {
-    res.send("Welcome to Ahead Shopping!")
+    res.send("Welcome to OlaFolio Fruits!")
 })
 app.get('/reviews', async (req, res) => {
   try {
@@ -34,7 +34,7 @@ app.get('/reviews', async (req, res) => {
 });
 
 
-app.get("/items", itemController);
+app.get("/fruits", itemController);
 
 app.get("*", (req, res) => {
     res.status(404).send("page not found")

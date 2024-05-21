@@ -1,48 +1,23 @@
-\c ahead_store_v1;
+INSERT INTO fruits (name, recipes, health_benefit, image, nutrition_info, description)
+VALUES
+  ('Pear', 'Pear Salad, Pear Tart', 'Pears are high in fiber and may promote gut health.', 'https://example.com/pear.jpg', 'Pears are a good source of vitamin C, potassium, and antioxidants.', 'Pears are sweet, bell-shaped fruits...'),
+  ('Plum', 'Plum Jam, Plum Pie', 'Plums are rich in vitamins and minerals and may have benefits for heart health.', 'https://example.com/plum.jpg', 'Plums are low in calories and contain vitamins A, C, and K.', 'Plums are small, round fruits...'),
+  ('Apricot', 'Apricot Jam, Apricot Smoothie', 'Apricots are rich in vitamins A and C and may promote eye health.', 'https://example.com/apricot.jpg', 'Apricots are a good source of fiber and antioxidants.', 'Apricots are small, orange fruits...'),
+  ('Papaya', 'Papaya Salad, Papaya Smoothie', 'Papayas are rich in vitamins A and C and may aid digestion.', 'https://example.com/papaya.jpg', 'Papayas contain an enzyme called papain, which may help with digestion.', 'Papayas are tropical fruits...'),
+  ('Grapefruit', 'Grapefruit Salad, Grapefruit Smoothie', 'Grapefruits are high in vitamins A and C and may help with weight loss.', 'https://example.com/grapefruit.jpg', 'Grapefruits are low in calories and high in fiber.', 'Grapefruits are large, round fruits...'),
+  ('Cantaloupe', 'Cantaloupe Salad, Cantaloupe Smoothie', 'Cantaloupes are hydrating and may promote skin health.', 'https://example.com/cantaloupe.jpg', 'Cantaloupes are low in calories and contain vitamins A and C.', 'Cantaloupes are large, oval fruits...'),
+  ('Honeydew', 'Honeydew Salad, Honeydew Smoothie', 'Honeydews are hydrating and may support heart health.', 'https://example.com/honeydew.jpg', 'Honeydews are low in calories and contain vitamins C and K.', 'Honeydews are round, juicy fruits...'),
+  ('Blackberry', 'Blackberry Jam, Blackberry Smoothie', 'Blackberries are high in antioxidants and may support brain health.', 'https://example.com/blackberry.jpg', 'Blackberries are low in calories and contain vitamins C and K.', 'Blackberries are small, black or dark purple...'),
+  ('Cranberry', 'Cranberry Sauce, Cranberry Smoothie', 'Cranberries are rich in antioxidants and may help prevent urinary tract infections.', 'https://example.com/cranberry.jpg', 'Cranberries are low in calories and high in vitamin C and fiber.', 'Cranberries are small, red fruits...'),
+  ('Coconut', 'Coconut Curry, Coconut Smoothie', 'Coconuts are rich in healthy fats and may support heart health.', 'https://example.com/coconut.jpg', 'Coconuts contain vitamins, minerals, and antioxidants.', 'Coconuts are tropical fruits with a hard, brown shell...'),
+  ('Lychee', 'Lychee Sorbet, Lychee Smoothie', 'Lychees are rich in vitamin C and may support immune health.', 'https://example.com/lychee.jpg', 'Lychees are low in calories and contain vitamins B and C.', 'Lychees are small, round fruits with a bumpy red shell...'),
+  ('Mangosteen', 'Mangosteen Salad, Mangosteen Smoothie', 'Mangosteens are rich in antioxidants and may have anti-inflammatory effects.', 'https://example.com/mangosteen.jpg', 'Mangosteens are low in calories and contain vitamins and minerals.', 'Mangosteens are tropical fruits with a purple rind...'),
+  ('Passion Fruit', 'Passion Fruit Jam, Passion Fruit Smoothie', 'Passion fruits are high in fiber and may support digestive health.', 'https://example.com/passionfruit.jpg', 'Passion fruits are low in calories and contain vitamins and antioxidants.', 'Passion fruits are small, round fruits with a tough outer shell...'),
+  ('Pomegranate', 'Pomegranate Salad, Pomegranate Smoothie', 'Pomegranates are high in antioxidants and may support heart health.', 'https://example.com/pomegranate.jpg', 'Pomegranates contain vitamins C and K, folate, and potassium.', 'Pomegranates are round fruits with a tough outer skin...'),
+  ('Dragon Fruit', 'Dragon Fruit Salad, Dragon Fruit Smoothie', 'Dragon fruits are rich in vitamins and minerals and may support skin health.', 'https://example.com/dragonfruit.jpg', 'Dragon fruits are low in calories and contain vitamin C, fiber, and antioxidants.', 'Dragon fruits are tropical fruits with a vibrant pink or yellow skin...'),
+  ('Guava', 'Guava Jam, Guava Smoothie', 'Guavas are rich in vitamin C and may support immune health.', 'https://example.com/guava.jpg', 'Guavas are low in calories and contain fiber, vitamins, and minerals.', 'Guavas are tropical fruits with a green or yellow skin...'),
+  ('Kiwi Berry', 'Kiwi Berry Salad, Kiwi Berry Smoothie', 'Kiwi berries are rich in vitamin C and may support immune health.', 'https://example.com/kiwiberry.jpg', 'Kiwi berries are low in calories and contain fiber and antioxidants.', 'Kiwi berries are small fruits similar in appearance to kiwis...'),
+  ('Mamey Sapote', 'Mamey Sapote Sorbet, Mamey Sapote Smoothie', 'Mamey sapotes are rich in vitamins and minerals and may support heart health.', 'https://example.com/mameysapote.jpg', 'Mamey sapotes are low in calories and contain fiber, vitamins, and antioxidants.', 'Mamey sapotes are tropical fruits with a brown, rough skin...'),
+  ('Star Fruit', 'Star Fruit Salad, Star Fruit Smoothie', 'Star fruits are low in calories and may support digestive health.', 'https://example.com/starfruit.jpg', 'Star fruits are rich in vitamin C and antioxidants.', 'Star fruits are tropical fruits with a star-shaped cross-section...'),
+  ('Tamarillo', 'Tamarillo Jam, Tamarillo Smoothie', 'Tamarillos are rich in vitamins and minerals and may support eye health.', 'https://example.com/tamarillo.jpg', 'Tamarillos are low in calories and contain fiber and antioxidants.', 'Tamarillos are oval-shaped fruits...');
 
-
-INSERT INTO items (name, price , quantity , image_url , description, category) VALUES 
-('Men Clothing', 29.99, 150, 'https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'Discover the latest trends in mens fashion with our carefully selected range of clothing. From sharp suits to casual tees, our collection caters to every style and occasion. Whether youre dressing up for a formal event or looking to stay comfortable in your everyday wear, we got you covered', 'Mens Clothing'),
-
- ('Women Clothing', 38.99 , 130 , 'https://images.pexels.com/photos/8485730/pexels-photo-8485730.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', 'Elevate your wardrobe with our stunning assortment of womens clothing. Embrace your unique style and explore our range of dresses, tops, skirts, and more. Our collection is designed to empower and inspire women to feel confident and beautiful in their own skin' , 'Trendy Womens apparel'), 
-
- ('Kids Clothing', 49.89 , 20 , 'https://images.pexels.com/photos/5691864/pexels-photo-5691864.jpeg?auto=compress&cs=tinysrgb&w=1600', 'Simplify your life with our cutting-edge home appliances. Our selection includes appliances that combine functionality and aesthetics to make your daily tasks effortless. From smart kitchen gadgets to energy-efficient home essentials, we have everything you need to create a comfortable living space' , 'Home Decorations'),
-
-  ('Footwear', 140, 15 , 'https://images.pexels.com/photos/318236/pexels-photo-318236.jpeg?auto=compress&cs=tinysrgb&w=1600',  'Dive into the world of technology with our impressive range of computers and electronics. Whether you are a gaming enthusiast, a tech-savvy professional, or someone looking for reliable gadgets, we offer a diverse lineup of devices that cater to all your digital needs.' , 'High-performance computers' ),
-
-   ('Accessories', 300, 60 , 'https://images.pexels.com/photos/1395306/pexels-photo-1395306.jpeg?auto=compress&cs=tinysrgb&w=400' , 'Transform your living space into a smart haven with our range of connected devices. From smart thermostats to voice-controlled assistants, our collection of home automation products enhances convenience and efficiency in every aspect of your life.' , 'Latest electronic gadgets' ),
-
-    ('Seasonal Collections', 149.99, 69, 'https://images.pexels.com/photos/9974540/pexels-photo-9974540.jpeg?auto=compress&cs=tinysrgb&w=1600', 'Unleash your inner beauty with our range of high-quality beauty supplies. From skincare essentials to makeup must-haves, our collection is curated to help you look and feel your best. Experience the transformative power of our beauty products and achieve a radiant glow that turns heads' , 'Premium beauty and skincare products'),
-
-    ('Athletic & Sports Gear', 149.99, 39, 'https://images.pexels.com/photos/5383793/pexels-photo-5383793.jpeg?auto=compress&cs=tinysrgb&w=400', 'Unleash your inner beauty with our range of high-quality beauty supplies. From skincare essentials to makeup must-haves, our collection is curated to help you look and feel your best. Experience the transformative power of our beauty products and achieve a radiant glow that turns heads' , 'Premium beauty and skincare products'),
-
-    ('Swimwear', 149.99, 19, 'https://www.pexels.com/photo/woman-holding-surfboard-1822745/', 'Unleash your inner beauty with our range of high-quality beauty supplies. From skincare essentials to makeup must-haves, our collection is curated to help you look and feel your best. Experience the transformative power of our beauty products and achieve a radiant glow that turns heads' , 'Premium beauty and skincare products'),
-
-    ('Plus Size Clothing', 349.99, 79, 'https://images.pexels.com/photos/7240198/pexels-photo-7240198.jpeg?auto=compress&cs=tinysrgb&w=1600', 'Unleash your inner beauty with our range of high-quality beauty supplies. From skincare essentials to makeup must-haves, our collection is curated to help you look and feel your best. Experience the transformative power of our beauty products and achieve a radiant glow that turns heads' , 'Premium beauty and skincare products'),
-
-    ('Maternity Wear', 649.99, 98, 'https://images.pexels.com/photos/3699329/pexels-photo-3699329.jpeg?auto=compress&cs=tinysrgb&w=1600', 'Unleash your inner beauty with our range of high-quality beauty supplies. From skincare essentials to makeup must-haves, our collection is curated to help you look and feel your best. Experience the transformative power of our beauty products and achieve a radiant glow that turns heads' , 'Premium beauty and skincare products'),
-
-    ('Workwear & Business Attire', 549.99, 19, 'https://images.pexels.com/photos/1367269/pexels-photo-1367269.jpeg?auto=compress&cs=tinysrgb&w=400', 'Unleash your inner beauty with our range of high-quality beauty supplies. From skincare essentials to makeup must-haves, our collection is curated to help you look and feel your best. Experience the transformative power of our beauty products and achieve a radiant glow that turns heads' , 'Premium beauty and skincare products'),
-
-    ('Outdoor & Adventure', 49.99, 279, 'https://images.pexels.com/photos/12106743/pexels-photo-12106743.jpeg?auto=compress&cs=tinysrgb&w=400', 'Unleash your inner beauty with our range of high-quality beauty supplies. From skincare essentials to makeup must-haves, our collection is curated to help you look and feel your best. Experience the transformative power of our beauty products and achieve a radiant glow that turns heads' , 'Premium beauty and skincare products'),
-
-    ('Streetwear', 179.99, 179, 'https://images.pexels.com/photos/1735559/pexels-photo-1735559.jpeg?auto=compress&cs=tinysrgb&w=400', 'Unleash your inner beauty with our range of high-quality beauty supplies. From skincare essentials to makeup must-haves, our collection is curated to help you look and feel your best. Experience the transformative power of our beauty products and achieve a radiant glow that turns heads' , 'Premium beauty and skincare products'),
-
-    ('Clearance & Sale', 99.99, 129, 'https://images.pexels.com/photos/5926239/pexels-photo-5926239.jpeg?auto=compress&cs=tinysrgb&w=1600', 'Unleash your inner beauty with our range of high-quality beauty supplies. From skincare essentials to makeup must-haves, our collection is curated to help you look and feel your best. Experience the transformative power of our beauty products and achieve a radiant glow that turns heads' , 'Premium beauty and skincare products'),
-    
-    ('New Arrivals:', 89.99, 89, 'https://images.pexels.com/photos/4210866/pexels-photo-4210866.jpeg?auto=compress&cs=tinysrgb&w=1600', 'Unleash your inner beauty with our range of high-quality beauty supplies. From skincare essentials to makeup must-haves, our collection is curated to help you look and feel your best. Experience the transformative power of our beauty products and achieve a radiant glow that turns heads' , 'Premium beauty and skincare products');
-  
- 
-  
-INSERT INTO mens(
- name, brand, size , price , instock, image
-) VALUES (
-    'T-Shirt, 'Nike' , 'XS S M L XL', 150 , 50 , 'https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' ' 
-
-)
-INSERT INTO womens(
- name, brand, size , price , instock, image
-) VALUES (
-    'T-Shirt, 'Nike' , 'XS S M L XL', 150 , 50 , 'https://images.pexels.com/photos/8485730/pexels-photo-8485730.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' ' 
-
-)

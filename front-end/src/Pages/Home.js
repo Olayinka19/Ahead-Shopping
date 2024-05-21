@@ -97,7 +97,12 @@ function Home() {
       </div> */}
 
       {/* Slider ending */}
+      <div className="site">
+      <h1>Site Under Construction</h1>
+      <p>Please check back soon.</p>
+  </div>
 <div className="intro2">
+
 <div className="port-1">
         <img className="pfp1" alt="pfp" src='https://m.media-amazon.com/images/I/71PK6BOLxCL._SX679_.jpg' ></img>
           {/* <h3>T shirt</h3> */}
