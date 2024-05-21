@@ -10,10 +10,10 @@ function Home() {
   const [loading, setLoading] = React.useState(true);
   return (
     <div>
-      {/* <video className='video' src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1800" height="1200" loop muted playsinline uk-video="autoplay: inview"></video> */}
+      <video className='video' src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1800" height="1200" loop muted playsinline uk-video="autoplay: inview"></video>
 
       {/* Slider */}
-      <div
+      {/* <div
         class="uk-position-relative uk-visible-toggle uk-light"
         tabindex="-1"
         uk-slider="autoplay: true"
@@ -67,34 +67,11 @@ function Home() {
             />
            
           </li>
-          {/* <li>
-            <img
-              className="Slide"
-              src="https://img.freepik.com/free-photo/young-adults-funky-clothing-enjoying-outdoors-generated-by-ai_188544-37450.jpg"
-              alt=""
-            />
-            
-          </li> */}
-          {/* <li>
-            <img
-              className="Slide"
-              src="https://img.freepik.com/free-photo/multi-ethnic-group-young-adults-smiling-generated-by-ai_24640-81233.jpg"
-              alt=""
-            />
-      
-          </li> */}
-          {/* <li>
-            <img
-              className="Slide"
-              src="https://img.freepik.com/free-photo/young-adults-embrace-fashionable-city-night-generated-by-ai_188544-38888.jpg"
-              alt=""
-            />
-          
-          </li> */}
+         
         </ul>
 
     
-      </div>
+      </div> */}
 
       {/* Slider ending */}
       <div className="site">
