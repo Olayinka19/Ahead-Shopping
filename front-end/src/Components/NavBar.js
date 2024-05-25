@@ -54,6 +54,7 @@ const toggleLogoDropdown = () => {
     </li>
              <a href="/Fruits">Fruits</a>
              <a href="/Learn">☞Learn📚</a>
+             <a href="/AboutMe">☞About Me📚</a>
              {/* <a href="/podcast">Podcast🎙️</a>
              <a href="/Projects">Projects🎖️</a>
              <a href="/Resume">Resume👨🏽‍💻</a>
