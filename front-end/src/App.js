@@ -28,6 +28,8 @@ import Signin from './Pages/Signin';
 import SignUp from './Pages/SignUp';
 import Account from './Pages/Account';
 import Register from './Components/Register';
+import Fruits from './Components/Fruits';
+
 
 import {AuthContextProvider} from './Context/AuthContext';
 
@@ -79,10 +81,12 @@ function App() {
     <Route path="/Checkout" element={<Checkout/>} />
     <Route path="/PaymentSlip" element={<PaymentSlip/>} />
     <Route path="/Items" element={<Index/>} />
+    <Route path="/Fruits" element={<Fruits/>} />
     <Route path="/Items/:id" element={<Show/>} />
     <Route path="/Items/new" element={<New/>} />
     <Route path="/Items/:id/edit" element={<Edit/>} />
     <Route path="*" element={<FourOFour/>} />
+    
   </Routes>
 
   </Router>

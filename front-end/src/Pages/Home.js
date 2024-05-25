@@ -1,6 +1,7 @@
 import React from "react";
 import Button from '@mui/material/Button';
 import "./Home.css";
+import { useState } from "react";
 // import { Link } from "react-router-dom";
 
 
@@ -8,8 +9,11 @@ const baseURL = "https://jsonplaceholder.typicode.com/posts/1";
 function Home() {
   const [post, setPost] = React.useState(null);
   const [loading, setLoading] = React.useState(true);
+  const [data, setData] = useState(null);
+
   return (
     <div>
+    
       <video className='video' src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1800" height="1200" loop muted playsinline uk-video="autoplay: inview"></video>
 
       {/* Slider */}
