@@ -20,37 +20,7 @@ function Fruit({ fruit, id }) {
             <p>{fruit.health_benefit}</p>
             <h2>Nutrition</h2>
             <p>{fruit.nutrition_info}</p>
-            {/* <h2>Description</h2>
-            <p>{fruit.description}</p> */}
-            
-            {/* <p>{fruit.description}</p> */}
-            {/* <p>{fruit.description}</p> */}
-         
-
-            {/* {fruit.recipes && (
-                <div>
-                    <h2>Recipes:</h2>
-                    <p>{fruit.recipes}</p>
-                   
-                </div>
-            )} */}
-
-            {/* <h2>Health Benefit</h2>
-            {fruit.health_benefits && (
-                <div>
-                    <h2>Health Benefits:</h2>
-                    <p>{fruit.health_benefits}</p>
-                   
-                </div>
-            )} */}
-            {/* <h2>Nutrition</h2>
-            {fruit.nutrition && (
-                <div>
-                    <h2>Nutrition:</h2>
-                    <p>{fruit.health_benefits}</p>
-                   
-                </div>
-            )} */}
+          
         </div>
     );
 }

@@ -33,9 +33,9 @@ function Fruits({ fruit, id }) {
 
     return (
         <div>
-            <Button variant="primary" onClick={() => sorting('name')}>Sort by Name</Button>
-            <Button variant="primary"  onClick={() => sorting('color')}>Sort by Color</Button>
-            <Button variant="primary"  onClick={() => sorting('size')}>Sort by Size</Button>
+            <Button variant="contained" onClick={() => sorting('name')}>Sort by Name</Button>
+            <Button variant="contained"  onClick={() => sorting('color')}>Sort by Color</Button>
+            <Button variant="contained"  onClick={() => sorting('size')}>Sort by Size</Button>
 
             <div>Fruits</div>
            
