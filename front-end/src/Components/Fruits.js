@@ -39,10 +39,12 @@ function Fruits({ fruit, id }) {
 
             <div>Fruits</div>
            
-
-            {fruits.map((fruit, id) => (
+<div>
+{fruits.map((fruit, id) => (
                 <Fruit key={id} fruit={fruit} id={id} />
             ))}
+</div>
+          
         </div>
     );
 }
