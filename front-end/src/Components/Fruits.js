@@ -39,11 +39,21 @@ function Fruits({ fruit, id }) {
 
             <div>Fruits</div>
            
-<div>
+{/* <div>
 {fruits.map((fruit, id) => (
                 <Fruit key={id} fruit={fruit} id={id} />
             ))}
+</div> */}
+<div>
+  {Array.isArray(fruits) ? (
+    fruits.map((fruit, id) => (
+      <Fruit key={id} fruit={fruit} id={id} />
+    ))
+  ) : (
+    <p>No fruits available</p>
+  )}
 </div>
+
           
         </div>
     );
