@@ -121,7 +121,7 @@ function Home() {
         </div>
         <div className="port-1">
         <img className="pfp1" alt="pfp" src="https://m.media-amazon.com/images/I/71NXYvDZ6OL._SX679_.jpg"></img>
-       
+       <Button variant="outlined">Buy Now</Button>
         </div>
         <div className="port-1">
         <img className="pfp1" alt="pfp" src="https://m.media-amazon.com/images/I/61fcR71K4tL._SX679_.jpg"></img>
